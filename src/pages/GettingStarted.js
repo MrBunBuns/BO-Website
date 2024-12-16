@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
-import categoriesDataEn from '../assests/stepText/stepsEnglish.json';  // English data
-import categoriesDataEs from '../assests/stepText/stepsSpanish.json';  // Spanish data
+import categoriesDataEn from '../assests/languages/en.json';  // English data
+import categoriesDataEs from '../assests/languages/es.json';  // Spanish data
 import { LanguageContext } from '../contexts/LanguageContext';
 
 const GettingStarted = () => {
@@ -12,10 +12,12 @@ const GettingStarted = () => {
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
+  const [selectedIndex, setSelectedIndex] = useState(0); // Used for rerendering language of steps
+
   const [selectedCategory, setSelectedCategory] = useState(null); // Track the selected category
   const { language } = useContext(LanguageContext);
   // Use the appropriate categories data based on the selected language
-  const categories = language === 'en' ? categoriesDataEn : categoriesDataEs;
+  let categories = language === 'en' ? categoriesDataEn.gettingStartedPage : categoriesDataEs.gettingStartedPage;
 
   // Handle image click in step
   const handleImageClick = (image, title) => {
@@ -24,33 +26,37 @@ const GettingStarted = () => {
     setOpenDialog(true);
   };
 
+  useEffect(() => {
+    categories = language === 'en' ? categoriesDataEn.gettingStartedPage : categoriesDataEs.gettingStartedPage;
+    setSteps(categories.methods[selectedIndex].steps);
+  }, [language]);
+
   return (
     <Stack marginTop={14} width={'100%'} alignItems={'center'} justifyContent={'center'} spacing={8}>
       {/* Introduction Section */}
       <Container>
         <Typography variant="h3" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '5rem', md: '3em' } }}>
-          {language === 'en' ? 'Getting Started' : 'Comenzando'}
+          {categories.header }
         </Typography>
         <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
-          {language === 'en'
-            ? 'This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the "Need Support" button in the top right of the page to get help.'
-            : 'Esta página te guiará para conectarte en línea en Black Ops Wii. Si tienes dificultades, haz clic en el botón "Need Support" en la parte superior derecha de la página para obtener ayuda.'}
+          { categories.description} 
         </Typography>
       </Container>
 
       {/* Categories Section */}
       <Container>
         <Typography marginBottom={5} variant="h4" gutterBottom>
-          {language === 'en' ? 'Select Your Method:' : 'Selecciona tu método:'}
+          {categories.methodHeader}
         </Typography>
         <Grid container spacing={4} justifyContent="flex-start">
-          {categories.map((category, index) => (
+          {categories.methods.map((category, index) => (
             <Grid item xs={12} sm={6} md={4} key={index}>
               <ButtonBase
                 onClick={() => {
                   setSteps(category.steps);
                   setGuideTitle(category.title);
                   setSelectedCategory(category.title); // Set selected category
+                  setSelectedIndex(index);
                 }}
                 sx={{ width: '100%' }}
               >
@@ -95,10 +101,10 @@ const GettingStarted = () => {
       {steps.length > 0 && (
         <Container>
           <Typography variant="h5" sx={{ fontSize: { sm: '2rem', md: '2rem' } }} gutterBottom>
-            {guideTitle} {language === 'en' ? 'Setup Instructions' : 'Instrucciones de configuración'}
+            {categories.methods[selectedIndex].title}
           </Typography>
           <Typography variant="body2" color={theme.palette.text.secondary} sx={{ fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }} gutterBottom>
-            * {language === 'en' ? 'Click images to expand' : 'Haz clic en las imágenes para expandir'}
+            * {categories.methodHelperText}
           </Typography>
           <List>
             {steps.map((step, index) => (

@@ -1,0 +1,70 @@
+{
+  "supportButton" : "Need Support?",
+  "gettingStartedPage" : {
+  "header": "Getting Started",
+  "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Need Support\" button in the top right of the page to get help.",
+  "methodHeader" : "Select Your Method:",
+  "methodHelperText" : "Click images to expand",
+  "methods": [
+    {
+      "title": "Wii Disc",
+      "image": "/images/test.png",
+      "steps": [
+        {
+          "title": "Download CodN-T5 files",
+          "description": "Click here to download the latest files for getting online.",
+          "image": ""
+        },
+        {
+          "title": "Open Homebrew Channel",
+          "description": "Be sure that you have your Black Ops 6 Disc inserted into your console.",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Run CodN TU Installer (First Time Only)",
+          "description": "Run the installer only if you do not have v51 already installed.",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Run CodN Client",
+          "description": "Run the client to launch into the game. Note: you will always need to run the client in order to be able to play online.",
+          "image": "https://via.placeholder.com/300x200"
+        }
+      ]
+    },
+    {
+      "title": "USB Loader GX",
+      "image": "/images/test2.png",
+      "steps": [
+        {
+          "title": "Step 1",
+          "description": "Description for step 1",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Step 2",
+          "description": "Description for step 2",
+          "image": "https://via.placeholder.com/300x200"
+        }
+      ]
+    },
+    {
+      "title": "Dolphin",
+      "image": "/images/test3.png",
+      "steps": [
+        {
+          "title": "Step 1",
+          "description": "Description for step 1",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Step 2",
+          "description": "Description for step 2",
+          "image": "https://via.placeholder.com/300x200"
+        }
+      ]
+    }
+  ]
+  }
+  
+}

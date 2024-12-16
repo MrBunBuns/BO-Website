@@ -1,0 +1,69 @@
+{
+  "supportButton" : "¿Necesitas Ayuda?",
+  "gettingStartedPage" : {
+  "header": "Primeros Pasos",
+  "description": "Esta página te guiará para conectarte en línea con Black Ops Wii. Si tienes dificultades, haz clic en el botón \"¿Necesitas Ayuda?\" en la parte superior derecha de la página para obtener asistencia.",
+  "methodHeader": "Selecciona tu Método:",
+  "methodHelperText": "Haz clic en las imágenes para ampliarlas",
+  "methods": [
+    {
+      "title": "Disco de Wii",
+      "image": "/images/test.png",
+      "steps": [
+        {
+          "title": "Descargar archivos CodN-T5",
+          "description": "Haz clic aquí para descargar los archivos más recientes para conectarte en línea.",
+          "image": ""
+        },
+        {
+          "title": "Abrir Homebrew Channel",
+          "description": "Asegúrate de tener insertado el disco de Black Ops 6 en tu consola.",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Ejecutar CodN TU Installer (Solo la Primera Vez)",
+          "description": "Ejecuta el instalador solo si aún no tienes la versión v51 instalada.",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Ejecutar CodN Client",
+          "description": "Ejecuta el cliente para iniciar el juego. Nota: siempre necesitarás ejecutar el cliente para poder jugar en línea.",
+          "image": "https://via.placeholder.com/300x200"
+        }
+      ]
+    },
+    {
+      "title": "USB Loader GX",
+      "image": "/images/test2.png",
+      "steps": [
+        {
+          "title": "Paso 1",
+          "description": "Descripción del paso 1",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Paso 2",
+          "description": "Descripción del paso 2",
+          "image": "https://via.placeholder.com/300x200"
+        }
+      ]
+    },
+    {
+      "title": "Dolphin",
+      "image": "/images/test3.png",
+      "steps": [
+        {
+          "title": "Paso 1",
+          "description": "Descripción del paso 1",
+          "image": "https://via.placeholder.com/300x200"
+        },
+        {
+          "title": "Paso 2",
+          "description": "Descripción del paso 2",
+          "image": "https://via.placeholder.com/300x200"
+        }
+      ]
+    }
+  ]
+}
+}

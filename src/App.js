@@ -10,6 +10,7 @@ const theme = createTheme({
   palette: {
     background: {
       default: '#262626',
+      header:  '#1a1a1a',
     },
     text: {
       primary: '#aaaaaa',
@@ -19,6 +20,7 @@ const theme = createTheme({
 });
 
 function App() {
+  
   return (
     <ThemeProvider theme={theme}>
       <LanguageProvider>
