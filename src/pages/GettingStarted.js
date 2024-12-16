@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
 import categoriesDataEn from '../assests/stepText/stepsEnglish.json';  // English data
 import categoriesDataEs from '../assests/stepText/stepsSpanish.json';  // Spanish data
+import { LanguageContext } from '../contexts/LanguageContext';
 
-const GettingStarted = ({ language }) => {
+const GettingStarted = () => {
   const theme = useTheme(); // Access theme
   const [steps, setSteps] = useState([]); // State to hold steps
   const [guideTitle, setGuideTitle] = useState('');
@@ -12,7 +13,7 @@ const GettingStarted = ({ language }) => {
   const [selectedImage, setSelectedImage] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(null); // Track the selected category
-
+  const { language } = useContext(LanguageContext);
   // Use the appropriate categories data based on the selected language
   const categories = language === 'en' ? categoriesDataEn : categoriesDataEs;
 
