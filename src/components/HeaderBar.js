@@ -89,7 +89,7 @@ const Header = () => {
           <Button
             color="inherit"
             onClick={() => alert('Contact button clicked!')}
-            sx={{ ml: 2 }}
+            sx={{ mr: 2 }}
           >
             {buttonText}
           </Button>

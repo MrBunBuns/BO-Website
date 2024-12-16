@@ -35,7 +35,7 @@ const HomePage = () => {
                 color: '#fff'
                 }}>
                 <Typography variant="h3" sx={{ padding: '10px' }}>
-                    Welcome to This Site
+                    Welcome to CoDN
                 </Typography>
             
                 </Box>
