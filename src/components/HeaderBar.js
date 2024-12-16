@@ -65,6 +65,7 @@ const Header = () => {
               onChange={handleLanguageChange}
               IconComponent={ArrowDropDownIcon}
               sx={{
+                
                 color: 'white',
                 '.MuiOutlinedInput-notchedOutline': {
                   border: 'none',
@@ -80,8 +81,8 @@ const Header = () => {
                 },
               }}
             >
-              <MenuItem value="en">English</MenuItem>
-              <MenuItem value="es">Español</MenuItem>
+              <MenuItem value="en" sx={{ color: 'black' }}>English</MenuItem>
+              <MenuItem value="es" sx={{ color: 'black' }}>Español</MenuItem>
             </Select>
           </FormControl>
 
