@@ -1,9 +1,12 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
-import categoriesDataEn from '../assests/languages/en.json';  // English data
-import categoriesDataEs from '../assests/languages/es.json';  // Spanish data
+import en from '../assests/languages/en.json'; // English translations
+import es from '../assests/languages/es.json'; // English translations
+
 import { LanguageContext } from '../contexts/LanguageContext';
+
+const translations = { en, es };
 
 const GettingStarted = () => {
   const theme = useTheme(); // Access theme
@@ -17,7 +20,7 @@ const GettingStarted = () => {
   const [selectedCategory, setSelectedCategory] = useState(null); // Track the selected category
   const { language } = useContext(LanguageContext);
   // Use the appropriate categories data based on the selected language
-  let categories = language === 'en' ? categoriesDataEn.gettingStartedPage : categoriesDataEs.gettingStartedPage;
+  let categories = translations[language].gettingStartedPage
 
   // Handle image click in step
   const handleImageClick = (image, title) => {
@@ -27,7 +30,7 @@ const GettingStarted = () => {
   };
 
   useEffect(() => {
-    categories = language === 'en' ? categoriesDataEn.gettingStartedPage : categoriesDataEs.gettingStartedPage;
+    categories = translations[language].gettingStartedPage
     setSteps(categories.methods[selectedIndex].steps);
   }, [language]);
 
