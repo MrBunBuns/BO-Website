@@ -7,84 +7,92 @@ import {
   FormControl,
   Select,
   MenuItem,
+  Box
 } from '@mui/material';
 import { LanguageContext } from '../contexts/LanguageContext';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useTheme } from '@mui/material/styles';
 import en from '../assests/languages/en.json'; // English translations
-import es from '../assests/languages/es.json'; // English translations
+import es from '../assests/languages/es.json'; // Spanish translations
+import { useNavigate } from 'react-router-dom';
 
 const translations = { en, es };
 
 const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
+  const [buttonText, setButtonText] = useState(translations[language].supportButton); 
   const theme = useTheme();
   
-  // Initialize button text using the correct key
-  const [buttonText, setButtonText] = useState(translations[language].supportButton); 
+  const navigate = useNavigate();
+  const handleHomeRedirect = () => {
+    navigate('/');
+  };
 
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
   };
 
-  // Update button text when the language changes
+  // On language switch we update button
   useEffect(() => {
-    setButtonText(translations[language].supportButton); // Access the correct key
+    setButtonText(translations[language].supportButton);
   }, [language]);
 
   return (
     <AppBar
       sx={{
         backgroundColor: theme.palette.background.header,
-        padding: { xs: '20px', sm: '10px' },
         height: { xs: '100px', sm: 'auto' },
       }}
     >
-      <Toolbar>
-        <Typography
-          variant="h5"
-          component="div"
+      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
+        <Button
+          onClick={handleHomeRedirect} 
           sx={{
-            flexGrow: 1,
+            textTransform: 'none', 
             fontSize: { xs: '1rem', sm: '1.5rem' },
+            color: theme.palette.text.primary
           }}
         >
-          CoD Nintendo
-        </Typography>
-
-        <FormControl>
-          <Select
-            value={language}
-            onChange={handleLanguageChange}
-            IconComponent={ArrowDropDownIcon}
-            sx={{
-              color: 'white',
-              '.MuiOutlinedInput-notchedOutline': {
-                border: 'none',
-              },
-              '&:hover .MuiOutlinedInput-notchedOutline': {
-                border: 'none',
-              },
-              '.MuiSelect-icon': {
-                color: 'white',
-              },
-              '&:focus-visible': {
-                outline: 'none',
-              },
-            }}
-          >
-            <MenuItem value="en">English</MenuItem>
-            <MenuItem value="es">Español</MenuItem>
-          </Select>
-        </FormControl>
-
-        <Button
-          color="inherit"
-          onClick={() => alert('Contact button clicked!')}
-          sx={{ ml: 'auto' }}
-        >
-          {buttonText}
+          <Typography variant="h5" component="div">
+            CoD Nintendo
+          </Typography>
         </Button>
+
+        <Box sx={{ display: 'flex', alignItems: 'center', marginRight: '24px' }}>
+          <FormControl>
+            <Select
+              value={language}
+              onChange={handleLanguageChange}
+              IconComponent={ArrowDropDownIcon}
+              sx={{
+                color: 'white',
+                '.MuiOutlinedInput-notchedOutline': {
+                  border: 'none',
+                },
+                '&:hover .MuiOutlinedInput-notchedOutline': {
+                  border: 'none',
+                },
+                '.MuiSelect-icon': {
+                  color: 'white',
+                },
+                '&:focus-visible': {
+                  outline: 'none',
+                },
+              }}
+            >
+              <MenuItem value="en">English</MenuItem>
+              <MenuItem value="es">Español</MenuItem>
+            </Select>
+          </FormControl>
+
+          <Button
+            color="inherit"
+            onClick={() => alert('Contact button clicked!')}
+            sx={{ ml: 2 }}
+          >
+            {buttonText}
+          </Button>
+        </Box>
       </Toolbar>
     </AppBar>
   );

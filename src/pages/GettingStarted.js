@@ -35,7 +35,7 @@ const GettingStarted = () => {
   }, [language]);
 
   return (
-    <Stack marginTop={14} width={'100%'} alignItems={'center'} justifyContent={'center'} spacing={8}>
+    <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} spacing={8}>
       {/* Introduction Section */}
       <Container>
         <Typography variant="h3" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '5rem', md: '3em' } }}>

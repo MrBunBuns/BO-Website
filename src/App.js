@@ -13,8 +13,9 @@ const theme = createTheme({
       header:  '#1a1a1a',
     },
     text: {
-      primary: '#aaaaaa',
+      primary: '#ffffff',
       secondary: '#b9bbbe',
+
     },
   },
 });
@@ -37,7 +38,7 @@ function App() {
               {/* Header */}
               <Header />
               {/* Main Content */}
-              <Stack height="100%" width={'100%'} direction="row">
+              <Stack height="100%" width={'100%'} marginTop={8} direction="row">
                 <Box
                   sx={{
                     flexGrow: 1,
