@@ -58,8 +58,20 @@ const GettingStarted = () => {
                 onClick={() => {
                   setSteps(category.steps);
                   setGuideTitle(category.title);
-                  setSelectedCategory(category.title); // Set selected category
+                  setSelectedCategory(category.title);
                   setSelectedIndex(index);
+
+                  const element = document.getElementById('step-by-step-container');
+                  if (element) {
+                    const offset = 100; // Prevents us from scrolling too far
+                    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                    const scrollPosition = elementPosition - offset;
+                    
+                    window.scrollTo({
+                      top: scrollPosition,
+                      behavior: 'smooth',
+                    });
+                  }
                 }}
                 sx={{ width: '100%' }}
               >
@@ -68,11 +80,11 @@ const GettingStarted = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     backgroundColor: '#4d4d4d',
-                    border: selectedCategory === category.title ? '3px solid #1976d2' : 'none', // Add border if selected
-                    transition: 'border 0.3s ease', // Smooth transition for border
-                    width: '100%', // Ensure the card width is flexible
-                    maxWidth: '250px', // Adjust the card to shrink if needed
-                    minWidth: '200px', // Ensure it doesn’t shrink too much
+                    border: selectedCategory === category.title ? '3px solid #1976d2' : 'none',
+                    transition: 'border 0.3s ease',
+                    width: '100%',
+                    maxWidth: '250px',
+                    minWidth: '200px',
                     maxHeight: '300px',
                     minHeight: '300px'
                   }}
@@ -102,7 +114,7 @@ const GettingStarted = () => {
 
       {/* Step-by-Step Expanded List */}
       {steps.length > 0 && (
-        <Container>
+        <Container id="step-by-step-container">
           <Typography variant="h5" sx={{ fontSize: { sm: '2rem', md: '2rem' } }} gutterBottom>
             {categories.methods[selectedIndex].title}
           </Typography>
