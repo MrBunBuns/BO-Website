@@ -1,5 +1,10 @@
 {
+
   "supportButton" : "Need Support?",
+  "homePage": {
+    "header" : "Call of Duty Wii is Back!",
+    "description" : "Someone fill this out with how great all the hard work was"
+  },
   "gettingStartedPage" : {
   "header": "Getting Started",
   "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Need Support\" button in the top right of the page to get help.",
