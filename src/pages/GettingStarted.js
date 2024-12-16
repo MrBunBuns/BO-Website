@@ -9,17 +9,17 @@ import { LanguageContext } from '../contexts/LanguageContext';
 const translations = { en, es };
 
 const GettingStarted = () => {
-  const theme = useTheme(); // Access theme
-  const [steps, setSteps] = useState([]); // State to hold steps
+  const theme = useTheme();
+  const [steps, setSteps] = useState([]); 
   const [guideTitle, setGuideTitle] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
-  const [selectedIndex, setSelectedIndex] = useState(0); // Used for rerendering language of steps
+  const [selectedIndex, setSelectedIndex] = useState(0); 
 
-  const [selectedCategory, setSelectedCategory] = useState(null); // Track the selected category
+  const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
-  // Use the appropriate categories data based on the selected language
+
   let categories = translations[language].gettingStartedPage
 
   // Handle image click in step
