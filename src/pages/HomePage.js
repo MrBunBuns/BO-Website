@@ -50,7 +50,7 @@ const HomePage = () => {
             <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
                 { description } 
             </Typography>
-            <Button onClick={handleClick} style={{ color: '#fff', textDecoration: 'none' }}>Getting Started</Button>
+            <Button onClick={handleClick} style={{ color: '#fff', textDecoration: 'none'}}>Get Connected</Button>
 
         </Box>
        
