@@ -1,9 +1,13 @@
 {
-
-  "supportButton" : "Need Support?",
   "homePage": {
     "header" : "Call of Duty Wii is Back!",
     "description" : "Someone fill this out with how great all the hard work was"
+  },
+  "headerBar" : {
+    "home" : "Home",
+    "gettingStarted" : "Getting Started",
+    "about" : "About",
+    "supportButton" : "Support"
   },
   "gettingStartedPage" : {
   "header": "Getting Started",

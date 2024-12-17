@@ -28,7 +28,11 @@ const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const [buttonText, setButtonText] = useState(translations[language].supportButton); 
+  const [buttonText, setButtonText] = useState(translations[language].headerBar.supportButton); 
+  const [homeButtonText, setHomeButtonText] = useState(translations[language].headerBar.home); 
+  const [gettingStartedButtonText, setGettingStartedButtonText] = useState(translations[language].headerBar.gettingStarted); 
+  const [aboutButtonText, setAboutButtonText] = useState(translations[language].headerBar.supportButton); 
+
   const theme = useTheme();
   const isMobile = !useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -52,7 +56,10 @@ const Header = () => {
   };
   // On language switch we update button
   useEffect(() => {
-    setButtonText(translations[language].supportButton);
+    setButtonText(translations[language].headerBar.supportButton);
+    setHomeButtonText(translations[language].headerBar.home);
+    setGettingStartedButtonText(translations[language].headerBar.gettingStarted);
+    setAboutButtonText(translations[language].headerBar.about);
   }, [language]);
 
   return (
@@ -93,8 +100,9 @@ const Header = () => {
            </IconButton>
           )}
           {isMobile && <Stack direction={'row'}>
-            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'50px', textDecoration: 'none' }}>Getting Started</Button>
-            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}>About</Button>
+            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'50px', textDecoration: 'none' }}>{gettingStartedButtonText}</Button>
+            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}>{aboutButtonText}</Button>
+            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}> {buttonText}</Button>
           </Stack>}
         </Stack> 
         
@@ -126,13 +134,6 @@ const Header = () => {
             </Select>
           </FormControl>
 
-          {isMobile && <Button
-            color="inherit"
-            onClick={() => alert('Contact button clicked!')}
-            sx={{ mr: 2 }}
-          >
-            {buttonText}
-          </Button>}
         </Box>
       </Toolbar>
       {/* Drawer for mobile menu */}
@@ -151,13 +152,20 @@ const Header = () => {
           role="presentation"
         >
           <Button onClick={handleHomeRedirect} sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}>
-            Home
+            {homeButtonText}
           </Button>
           <Button onClick={handleClick} sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}>
             Getting Started
           </Button>
           <Button onClick={handleClick} sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}>
             About
+          </Button>
+          <Button
+            color="inherit"
+            onClick={() => alert('Contact button clicked!')}
+            sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}
+          >
+            {buttonText}
           </Button>
         </Box>
       </Drawer>
