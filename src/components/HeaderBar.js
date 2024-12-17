@@ -41,6 +41,10 @@ const Header = () => {
     navigate('/');
     setDrawerOpen(false);
   };
+  const handleAboutRedirect = () => {
+    navigate('/about');
+    setDrawerOpen(false);
+  };
 
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
@@ -101,7 +105,7 @@ const Header = () => {
           )}
           {isMobile && <Stack direction={'row'}>
             <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'50px', textDecoration: 'none' }}>{gettingStartedButtonText}</Button>
-            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}>{aboutButtonText}</Button>
+            <Button onClick={handleAboutRedirect} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}>{aboutButtonText}</Button>
             <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}> {buttonText}</Button>
           </Stack>}
         </Stack> 
@@ -141,6 +145,11 @@ const Header = () => {
         anchor="left"
         open={drawerOpen}
         onClose={toggleDrawer(false)}
+        sx={{
+          '& .MuiDrawer-paper': {
+            backgroundColor: theme.palette.background.default,
+          },
+        }}
       >
         <Box
           sx={{
@@ -151,19 +160,19 @@ const Header = () => {
           }}
           role="presentation"
         >
-          <Button onClick={handleHomeRedirect} sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}>
+          <Button onClick={handleHomeRedirect} sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}>
             {homeButtonText}
           </Button>
-          <Button onClick={handleClick} sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}>
+          <Button onClick={handleClick} sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}>
             Getting Started
           </Button>
-          <Button onClick={handleClick} sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}>
+          <Button onClick={handleAboutRedirect} sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}>
             About
           </Button>
           <Button
             color="inherit"
             onClick={() => alert('Contact button clicked!')}
-            sx={{ textAlign: 'left', color: '#000', marginBottom: '10px' }}
+            sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}
           >
             {buttonText}
           </Button>

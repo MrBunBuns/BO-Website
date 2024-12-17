@@ -5,6 +5,7 @@ import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/HeaderBar';
 import HomePage from './pages/HomePage';
 import GettingStarted from './pages/GettingStarted';
+import AboutPage from './pages/AboutPage';
 import { useLayoutEffect } from 'react';
 
 const theme = createTheme({
@@ -64,6 +65,8 @@ function App() {
                     <Routes>
                       <Route path="/" element={<HomePage />} />
                       <Route path="/getting-started" element={<GettingStarted />} />
+                      <Route path="/about" element={<AboutPage />} />
+
                     </Routes>
                     </Wrapper>
                   </Box>

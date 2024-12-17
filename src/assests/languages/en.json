@@ -9,6 +9,10 @@
     "about" : "About",
     "supportButton" : "Support"
   },
+  "aboutPage" : {
+    "title" : "About",
+    "description" : "This is the about page."
+  },
   "gettingStartedPage" : {
   "header": "Getting Started",
   "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Need Support\" button in the top right of the page to get help.",
