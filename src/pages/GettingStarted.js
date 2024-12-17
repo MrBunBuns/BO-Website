@@ -31,8 +31,12 @@ const GettingStarted = () => {
 
   useEffect(() => {
     categories = translations[language].gettingStartedPage
-    setSteps(categories.methods[selectedIndex].steps);
+    steps.length > 0 ? setSteps(categories.methods[selectedIndex].steps) : setSteps([]);
   }, [language]);
+
+  useEffect(() => {
+    setSteps([]);
+  }, []);
 
   return (
     <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} spacing={8}>
@@ -80,7 +84,7 @@ const GettingStarted = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     backgroundColor: '#4d4d4d',
-                    border: selectedCategory === category.title ? '3px solid #1976d2' : 'none',
+                    border: selectedIndex === index ? '3px solid #1976d2' : 'none',
                     transition: 'border 0.3s ease',
                     width: '100%',
                     maxWidth: '250px',

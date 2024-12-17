@@ -41,7 +41,7 @@ const Header = () => {
     <AppBar
       sx={{
         backgroundColor: theme.palette.background.header,
-        height: { xs: '100px', sm: 'auto' },
+        height: { xs: 'auto', sm: 'auto' },
       }}
     >
       <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>

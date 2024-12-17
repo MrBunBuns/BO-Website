@@ -1,10 +1,11 @@
 import React from 'react';
 import { ThemeProvider, createTheme, Box, Stack } from '@mui/material';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/HeaderBar';
 import HomePage from './pages/HomePage';
 import GettingStarted from './pages/GettingStarted';
+import { useLayoutEffect } from 'react';
 
 const theme = createTheme({
   palette: {
@@ -20,9 +21,19 @@ const theme = createTheme({
   },
 });
 
+const Wrapper = ({ children }) => {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    document.documentElement.scrollTo(0, 0);
+  }, [location.pathname]);
+  return children;
+};
+
 function App() {
   
   return (
+
+
     <ThemeProvider theme={theme}>
       <LanguageProvider>
         <Router>
@@ -49,10 +60,12 @@ function App() {
                   }}
                 >
                   <Box sx={{ p: 3 }}>
+                  <Wrapper>
                     <Routes>
                       <Route path="/" element={<HomePage />} />
                       <Route path="/getting-started" element={<GettingStarted />} />
                     </Routes>
+                    </Wrapper>
                   </Box>
                 </Box>
               </Stack>
@@ -61,6 +74,9 @@ function App() {
         </Router>
       </LanguageProvider>
     </ThemeProvider>
+
+
+
   );
 }
 
