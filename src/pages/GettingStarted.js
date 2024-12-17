@@ -15,7 +15,7 @@ const GettingStarted = () => {
   const [openDialog, setOpenDialog] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
-  const [selectedIndex, setSelectedIndex] = useState(0); 
+  const [selectedIndex, setSelectedIndex] = useState(-1); 
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);

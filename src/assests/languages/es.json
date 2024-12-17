@@ -1,5 +1,9 @@
 {
   "supportButton" : "¿Necesitas Ayuda?",
+  "homePage": {
+    "header" : "Call of Duty Wii is Back!",
+    "description" : "Someone fill this out with how great all the hard work was"
+  },
   "gettingStartedPage" : {
   "header": "Primeros Pasos",
   "description": "Esta página te guiará para conectarte en línea con Black Ops Wii. Si tienes dificultades, haz clic en el botón \"¿Necesitas Ayuda?\" en la parte superior derecha de la página para obtener asistencia.",
