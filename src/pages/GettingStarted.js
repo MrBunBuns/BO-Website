@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Box, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
 import en from '../assests/languages/en.json'; // English translations
 import es from '../assests/languages/es.json'; // English translations
@@ -21,7 +21,27 @@ const GettingStarted = () => {
   const { language } = useContext(LanguageContext);
 
   let categories = translations[language].gettingStartedPage
-
+ 
+  const waitForElementAndScroll = (selector) => {
+    return new Promise(resolve => {
+      const intervalId = setInterval(() => {
+        const element = document.querySelector(selector);
+        if (element) {
+          const offset = 100; // Prevents us from scrolling too far
+          const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+          const scrollPosition = elementPosition - offset;
+          
+          window.scrollTo({
+            top: scrollPosition,
+            behavior: 'smooth',
+          });
+          clearInterval(intervalId);
+          resolve();
+        }
+      }, 100); // Check every 100ms
+    });
+  }
+  
   // Handle image click in step
   const handleImageClick = (image, title) => {
     setSelectedImage(image);
@@ -64,18 +84,9 @@ const GettingStarted = () => {
                   setGuideTitle(category.title);
                   setSelectedCategory(category.title);
                   setSelectedIndex(index);
+                  
+                  waitForElementAndScroll('#step-by-step-container')
 
-                  const element = document.getElementById('step-by-step-container');
-                  if (element) {
-                    const offset = 100; // Prevents us from scrolling too far
-                    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-                    const scrollPosition = elementPosition - offset;
-                    
-                    window.scrollTo({
-                      top: scrollPosition,
-                      behavior: 'smooth',
-                    });
-                  }
                 }}
                 sx={{ width: '100%' }}
               >
@@ -115,7 +126,7 @@ const GettingStarted = () => {
           ))}
         </Grid>
       </Container>
-
+      
       {/* Step-by-Step Expanded List */}
       {steps.length > 0 && (
         <Container id="step-by-step-container">
@@ -172,7 +183,7 @@ const GettingStarted = () => {
               </ListItem>
             ))}
           </List>
-        </Container>
+          </Container>
       )}
 
       {/* Image Dialog */}

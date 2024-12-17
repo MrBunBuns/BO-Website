@@ -54,7 +54,7 @@ const Header = () => {
           }}
         >
           <Typography variant="h5" component="div">
-            CoD Nintendo
+            CoDN
           </Typography>
         </Button>
 
