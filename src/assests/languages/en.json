@@ -1,17 +1,18 @@
 {
   "homePage": {
-    "header" : "Call of Duty Wii is Back!",
-    "description" : "Someone fill this out with how great all the hard work was"
+    "header" : "Call of Duty Black Ops Wii is Back!",
+    "description" : "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development."
   },
   "headerBar" : {
     "home" : "Home",
     "gettingStarted" : "Getting Started",
     "about" : "About",
-    "supportButton" : "Support"
+    "supportButton" : "Support",
+    "faq" : "FAQ"
   },
   "aboutPage" : {
     "title" : "About",
-    "description" : "This is the about page."
+    "description" : ""
   },
   "gettingStartedPage" : {
   "header": "Getting Started",

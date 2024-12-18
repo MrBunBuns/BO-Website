@@ -22,11 +22,11 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <Stack padding={2} spacing={8}>
-        <Typography variant="h4" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '5rem', md: '2.5em' } }}>
+    <Stack alignItems='center' padding={2} spacing={8}>
+        <Typography width={'60%'} variant="h4" sx={{ fontSize: { xs: '2rem', sm: '5rem', md: '2.5em' } }}>
           {categories.title}
         </Typography>
-        <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
+        <Typography width={'60%'} variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
           {categories.description}
         </Typography>
     </Stack>

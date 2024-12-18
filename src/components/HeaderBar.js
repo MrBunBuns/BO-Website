@@ -11,8 +11,7 @@ import {
   Stack,
   useMediaQuery,
   Drawer,
-  IconButton
-
+  IconButton,
 } from '@mui/material';
 import { LanguageContext } from '../contexts/LanguageContext';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -28,43 +27,44 @@ const Header = () => {
   const { language, setLanguage } = useContext(LanguageContext);
   const [drawerOpen, setDrawerOpen] = useState(false);
 
-  const [buttonText, setButtonText] = useState(translations[language].headerBar.supportButton); 
-  const [homeButtonText, setHomeButtonText] = useState(translations[language].headerBar.home); 
-  const [gettingStartedButtonText, setGettingStartedButtonText] = useState(translations[language].headerBar.gettingStarted); 
-  const [aboutButtonText, setAboutButtonText] = useState(translations[language].headerBar.supportButton); 
+  const [buttonTexts, setButtonTexts] = useState({
+    supportButton: translations[language].headerBar.supportButton,
+    home: translations[language].headerBar.home,
+    gettingStarted: translations[language].headerBar.gettingStarted,
+    about: translations[language].headerBar.about,
+  });
 
   const theme = useTheme();
   const isMobile = !useMediaQuery(theme.breakpoints.down('sm'));
-
   const navigate = useNavigate();
-  const handleHomeRedirect = () => {
-    navigate('/');
-    setDrawerOpen(false);
-  };
-  const handleAboutRedirect = () => {
-    navigate('/about');
-    setDrawerOpen(false);
-  };
 
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
   };
 
-  const handleClick = () => {
-    setDrawerOpen(false);
-    navigate('/getting-started');
-  };
-
   const toggleDrawer = (open) => () => {
     setDrawerOpen(open);
   };
-  // On language switch we update button
+
   useEffect(() => {
-    setButtonText(translations[language].headerBar.supportButton);
-    setHomeButtonText(translations[language].headerBar.home);
-    setGettingStartedButtonText(translations[language].headerBar.gettingStarted);
-    setAboutButtonText(translations[language].headerBar.about);
+    setButtonTexts({
+      supportButton: translations[language].headerBar.supportButton,
+      home: translations[language].headerBar.home,
+      gettingStarted: translations[language].headerBar.gettingStarted,
+      about: translations[language].headerBar.about,
+      faq: translations[language].headerBar.faq,
+
+    });
   }, [language]);
+
+  // Button configurations
+  const buttons = [
+    { text: buttonTexts.home, action: () => navigate('/') },
+    { text: buttonTexts.gettingStarted, action: () => navigate('/getting-started') },
+    { text: buttonTexts.about, action: () => navigate('/about') },
+    { text: buttonTexts.faq, action: () => alert('Contact button clicked!') },
+    { text: buttonTexts.supportButton, action: () => alert('Contact button clicked!') },
+  ];
 
   return (
     <AppBar
@@ -73,51 +73,60 @@ const Header = () => {
         height: { xs: 'auto', sm: 'auto' },
       }}
     >
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}>
-        <Stack direction='row'>
-        {isMobile ? (
-          <Button
-          onClick={handleHomeRedirect} 
-          sx={{
-            textTransform: 'none', 
-            fontSize: { xs: '1rem', sm: '1.5rem' },
-            color: theme.palette.text.primary
-          }}
-        >
-          <Typography variant="h5" component="div">
-            CoDN
-          </Typography>
-        </Button>
-           
+      <Toolbar
+        sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}
+      >
+        <Stack direction="row">
+          {isMobile ? (
+            <Button
+              onClick={() => navigate('/')}
+              sx={{
+                textTransform: 'none',
+                fontSize: { xs: '1rem', sm: '1.5rem' },
+                color: theme.palette.text.primary,
+              }}
+            >
+              <Typography variant="h5" component="div">
+                CoDN
+              </Typography>
+            </Button>
           ) : (
-             // Mobile menu icon
-             <IconButton
-             color="inherit"
-             edge="start"
-             onClick={toggleDrawer(true)}
-             sx={{ mr: 2 }}
-           >
-             <MenuIcon />
-             <Typography variant="h5" marginLeft={1} component="div">
-               CoDN
-            </Typography>
-           </IconButton>
+            <IconButton
+              color="inherit"
+              edge="start"
+              onClick={toggleDrawer(true)}
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+              <Typography variant="h5" marginLeft={1} component="div">
+                CoDN
+              </Typography>
+            </IconButton>
           )}
-          {isMobile && <Stack direction={'row'}>
-            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'50px', textDecoration: 'none' }}>{gettingStartedButtonText}</Button>
-            <Button onClick={handleAboutRedirect} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}>{aboutButtonText}</Button>
-            <Button onClick={handleClick} style={{ color: '#fff', marginLeft:'20px', textDecoration: 'none' }}> {buttonText}</Button>
-          </Stack>}
-        </Stack> 
-        
-        <Box sx={{ display: 'flex', alignItems: 'center', marginRight: '24px' }}>
+          {isMobile && (
+            <Stack direction="row" spacing={2} sx={{ marginLeft: '50px' }}>
+              {buttons.map((button, index) => (
+                <Button
+                  key={index}
+                  onClick={button.action}
+                  sx={{ color: '#fff', textDecoration: 'none' }}
+                >
+                  {button.text}
+                </Button>
+              ))}
+            </Stack>
+          )}
+        </Stack>
+
+        <Box
+          sx={{ display: 'flex', alignItems: 'center', marginRight: '24px' }}
+        >
           <FormControl>
             <Select
               value={language}
               onChange={handleLanguageChange}
               IconComponent={ArrowDropDownIcon}
               sx={{
-                
                 color: 'white',
                 '.MuiOutlinedInput-notchedOutline': {
                   border: 'none',
@@ -133,13 +142,17 @@ const Header = () => {
                 },
               }}
             >
-              <MenuItem value="en" sx={{ color: 'black' }}>English</MenuItem>
-              <MenuItem value="es" sx={{ color: 'black' }}>Español</MenuItem>
+              <MenuItem value="en" sx={{ color: 'black' }}>
+                English
+              </MenuItem>
+              <MenuItem value="es" sx={{ color: 'black' }}>
+                Español
+              </MenuItem>
             </Select>
           </FormControl>
-
         </Box>
       </Toolbar>
+
       {/* Drawer for mobile menu */}
       <Drawer
         anchor="left"
@@ -160,22 +173,22 @@ const Header = () => {
           }}
           role="presentation"
         >
-          <Button onClick={handleHomeRedirect} sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}>
-            {homeButtonText}
-          </Button>
-          <Button onClick={handleClick} sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}>
-            Getting Started
-          </Button>
-          <Button onClick={handleAboutRedirect} sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}>
-            About
-          </Button>
-          <Button
-            color="inherit"
-            onClick={() => alert('Contact button clicked!')}
-            sx={{ textAlign: 'left', color: theme.palette.text.primary, marginBottom: '10px' }}
-          >
-            {buttonText}
-          </Button>
+          {buttons.map((button, index) => (
+            <Button
+              key={index}
+              onClick={() => {
+                button.action();
+                setDrawerOpen(false);
+              }}
+              sx={{
+                textAlign: 'left',
+                color: theme.palette.text.primary,
+                marginBottom: '10px',
+              }}
+            >
+              {button.text}
+            </Button>
+          ))}
         </Box>
       </Drawer>
     </AppBar>
