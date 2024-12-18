@@ -1,79 +1,83 @@
 {
   "homePage": {
-    "header" : "Call of Duty Wii is Back!",
-    "description" : "Someone fill this out with how great all the hard work was"
+    "header": "¡Call of Duty Black Ops Wii está de vuelta!",
+    "description": "Tras el cierre completo de los servicios en línea de la Wii en 2023, todos los juegos de Call of Duty en la plataforma perdieron acceso a sus funciones multijugador. Sin embargo, gracias a los esfuerzos de un talentoso equipo de desarrolladores, estos servicios han sido restaurados, permitiendo a los jugadores disfrutar nuevamente de Call of Duty en línea en la Wii. Actualmente, solo Call of Duty: Black Ops ha sido revivido, mientras que la restauración de otros títulos requiere más investigación y desarrollo."
   },
-  "headerBar" : {
-    "home" : "Home",
-    "gettingStarted" : "Getting Started",
-    "about" : "About",
-    "supportButton" : "Need Support?"
+  "headerBar": {
+    "home": "Inicio",
+    "gettingStarted": "Primeros Pasos",
+    "about": "Acerca de",
+    "supportButton": "Soporte",
+    "faq": "Preguntas Frecuentes"
   },
-  "gettingStartedPage" : {
-  "header": "Getting Started",
-  "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Need Support\" button in the top right of the page to get help.",
-  "methodHeader" : "Select Your Method:",
-  "methodHelperText" : "Click images to expand",
-  "methods": [
-    {
-      "title": "Wii Disc",
-      "image": "/images/test.png",
-      "steps": [
-        {
-          "title": "Download CodN-T5 files",
-          "description": "Click here to download the latest files for getting online.",
-          "image": ""
-        },
-        {
-          "title": "Open Homebrew Channel",
-          "description": "Be sure that you have your Black Ops 6 Disc inserted into your console.",
-          "image": "https://via.placeholder.com/300x200"
-        },
-        {
-          "title": "Run CodN TU Installer (First Time Only)",
-          "description": "Run the installer only if you do not have v51 already installed.",
-          "image": "https://via.placeholder.com/300x200"
-        },
-        {
-          "title": "Run CodN Client",
-          "description": "Run the client to launch into the game. Note: you will always need to run the client in order to be able to play online.",
-          "image": "https://via.placeholder.com/300x200"
-        }
-      ]
-    },
-    {
-      "title": "USB Loader GX",
-      "image": "/images/test2.png",
-      "steps": [
-        {
-          "title": "Step 1",
-          "description": "Description for step 1",
-          "image": "https://via.placeholder.com/300x200"
-        },
-        {
-          "title": "Step 2",
-          "description": "Description for step 2",
-          "image": "https://via.placeholder.com/300x200"
-        }
-      ]
-    },
-    {
-      "title": "Dolphin",
-      "image": "/images/test3.png",
-      "steps": [
-        {
-          "title": "Step 1",
-          "description": "Description for step 1",
-          "image": "https://via.placeholder.com/300x200"
-        },
-        {
-          "title": "Step 2",
-          "description": "Description for step 2",
-          "image": "https://via.placeholder.com/300x200"
-        }
-      ]
-    }
-  ]
+  "aboutPage": {
+    "title": "Acerca de",
+    "description": ""
+  },
+  "gettingStartedPage": {
+    "header": "Primeros Pasos",
+    "description": "Esta página te guiará para conectarte en línea con Black Ops Wii. Si tienes dificultades, haz clic en el botón \"Soporte\" en la esquina superior derecha de la página para obtener asistencia.",
+    "methodHeader": "Selecciona tu Método:",
+    "methodHelperText": "Haz clic en las imágenes para ampliarlas",
+    "methods": [
+      {
+        "title": "Disco de Wii",
+        "image": "/images/test.png",
+        "steps": [
+          {
+            "title": "Descargar archivos CodN-T5",
+            "description": "Haz clic aquí para descargar los archivos más recientes para conectarte en línea.",
+            "image": ""
+          },
+          {
+            "title": "Abrir el Canal Homebrew",
+            "description": "Asegúrate de tener insertado tu disco de Black Ops 6 en la consola.",
+            "image": "https://via.placeholder.com/300x200"
+          },
+          {
+            "title": "Ejecutar CodN TU Installer (Solo la primera vez)",
+            "description": "Ejecuta el instalador solo si no tienes instalada la versión v51.",
+            "image": "https://via.placeholder.com/300x200"
+          },
+          {
+            "title": "Ejecutar el cliente CodN",
+            "description": "Ejecuta el cliente para iniciar el juego. Nota: siempre necesitarás ejecutar el cliente para poder jugar en línea.",
+            "image": "https://via.placeholder.com/300x200"
+          }
+        ]
+      },
+      {
+        "title": "USB Loader GX",
+        "image": "/images/test2.png",
+        "steps": [
+          {
+            "title": "Paso 1",
+            "description": "Descripción del paso 1",
+            "image": "https://via.placeholder.com/300x200"
+          },
+          {
+            "title": "Paso 2",
+            "description": "Descripción del paso 2",
+            "image": "https://via.placeholder.com/300x200"
+          }
+        ]
+      },
+      {
+        "title": "Dolphin",
+        "image": "/images/test3.png",
+        "steps": [
+          {
+            "title": "Paso 1",
+            "description": "Descripción del paso 1",
+            "image": "https://via.placeholder.com/300x200"
+          },
+          {
+            "title": "Paso 2",
+            "description": "Descripción del paso 2",
+            "image": "https://via.placeholder.com/300x200"
+          }
+        ]
+      }
+    ]
   }
-  
 }
