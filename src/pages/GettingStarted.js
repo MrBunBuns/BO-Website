@@ -1,9 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Box, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Button, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
 import en from '../assests/languages/en.json'; // English translations
 import es from '../assests/languages/es.json'; // English translations
-
+import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { LanguageContext } from '../contexts/LanguageContext';
 
 const translations = { en, es };
@@ -163,6 +163,30 @@ const GettingStarted = () => {
                     {step.description}
                   </Typography>
                 </CardContent>
+                {step.link && (
+                   <CardContent
+                   sx={{
+                     display: 'flex', // Enable Flexbox
+                     justifyContent: 'center', // Center horizontally
+                     alignItems: 'center', // Center vertically
+                     width: '100%',
+                     height: '100%',
+                     maxWidth: '300px',
+                     paddingTop: '20px', // You can adjust/remove this if needed
+                   }}
+                 >
+                   <Button
+                     variant="contained"
+                     color="primary"
+                     endIcon={<ArrowOutwardIcon/>}
+                     sx={{ textTransform: 'none', backgroundColor: '#4d4d4d', width:'300px', height: '100px' }}
+                     onClick={() => window.open(step.link, '_blank', 'noopener,noreferrer')}
+                   >
+                     {step.linkName}
+                   </Button>
+                 </CardContent>
+                 
+                )}
                 {step.image && (
                   <CardMedia
                     component="img"

@@ -25,24 +25,50 @@
       "image": "/images/test.png",
       "steps": [
         {
-          "title": "Download CodN-T5 files",
-          "description": "Click here to download the latest files for getting online.",
-          "image": ""
+          "title": "Prerequisties",
+          "description": "In order to play Black Ops Online, you will need the homebrew channel. If you do not already have the Homebrew Channel installed, please click the link on the right hand site to be taken to the Wii Hacks Guide website.",
+          "image": "",
+          "link": "https://wii.hacks.guide/get-started.html",
+          "linkName" : "Wii Hacks Guide Website"
+        },
+        {
+          "title": "Download CoDN-T5 files",
+          "description": "Click the download button to download the CoDN Installer Files.",
+          "image": "",
+          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "linkName" : "CoDN Files Download"
+
+        },
+        {
+          "title": "Extract the Contents to your Wii's SD card",
+          "description": "Make sure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol and the apps folder. Note if you already have an apps folder just copy the content inside apps/ into your apps directory.",
+          "image": "/images/extractedContents.PNG",
+          "link": ""
         },
         {
           "title": "Open Homebrew Channel",
-          "description": "Be sure that you have your Black Ops 6 Disc inserted into your console.",
-          "image": "https://via.placeholder.com/300x200"
+          "description": "On your Wii, with the SD Card and your disc copy of Black Ops inserted, open the homebrew channel",
+          "image": "/images/HomebrewChannel.PNG",
+          "link" : ""
         },
         {
           "title": "Run CodN TU Installer (First Time Only)",
-          "description": "Run the installer only if you do not have v51 already installed.",
-          "image": "https://via.placeholder.com/300x200"
+          "description": "Run the installer only if you do not have v51 already installed. Attempting to launch without v51 will result in an error message",
+          "image": "/images/TUInstaller.PNG",
+          "link": ""
         },
         {
           "title": "Run CodN Client",
           "description": "Run the client to launch into the game. Note: you will always need to run the client in order to be able to play online.",
-          "image": "https://via.placeholder.com/300x200"
+          "image": "/images/TUClient.PNG",
+          "link" : ""
+        },
+        {
+          "title": "You are all set!",
+          "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
+          "image": "",
+          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "linkName" : "Support Link (Discord)"
         }
       ]
     },
@@ -51,14 +77,74 @@
       "image": "/images/test2.png",
       "steps": [
         {
-          "title": "Step 1",
-          "description": "Description for step 1",
-          "image": "https://via.placeholder.com/300x200"
+          "title": "Prerequisties",
+          "description": "In order to play Black Ops Online, you will need the homebrew channel. If you do not already have the Homebrew Channel installed, please click the link on the right hand site to be taken to the Wii Hacks Guide website.",
+          "image": "",
+          "link": "https://wii.hacks.guide/get-started.html",
+          "linkName" : "Wii Hacks Guide Website"
         },
         {
-          "title": "Step 2",
-          "description": "Description for step 2",
-          "image": "https://via.placeholder.com/300x200"
+          "title": "Download CoDN-T5 files",
+          "description": "Click the download button to download the CoDN Installer Files.",
+          "image": "",
+          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "linkName" : "CoDN Files Download"
+
+        },
+        {
+          "title": "Extract the Contents to your Wii's SD card",
+          "description": "Make sure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol and the apps folder. Note if you already have an apps folder just copy the content inside apps/ into your apps directory.",
+          "image": "/images/extractedContents.PNG",
+          "link": ""
+        },
+        {
+          "title": "(Non NTSC and PAL Versions Only) Rename SC7E52.dol to the title ID of your copy",
+          "description": "This step is required if you are not running the NTSC or PAL Versions.",
+          "image": "/images/extractedContents.PNG",
+          "link": ""
+        },
+        {
+          "title": "Open USB Loader GX",
+          "description": "On your Wii, with the SD Card inserted, open USB Loader GX",
+          "image": "/images/USBLoader.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Select Settings",
+          "description": "In USB Loader, select Black Ops then select Settings",
+          "image": "/images/USBGameSettings.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Select Game Load",
+          "description": "",
+          "image": "/images/GameLoad.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Set Custom Game IOS to 250",
+          "description": "",
+          "image": "/images/IOS.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Set Alternate DOL to Load from SD/USB",
+          "description": "",
+          "image": "/images/LoadFromUSBSD.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Start Black Ops",
+          "description": "Return to the settings and start screen and select start to launch the game. Your settings should remain persistent so you will not need to edit anything again.",
+          "image": "/images/StartBlackOpsUSB.PNG",
+          "link" : ""
+        },
+        {
+          "title": "You are all set!",
+          "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
+          "image": "",
+          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "linkName" : "Support Link (Discord)"
         }
       ]
     },
@@ -67,14 +153,62 @@
       "image": "/images/test3.png",
       "steps": [
         {
-          "title": "Step 1",
-          "description": "Description for step 1",
-          "image": "https://via.placeholder.com/300x200"
+          "title": "Prerequisties",
+          "description": "In order to play on Dolphin Emulator, you are required to import a NAND backup. Please click the link on the right to learn how.",
+          "image": "",
+          "link": "https://dolphin-emu.org/docs/guides/nand-usage-guide/",
+          "linkName" : "Dolphin NAND Guide"
         },
         {
-          "title": "Step 2",
-          "description": "Description for step 2",
-          "image": "https://via.placeholder.com/300x200"
+          "title": "Download CoDN-T5 files",
+          "description": "Click the download button to download the CoDN Installer Files.",
+          "image": "",
+          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "linkName" : "CoDN Files Download"
+
+        },
+        {
+          "title": "Extract the Contents to your Dolphin SD Card Folder",
+          "description": "Dolphin allows the user to set a folder to act as their SD Card. Basically this folder would be equivalent to the root of an SD Card used for a real Wii. You can set this path in Dolphin -> Config -> Wii",
+          "image": "/images/DolphinSD.PNG",
+          "link": ""
+        },
+        {
+          "title": "Make sure Automatically Sync with Folder is Checked",
+          "description": "",
+          "image": "/images/DolphinAutoSync.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Right Click Black Ops and Select Set as Default ISO",
+          "description": "",
+          "image": "/images/DolphinDefaultISO.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Click Open in the Dolphin Options Panel",
+          "description": "",
+          "image": "/images/DolphinOpen.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Click Open in the Dolphin Options Panel",
+          "description": "",
+          "image": "/images/DolphinOpen.PNG",
+          "link" : ""
+        },
+        {
+          "title": "Select the boot.dol File to Launch the Game",
+          "description": "Important: You must select the boot.dol file located in the apps/codn-client folder located in the same folder as you Dolphin SD Card folder",
+          "image": "/images/DolphinDol.PNG",
+          "link" : ""
+        },
+        {
+          "title": "You are all set!",
+          "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
+          "image": "",
+          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "linkName" : "Support Link (Discord)"
         }
       ]
     }
