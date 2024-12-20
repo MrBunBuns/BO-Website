@@ -49,7 +49,7 @@
     "methods": [
       {
         "title": "Disco de Wii",
-        "image": "images/test.png",
+        "image": "/BO-Website/images/test.png",
         "steps": [
           {
             "title": "Requisitos previos",
@@ -68,25 +68,25 @@
           {
             "title": "Extrae los contenidos a la tarjeta SD de tu Wii",
             "description": "Asegúrate de que los siguientes archivos estén ubicados en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' a tu directorio apps existente.",
-            "image": "images/extractedContents.PNG",
+            "image": "/BO-Website/images/extractedContents.PNG",
             "link": ""
           },
           {
             "title": "Abrir Canal Homebrew",
             "description": "En tu Wii, con la tarjeta SD y el disco de Black Ops insertado, abre el Canal Homebrew.",
-            "image": "images/HomebrewChannel.PNG",
+            "image": "/BO-Website/images/HomebrewChannel.PNG",
             "link": ""
           },
           {
             "title": "Ejecutar CodN TU Installer (Solo la primera vez)",
             "description": "Ejecuta el instalador solo si no tienes la versión v51 instalada. Intentar lanzar sin v51 dará un mensaje de error.",
-            "image": "images/TUInstaller.PNG",
+            "image": "/BO-Website/images/TUInstaller.PNG",
             "link": ""
           },
           {
             "title": "Ejecutar el Cliente CodN",
             "description": "Ejecuta el cliente para iniciar el juego. Nota: Debes ejecutar siempre el cliente para jugar en línea.",
-            "image": "images/TUClient.PNG",
+            "image": "/BO-Website/images/TUClient.PNG",
             "link": ""
           },
           {
@@ -100,7 +100,7 @@
       },
       {
         "title": "USB Loader GX",
-        "image": "images/test2.png",
+        "image": "/BO-Website/images/test2.png",
         "steps": [
           {
             "title": "Requisitos previos",
@@ -119,49 +119,49 @@
           {
             "title": "Extrae los contenidos a la tarjeta SD de tu Wii",
             "description": "Asegúrate de que los siguientes archivos estén ubicados en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' a tu directorio apps existente.",
-            "image": "images/extractedContents.PNG",
+            "image": "/BO-Website/images/extractedContents.PNG",
             "link": ""
           },
           {
             "title": "(Solo versiones no NTSC y PAL) Renombrar SC7E52.dol con el ID del título de tu copia",
             "description": "Este paso es necesario si no estás usando las versiones NTSC o PAL.",
-            "image": "images/extractedContents.PNG",
+            "image": "/BO-Website/images/extractedContents.PNG",
             "link": ""
           },
           {
             "title": "Abrir USB Loader GX",
             "description": "En tu Wii, con la tarjeta SD insertada, abre USB Loader GX.",
-            "image": "images/USBLoader.PNG",
+            "image": "/BO-Website/images/USBLoader.PNG",
             "link": ""
           },
           {
             "title": "Seleccionar Configuración",
             "description": "En USB Loader, selecciona Black Ops, luego selecciona Configuración.",
-            "image": "images/USBGameSettings.PNG",
+            "image": "/BO-Website/images/USBGameSettings.PNG",
             "link": ""
           },
           {
             "title": "Seleccionar Cargar Juego",
             "description": "",
-            "image": "images/GameLoad.PNG",
+            "image": "/BO-Website/images/GameLoad.PNG",
             "link": ""
           },
           {
             "title": "Establecer \"Custom Game IOS\" a 250",
             "description": "",
-            "image": "images/IOS.PNG",
+            "image": "/BO-Website/images/IOS.PNG",
             "link": ""
           },
           {
             "title": "Establecer \"Alternate DOL\" a Cargar desde SD/USB",
             "description": "",
-            "image": "images/LoadFromUSBSD.PNG",
+            "image": "/BO-Website/images/LoadFromUSBSD.PNG",
             "link": ""
           },
           {
             "title": "Iniciar Black Ops",
             "description": "Regresa a la configuración y la pantalla de inicio, luego selecciona 'Iniciar' para lanzar el juego. Tus configuraciones deben permanecer persistentes, por lo que no necesitarás editar nada más.",
-            "image": "images/StartBlackOpsUSB.PNG",
+            "image": "/BO-Website/images/StartBlackOpsUSB.PNG",
             "link": ""
           },
           {
@@ -175,7 +175,7 @@
       },
       {
         "title": "Dolphin",
-        "image": "images/test3.png",
+        "image": "/BO-Website/images/test3.png",
         "steps": [
           {
             "title": "Requisitos",
@@ -194,37 +194,37 @@
           {
             "title": "Extrae los contenidos a la carpeta de la tarjeta SD de Dolphin",
             "description": "Dolphin permite al usuario establecer una carpeta para que funcione como su tarjeta SD. Básicamente, esta carpeta será equivalente a la raíz de una tarjeta SD utilizada en una Wii real. Puedes establecer esta ruta en Dolphin -> Configuración -> Wii",
-            "image": "images/DolphinSD.PNG",
+            "image": "/BO-Website/images/DolphinSD.PNG",
             "link": ""
           },
           {
             "title": "Asegúrate de que \"Sincronizar automáticamente con la carpeta\" esté activado",
             "description": "",
-            "image": "images/DolphinAutoSync.PNG",
+            "image": "/BO-Website/images/DolphinAutoSync.PNG",
             "link" : ""
           },
           {
             "title": "Haz clic derecho sobre Black Ops y selecciona \"Establecer como ISO predeterminada\"",
             "description": "",
-            "image": "images/DolphinDefaultISO.PNG",
+            "image": "/BO-Website/images/DolphinDefaultISO.PNG",
             "link" : ""
           },
           {
             "title": "Haz clic en Abrir en el panel de opciones de Dolphin",
             "description": "",
-            "image": "images/DolphinOpen.PNG",
+            "image": "/BO-Website/images/DolphinOpen.PNG",
             "link" : ""
           },
           {
             "title": "Haz clic en Abrir en el panel de opciones de Dolphin",
             "description": "",
-            "image": "images/DolphinOpen.PNG",
+            "image": "/BO-Website/images/DolphinOpen.PNG",
             "link" : ""
           },
           {
             "title": "Selecciona el archivo boot.dol para iniciar el juego",
             "description": "Importante: Debes seleccionar el archivo boot.dol ubicado en la carpeta apps/codn-client, que está en la misma carpeta que tu carpeta SD de Dolphin.",
-            "image": "images/DolphinDol.PNG",
+            "image": "/BO-Website/images/DolphinDol.PNG",
             "link" : ""
           },
           {
