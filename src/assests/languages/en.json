@@ -120,7 +120,7 @@
           "linkName": "CoDN Files Download"
         },
         {
-          "title": "Extract the Contents to your Wii's SD Card",
+          "title": "Extract the Contents to the root of your Wii's SD Card",
           "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
           "image": "/BO-Website/images/extractedContents.png",
           "link": ""
@@ -196,7 +196,7 @@
 
         },
         {
-          "title": "Extract the Contents to your Dolphin SD Card Folder",
+          "title": "Extract the Contents to the root of your Wii's SD Card",
           "description": "Dolphin allows the user to set a folder to act as their SD Card. Basically this folder would be equivalent to the root of an SD Card used for a real Wii. You can set this path in Dolphin -> Config -> Wii",
           "image": "/BO-Website/images/DolphinSD.png",
           "link": ""
