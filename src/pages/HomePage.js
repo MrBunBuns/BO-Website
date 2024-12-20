@@ -56,7 +56,7 @@ const HomePage = () => {
             <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
                 {description}
             </Typography>
-            <Button marginTop={5} onClick={handleClick} style={{ color: '#fff', backgroundColor: 'grey', textDecoration: 'none' }}>Get Connected</Button>
+            <Button onClick={handleClick} style={{ color: '#fff', backgroundColor: theme.palette.background.primary, textDecoration: 'none', marginTop: '30px' }}>Get Connected</Button>
 
             {/* Region Compatibility Section */}
             <Box sx={{ marginTop: '40px' }}>
