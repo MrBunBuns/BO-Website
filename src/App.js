@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import GettingStarted from './pages/GettingStarted';
 import AboutPage from './pages/AboutPage';
 import { useLayoutEffect } from 'react';
+import FAQPage from './pages/FAQPage';
 
 const theme = createTheme({
   palette: {
@@ -66,7 +67,7 @@ function App() {
                       <Route path="/" element={<HomePage />} />
                       <Route path="/getting-started" element={<GettingStarted />} />
                       <Route path="/about" element={<AboutPage />} />
-
+                      <Route path="/FAQ" element={<FAQPage />} />
                     </Routes>
                     </Wrapper>
                   </Box>

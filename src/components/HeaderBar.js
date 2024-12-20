@@ -62,8 +62,8 @@ const Header = () => {
     { text: buttonTexts.home, action: () => navigate('/') },
     { text: buttonTexts.gettingStarted, action: () => navigate('/getting-started') },
     { text: buttonTexts.about, action: () => navigate('/about') },
-    { text: buttonTexts.faq, action: () => alert('Contact button clicked!') },
-    { text: buttonTexts.supportButton, action: () => alert('Contact button clicked!') },
+    { text: buttonTexts.faq, action: () => navigate('/faq') },
+    { text: buttonTexts.supportButton, action: () => window.open('https://discord.gg/gXsgTUWquc', '_blank', 'noopener,noreferrer') },
   ];
 
   return (

@@ -1,7 +1,17 @@
 {
   "homePage": {
+    "imageBanner" : "Welcome to CoDN",
     "header" : "Call of Duty Black Ops Wii is Back!",
-    "description" : "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development."
+    "description" : "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development.",
+    "compatibility" : [
+      { "language": "English (USA) ", "status": "🟢 Fully Works" },
+      { "language": "English (PAL)", "status": "🟢 Fully Works" },
+      { "language": "French (Canadian)", "status": "🟡 Limited Playlists Available. Can only play with French versions." },
+      { "language": "French (Europe)", "status": "🟡 Limited Playlists Available. Can only play with French versions." },
+      { "language": "Spanish", "status": "🔴 No Support Currently" },
+      { "language": "Italian", "status": "🔴 No Support Currently" },
+      { "language": "German", "status": "🔴 No Support Currently" }
+  ]
   },
   "headerBar" : {
     "home" : "Home",
@@ -12,7 +22,24 @@
   },
   "aboutPage" : {
     "title" : "About",
-    "description" : ""
+    "description" : "IDK"
+  },
+  "faqPage" : {
+    "title" : "Frequently Asked Questions",
+    "questions" :  [
+      {
+        "question": "What is this page about?",
+        "answer": "This page provides information about our services and products."
+      },
+      {
+        "question": "How can I contact support?",
+        "answer": "You can contact support via email or our contact form."
+      },
+      {
+        "question": "What are the payment options?",
+        "answer": "We accept credit cards, PayPal, and bank transfers."
+      }
+    ]
   },
   "gettingStartedPage" : {
   "header": "Getting Started",
@@ -25,50 +52,49 @@
       "image": "/images/test.png",
       "steps": [
         {
-          "title": "Prerequisties",
-          "description": "In order to play Black Ops Online, you will need the homebrew channel. If you do not already have the Homebrew Channel installed, please click the link on the right hand site to be taken to the Wii Hacks Guide website.",
+          "title": "Prerequisites",
+          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link on the right-hand side to visit the Wii Hacks Guide website.",
           "image": "",
           "link": "https://wii.hacks.guide/get-started.html",
-          "linkName" : "Wii Hacks Guide Website"
+          "linkName": "Wii Hacks Guide Website"
         },
         {
-          "title": "Download CoDN-T5 files",
-          "description": "Click the download button to download the CoDN Installer Files.",
+          "title": "Download CoDN-T5 Files",
+          "description": "Click the download button to get the CoDN Installer Files.",
           "image": "",
           "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-          "linkName" : "CoDN Files Download"
-
+          "linkName": "CoDN Files Download"
         },
         {
-          "title": "Extract the Contents to your Wii's SD card",
-          "description": "Make sure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol and the apps folder. Note if you already have an apps folder just copy the content inside apps/ into your apps directory.",
+          "title": "Extract the Contents to your Wii's SD Card",
+          "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
           "image": "/images/extractedContents.PNG",
           "link": ""
         },
         {
           "title": "Open Homebrew Channel",
-          "description": "On your Wii, with the SD Card and your disc copy of Black Ops inserted, open the homebrew channel",
+          "description": "On your Wii, with the SD Card and your disc copy of Black Ops inserted, open the Homebrew Channel.",
           "image": "/images/HomebrewChannel.PNG",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "Run CodN TU Installer (First Time Only)",
-          "description": "Run the installer only if you do not have v51 already installed. Attempting to launch without v51 will result in an error message",
+          "description": "Run the installer only if you do not already have v51 installed. Attempting to launch without v51 will result in an error message.",
           "image": "/images/TUInstaller.PNG",
           "link": ""
         },
         {
           "title": "Run CodN Client",
-          "description": "Run the client to launch into the game. Note: you will always need to run the client in order to be able to play online.",
+          "description": "Run the client to launch into the game. Note: You must always run the client to play online.",
           "image": "/images/TUClient.PNG",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "You are all set!",
-          "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
+          "title": "You Are All Set!",
+          "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
           "image": "",
           "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-          "linkName" : "Support Link (Discord)"
+          "linkName": "Support Link (Discord)"
         }
       ]
     },
@@ -77,74 +103,73 @@
       "image": "/images/test2.png",
       "steps": [
         {
-          "title": "Prerequisties",
-          "description": "In order to play Black Ops Online, you will need the homebrew channel. If you do not already have the Homebrew Channel installed, please click the link on the right hand site to be taken to the Wii Hacks Guide website.",
+          "title": "Prerequisites",
+          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link on the right-hand side to visit the Wii Hacks Guide website.",
           "image": "",
           "link": "https://wii.hacks.guide/get-started.html",
-          "linkName" : "Wii Hacks Guide Website"
+          "linkName": "Wii Hacks Guide Website"
         },
         {
-          "title": "Download CoDN-T5 files",
-          "description": "Click the download button to download the CoDN Installer Files.",
+          "title": "Download CoDN-T5 Files",
+          "description": "Click the download button to get the CoDN Installer Files.",
           "image": "",
           "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-          "linkName" : "CoDN Files Download"
-
+          "linkName": "CoDN Files Download"
         },
         {
-          "title": "Extract the Contents to your Wii's SD card",
-          "description": "Make sure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol and the apps folder. Note if you already have an apps folder just copy the content inside apps/ into your apps directory.",
+          "title": "Extract the Contents to your Wii's SD Card",
+          "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
           "image": "/images/extractedContents.PNG",
           "link": ""
         },
         {
-          "title": "(Non NTSC and PAL Versions Only) Rename SC7E52.dol to the title ID of your copy",
-          "description": "This step is required if you are not running the NTSC or PAL Versions.",
+          "title": "(Non-NTSC and PAL Versions Only) Rename SC7E52.dol to the Title ID of Your Copy",
+          "description": "This step is required if you are not running the NTSC or PAL versions.",
           "image": "/images/extractedContents.PNG",
           "link": ""
         },
         {
           "title": "Open USB Loader GX",
-          "description": "On your Wii, with the SD Card inserted, open USB Loader GX",
+          "description": "On your Wii, with the SD Card inserted, open USB Loader GX.",
           "image": "/images/USBLoader.PNG",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "Select Settings",
-          "description": "In USB Loader, select Black Ops then select Settings",
+          "description": "In USB Loader, select Black Ops, then select Settings.",
           "image": "/images/USBGameSettings.PNG",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "Select Game Load",
           "description": "",
           "image": "/images/GameLoad.PNG",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Set Custom Game IOS to 250",
+          "title": "Set \"Custom Game IOS\" to 250",
           "description": "",
           "image": "/images/IOS.PNG",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Set Alternate DOL to Load from SD/USB",
+          "title": "Set \"Alternate DOL\" to Load from SD/USB",
           "description": "",
           "image": "/images/LoadFromUSBSD.PNG",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "Start Black Ops",
-          "description": "Return to the settings and start screen and select start to launch the game. Your settings should remain persistent so you will not need to edit anything again.",
+          "description": "Return to the settings and start screen, then select 'Start' to launch the game. Your settings should remain persistent, so you will not need to edit anything again.",
           "image": "/images/StartBlackOpsUSB.PNG",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "You are all set!",
-          "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
+          "title": "You Are All Set!",
+          "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
           "image": "",
           "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-          "linkName" : "Support Link (Discord)"
+          "linkName": "Support Link (Discord)"
         }
       ]
     },
@@ -174,13 +199,13 @@
           "link": ""
         },
         {
-          "title": "Make sure Automatically Sync with Folder is Checked",
+          "title": "Make sure \"Automatically Sync with Folder\" is Checked",
           "description": "",
           "image": "/images/DolphinAutoSync.PNG",
           "link" : ""
         },
         {
-          "title": "Right Click Black Ops and Select Set as Default ISO",
+          "title": "Right Click Black Ops and Select \"Set as Default ISO\"",
           "description": "",
           "image": "/images/DolphinDefaultISO.PNG",
           "link" : ""

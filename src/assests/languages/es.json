@@ -1,48 +1,100 @@
 {
   "homePage": {
-    "header": "¡Call of Duty Black Ops Wii está de vuelta!",
-    "description": "Tras el cierre completo de los servicios en línea de la Wii en 2023, todos los juegos de Call of Duty en la plataforma perdieron acceso a sus funciones multijugador. Sin embargo, gracias a los esfuerzos de un talentoso equipo de desarrolladores, estos servicios han sido restaurados, permitiendo a los jugadores disfrutar nuevamente de Call of Duty en línea en la Wii. Actualmente, solo Call of Duty: Black Ops ha sido revivido, mientras que la restauración de otros títulos requiere más investigación y desarrollo."
+    "imageBanner" : "Bienvenido a CoDN",
+    "header" : "¡Call of Duty Black Ops Wii ha vuelto!",
+    "description" : "Tras el cierre completo de los servicios en línea de la Wii en 2023, todos los juegos de Call of Duty en la plataforma perdieron el acceso a sus características multijugador. Sin embargo, gracias a los esfuerzos de un equipo talentoso de desarrolladores, estos servicios han sido restaurados, lo que permite a los jugadores volver a disfrutar de Call of Duty en línea en la Wii. Actualmente, solo se ha revivido Call of Duty: Black Ops, mientras que la restauración de otros títulos requiere más investigación y desarrollo.",
+    "compatibility" : [
+      { "language": "Inglés (USA)", "status": "🟢 Funciona completamente" },
+      { "language": "Inglés (PAL)", "status": "🟢 Funciona completamente" },
+      { "language": "Francés (Canadiense)", "status": "🟡 Listas de juegos limitadas. Solo se puede jugar con versiones en francés." },
+      { "language": "Francés (Europa)", "status": "🟡 Listas de juegos limitadas. Solo se puede jugar con versiones en francés." },
+      { "language": "Español", "status": "🔴 No hay soporte actualmente" },
+      { "language": "Italiano", "status": "🔴 No hay soporte actualmente" },
+      { "language": "Alemán", "status": "🔴 No hay soporte actualmente" }
+    ]
   },
-  "headerBar": {
-    "home": "Inicio",
-    "gettingStarted": "Primeros Pasos",
-    "about": "Acerca de",
-    "supportButton": "Soporte",
-    "faq": "Preguntas Frecuentes"
+  "headerBar" : {
+    "home" : "Inicio",
+    "gettingStarted" : "Comenzando",
+    "about" : "Acerca de",
+    "supportButton" : "Soporte",
+    "faq" : "Preguntas Frecuentes"
   },
-  "aboutPage": {
-    "title": "Acerca de",
-    "description": ""
+  "aboutPage" : {
+    "title" : "Acerca de",
+    "description" : "IDK"
   },
-  "gettingStartedPage": {
-    "header": "Primeros Pasos",
-    "description": "Esta página te guiará para conectarte en línea con Black Ops Wii. Si tienes dificultades, haz clic en el botón \"Soporte\" en la esquina superior derecha de la página para obtener asistencia.",
-    "methodHeader": "Selecciona tu Método:",
-    "methodHelperText": "Haz clic en las imágenes para ampliarlas",
+  "faqPage" : {
+    "title" : "Preguntas Frecuentes",
+    "questions" :  [
+      {
+        "question": "¿De qué trata esta página?",
+        "answer": "Esta página proporciona información sobre nuestros servicios y productos."
+      },
+      {
+        "question": "¿Cómo puedo contactar con soporte?",
+        "answer": "Puedes contactar con soporte por correo electrónico o mediante nuestro formulario de contacto."
+      },
+      {
+        "question": "¿Cuáles son las opciones de pago?",
+        "answer": "Aceptamos tarjetas de crédito, PayPal y transferencias bancarias."
+      }
+    ]
+  },
+  "gettingStartedPage" : {
+    "header": "Comenzando",
+    "description": "Esta página te guiará para jugar en línea a Black Ops Wii. Si tienes dificultades, haz clic en el botón \"Soporte\" para obtener ayuda.",
+    "methodHeader" : "Selecciona tu método:",
+    "methodHelperText" : "Haz clic en las imágenes para expandir",
     "methods": [
       {
         "title": "Disco de Wii",
         "image": "/images/test.png",
         "steps": [
           {
-            "title": "Descargar archivos CodN-T5",
-            "description": "Haz clic aquí para descargar los archivos más recientes para conectarte en línea.",
-            "image": ""
+            "title": "Requisitos previos",
+            "description": "Para jugar Black Ops en línea, necesitarás el Canal Homebrew. Si no lo tienes instalado, haz clic en el enlace a la derecha para visitar el sitio web de la Guía de Hacks para Wii.",
+            "image": "",
+            "link": "https://wii.hacks.guide/get-started.html",
+            "linkName": "Sitio Web de Guía de Hacks para Wii"
           },
           {
-            "title": "Abrir el Canal Homebrew",
-            "description": "Asegúrate de tener insertado tu disco de Black Ops 6 en la consola.",
-            "image": "https://via.placeholder.com/300x200"
+            "title": "Descargar archivos CoDN-T5",
+            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador CoDN.",
+            "image": "",
+            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "linkName": "Descarga de Archivos CoDN"
+          },
+          {
+            "title": "Extrae los contenidos a la tarjeta SD de tu Wii",
+            "description": "Asegúrate de que los siguientes archivos estén ubicados en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' a tu directorio apps existente.",
+            "image": "/images/extractedContents.PNG",
+            "link": ""
+          },
+          {
+            "title": "Abrir Canal Homebrew",
+            "description": "En tu Wii, con la tarjeta SD y el disco de Black Ops insertado, abre el Canal Homebrew.",
+            "image": "/images/HomebrewChannel.PNG",
+            "link": ""
           },
           {
             "title": "Ejecutar CodN TU Installer (Solo la primera vez)",
-            "description": "Ejecuta el instalador solo si no tienes instalada la versión v51.",
-            "image": "https://via.placeholder.com/300x200"
+            "description": "Ejecuta el instalador solo si no tienes la versión v51 instalada. Intentar lanzar sin v51 dará un mensaje de error.",
+            "image": "/images/TUInstaller.PNG",
+            "link": ""
           },
           {
-            "title": "Ejecutar el cliente CodN",
-            "description": "Ejecuta el cliente para iniciar el juego. Nota: siempre necesitarás ejecutar el cliente para poder jugar en línea.",
-            "image": "https://via.placeholder.com/300x200"
+            "title": "Ejecutar el Cliente CodN",
+            "description": "Ejecuta el cliente para iniciar el juego. Nota: Debes ejecutar siempre el cliente para jugar en línea.",
+            "image": "/images/TUClient.PNG",
+            "link": ""
+          },
+          {
+            "title": "¡Todo listo!",
+            "description": "Si todo ha funcionado correctamente, deberías entrar directamente en el modo multijugador. Si encuentras problemas, haz clic en el botón de soporte para unirte a nuestro Discord.",
+            "image": "",
+            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "linkName": "Enlace de Soporte (Discord)"
           }
         ]
       },
@@ -51,14 +103,73 @@
         "image": "/images/test2.png",
         "steps": [
           {
-            "title": "Paso 1",
-            "description": "Descripción del paso 1",
-            "image": "https://via.placeholder.com/300x200"
+            "title": "Requisitos previos",
+            "description": "Para jugar Black Ops en línea, necesitarás el Canal Homebrew. Si no lo tienes instalado, haz clic en el enlace a la derecha para visitar el sitio web de la Guía de Hacks para Wii.",
+            "image": "",
+            "link": "https://wii.hacks.guide/get-started.html",
+            "linkName": "Sitio Web de Guía de Hacks para Wii"
           },
           {
-            "title": "Paso 2",
-            "description": "Descripción del paso 2",
-            "image": "https://via.placeholder.com/300x200"
+            "title": "Descargar archivos CoDN-T5",
+            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador CoDN.",
+            "image": "",
+            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "linkName": "Descarga de Archivos CoDN"
+          },
+          {
+            "title": "Extrae los contenidos a la tarjeta SD de tu Wii",
+            "description": "Asegúrate de que los siguientes archivos estén ubicados en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' a tu directorio apps existente.",
+            "image": "/images/extractedContents.PNG",
+            "link": ""
+          },
+          {
+            "title": "(Solo versiones no NTSC y PAL) Renombrar SC7E52.dol con el ID del título de tu copia",
+            "description": "Este paso es necesario si no estás usando las versiones NTSC o PAL.",
+            "image": "/images/extractedContents.PNG",
+            "link": ""
+          },
+          {
+            "title": "Abrir USB Loader GX",
+            "description": "En tu Wii, con la tarjeta SD insertada, abre USB Loader GX.",
+            "image": "/images/USBLoader.PNG",
+            "link": ""
+          },
+          {
+            "title": "Seleccionar Configuración",
+            "description": "En USB Loader, selecciona Black Ops, luego selecciona Configuración.",
+            "image": "/images/USBGameSettings.PNG",
+            "link": ""
+          },
+          {
+            "title": "Seleccionar Cargar Juego",
+            "description": "",
+            "image": "/images/GameLoad.PNG",
+            "link": ""
+          },
+          {
+            "title": "Establecer \"Custom Game IOS\" a 250",
+            "description": "",
+            "image": "/images/IOS.PNG",
+            "link": ""
+          },
+          {
+            "title": "Establecer \"Alternate DOL\" a Cargar desde SD/USB",
+            "description": "",
+            "image": "/images/LoadFromUSBSD.PNG",
+            "link": ""
+          },
+          {
+            "title": "Iniciar Black Ops",
+            "description": "Regresa a la configuración y la pantalla de inicio, luego selecciona 'Iniciar' para lanzar el juego. Tus configuraciones deben permanecer persistentes, por lo que no necesitarás editar nada más.",
+            "image": "/images/StartBlackOpsUSB.PNG",
+            "link": ""
+          },
+          {
+            "title": "¡Todo listo!",
+            "description": "Si todo ha funcionado correctamente, deberías entrar directamente en el modo multijugador. Si encuentras problemas, haz clic en el botón de soporte para unirte a nuestro Discord.",
+            "image": "",
+            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "linkName": "Enlace de Soporte (Discord)"
           }
         ]
       },
@@ -67,14 +178,61 @@
         "image": "/images/test3.png",
         "steps": [
           {
-            "title": "Paso 1",
-            "description": "Descripción del paso 1",
-            "image": "https://via.placeholder.com/300x200"
+            "title": "Requisitos",
+            "description": "Para jugar en el emulador Dolphin, necesitas importar una copia de seguridad del NAND. Haz clic en el enlace a la derecha para aprender cómo.",
+            "image": "",
+            "link": "https://dolphin-emu.org/docs/guides/nand-usage-guide/",
+            "linkName" : "Guía de NAND de Dolphin"
           },
           {
-            "title": "Paso 2",
-            "description": "Descripción del paso 2",
-            "image": "https://via.placeholder.com/300x200"
+            "title": "Descargar archivos CoDN-T5",
+            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador CoDN.",
+            "image": "",
+            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "linkName" : "Descarga de Archivos CoDN"
+          },
+          {
+            "title": "Extrae los contenidos a la carpeta de la tarjeta SD de Dolphin",
+            "description": "Dolphin permite al usuario establecer una carpeta para que funcione como su tarjeta SD. Básicamente, esta carpeta será equivalente a la raíz de una tarjeta SD utilizada en una Wii real. Puedes establecer esta ruta en Dolphin -> Configuración -> Wii",
+            "image": "/images/DolphinSD.PNG",
+            "link": ""
+          },
+          {
+            "title": "Asegúrate de que \"Sincronizar automáticamente con la carpeta\" esté activado",
+            "description": "",
+            "image": "/images/DolphinAutoSync.PNG",
+            "link" : ""
+          },
+          {
+            "title": "Haz clic derecho sobre Black Ops y selecciona \"Establecer como ISO predeterminada\"",
+            "description": "",
+            "image": "/images/DolphinDefaultISO.PNG",
+            "link" : ""
+          },
+          {
+            "title": "Haz clic en Abrir en el panel de opciones de Dolphin",
+            "description": "",
+            "image": "/images/DolphinOpen.PNG",
+            "link" : ""
+          },
+          {
+            "title": "Haz clic en Abrir en el panel de opciones de Dolphin",
+            "description": "",
+            "image": "/images/DolphinOpen.PNG",
+            "link" : ""
+          },
+          {
+            "title": "Selecciona el archivo boot.dol para iniciar el juego",
+            "description": "Importante: Debes seleccionar el archivo boot.dol ubicado en la carpeta apps/codn-client, que está en la misma carpeta que tu carpeta SD de Dolphin.",
+            "image": "/images/DolphinDol.PNG",
+            "link" : ""
+          },
+          {
+            "title": "¡Todo listo!",
+            "description": "Si todo ha ido bien, deberías haber entrado directamente en el modo multijugador. Si tienes problemas, haz clic en el botón de soporte para unirte a nuestro Discord.",
+            "image": "",
+            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "linkName" : "Enlace de Soporte (Discord)"
           }
         ]
       }
