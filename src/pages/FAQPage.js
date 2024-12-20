@@ -24,11 +24,11 @@ const FAQPage = () => {
       <Typography width={'60%'} variant="h4" sx={{ fontSize: { xs: '2rem', sm: '5rem', md: '2.5em' } }}>
         {title}
       </Typography>
-      <Stack width="60%" spacing={0}>
+      <Stack width="60%" spacing={.5}>
         {faqData.map((faq, index) => (
-          <Accordion sx={{backgroundColor: 'grey'}} key={index}>
+          <Accordion sx={{backgroundColor: theme.palette.background.alternate}} key={index}>
             <AccordionSummary
-              expandIcon={<ExpandMore />}
+              expandIcon={<ExpandMore style={{ color: "white" }}/>}
               aria-controls={`panel${index}-content`}
               id={`panel${index}-header`}
             >

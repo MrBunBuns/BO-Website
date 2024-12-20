@@ -19,7 +19,7 @@ const HomePage = () => {
     const navigate = useNavigate();
 
     //TODO: Use Emmas image for mobile
-    const isMobile = !useMediaQuery(theme.breakpoints.down('sm'));
+    const isMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
 
     const handleClick = () => {
         navigate('/getting-started');
@@ -45,7 +45,7 @@ const HomePage = () => {
                 justifyContent: 'center',
                 color: '#fff'
             }}>
-                <Typography variant="h3" sx={{ padding: '10px' }}>
+                <Typography color='white' variant={isMobile ? ('h3') : ('h4')} sx={{ padding: '10px' }}>
                    {bannerText}
                 </Typography>
             </Box>

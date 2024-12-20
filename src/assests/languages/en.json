@@ -37,6 +37,10 @@
       {
         "question": "Will bans be enforced?",
         "answer": "Fishy answer here"
+      },
+      {
+        "question": "How can I obtain Max Rank + COD Points",
+        "answer": "Go to lobby screen. For Wiimote - On DPad: Up, Up, Down, Down, Left, Right, Left, Right, Minus, Classic Controller - on DPad: Up, Up, Down, Down, Left, Right, Left, Right, B"
       }
     ]
   },
@@ -52,7 +56,7 @@
       "steps": [
         {
           "title": "Prerequisites",
-          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link on the right-hand side to visit the Wii Hacks Guide website.",
+          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link in this step to visit the Wii Hacks Guide website.",
           "image": "",
           "link": "https://wii.hacks.guide/get-started.html",
           "linkName": "Wii Hacks Guide Website"
@@ -103,7 +107,7 @@
       "steps": [
         {
           "title": "Prerequisites",
-          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link on the right-hand side to visit the Wii Hacks Guide website.",
+          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link in this step to visit the Wii Hacks Guide website.",
           "image": "",
           "link": "https://wii.hacks.guide/get-started.html",
           "linkName": "Wii Hacks Guide Website"
@@ -123,7 +127,7 @@
         },
         {
           "title": "(Non-NTSC and PAL Versions Only) Rename SC7E52.dol to the Title ID of Your Copy",
-          "description": "This step is required if you are not running the NTSC or PAL versions. For region codes, click the right-hand image.",
+          "description": "This step is required if you are not running the NTSC or PAL versions. For region codes, click the image in this step.",
           "image": "/BO-Website/images/RegionTable.png",
           "link": ""
         },
@@ -178,7 +182,7 @@
       "steps": [
         {
           "title": "Prerequisties",
-          "description": "In order to play on Dolphin Emulator, you are required to import a NAND backup. Please click the link on the right to learn how.",
+          "description": "In order to play on Dolphin Emulator, you are required to import a NAND backup. Please click the link in this step to learn how.",
           "image": "",
           "link": "https://dolphin-emu.org/docs/guides/nand-usage-guide/",
           "linkName" : "Dolphin NAND Guide"

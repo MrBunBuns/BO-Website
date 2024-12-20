@@ -94,7 +94,7 @@ const GettingStarted = () => {
                   sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    backgroundColor: '#4d4d4d',
+                    backgroundColor: theme.palette.background.alternate,
                     border: selectedIndex === index ? '3px solid #1976d2' : 'none',
                     transition: 'border 0.3s ease',
                     width: '100%',

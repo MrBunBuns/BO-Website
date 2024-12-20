@@ -35,7 +35,8 @@ const Header = () => {
   });
 
   const theme = useTheme();
-  const isMobile = !useMediaQuery(theme.breakpoints.down('sm'));
+  const isMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
+
   const navigate = useNavigate();
 
   const handleLanguageChange = (event) => {
@@ -61,7 +62,7 @@ const Header = () => {
   const buttons = [
     { text: buttonTexts.home, action: () => navigate('/') },
     { text: buttonTexts.gettingStarted, action: () => navigate('/getting-started') },
-    { text: buttonTexts.about, action: () => navigate('/about') },
+   // { text: buttonTexts.about, action: () => navigate('/about') }, Disabling about for now
     { text: buttonTexts.faq, action: () => navigate('/faq') },
     { text: buttonTexts.supportButton, action: () => window.open('https://discord.gg/gXsgTUWquc', '_blank', 'noopener,noreferrer') },
   ];
