@@ -18,13 +18,15 @@ const HomePage = () => {
     const theme = useTheme();
     const navigate = useNavigate();
 
-    //TODO: Use Emmas image for mobile
     const isMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
+    const isUltraWide = useMediaQuery('(min-width: 2200px)');
+    const contained = isUltraWide ? (isMobile ? 'lg' : 'sm') : false;
 
     const handleClick = () => {
         navigate('/getting-started');
     };
-
+   
+    
     useEffect(() => {
         setBannerText(translations[language].homePage.imageBanner);
         setHeaderText(translations[language].homePage.header);
@@ -33,10 +35,10 @@ const HomePage = () => {
       }, [language]); 
 
     return (
-        <Box>
+        <Container maxWidth={contained}>
             <Box sx={{
                 position: 'relative',
-                height: '400px',
+                height: isMobile ? ('400px') : ('250px'),
                 backgroundImage: 'url(/BO-Website/images/homepagebanner1.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
@@ -79,7 +81,7 @@ const HomePage = () => {
                     ))}
                 </Grid>
             </Box>
-        </Box>
+        </Container>
     );
 };
 
