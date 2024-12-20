@@ -49,7 +49,7 @@
   "methods": [
     {
       "title": "Wii Disc",
-      "image": "/BO-Website/images/test.png",
+      "image": "/BO-Website/images/test.PNG",
       "steps": [
         {
           "title": "Prerequisites",
@@ -68,25 +68,25 @@
         {
           "title": "Extract the Contents to your Wii's SD Card",
           "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
-          "image": "/BO-Website/images/extractedContents.png",
+          "image": "/BO-Website/images/extractedContents.PNG",
           "link": ""
         },
         {
           "title": "Open Homebrew Channel",
           "description": "On your Wii, with the SD Card and your disc copy of Black Ops inserted, open the Homebrew Channel.",
-          "image": "/BO-Website/images/HomebrewChannel.png",
+          "image": "/BO-Website/images/HomebrewChannel.PNG",
           "link": ""
         },
         {
           "title": "Run CodN TU Installer (First Time Only)",
           "description": "Run the installer only if you do not already have v51 installed. Attempting to launch without v51 will result in an error message.",
-          "image": "/BO-Website/images/TUInstaller.png",
+          "image": "/BO-Website/images/TUInstaller.PNG",
           "link": ""
         },
         {
           "title": "Run CodN Client",
           "description": "Run the client to launch into the game. Note: You must always run the client to play online.",
-          "image": "/BO-Website/images/TUClient.png",
+          "image": "/BO-Website/images/TUClient.PNG",
           "link": ""
         },
         {
@@ -100,7 +100,7 @@
     },
     {
       "title": "USB Loader GX",
-      "image": "/BO-Website/images/test2.png",
+      "image": "/BO-Website/images/test2.PNG",
       "steps": [
         {
           "title": "Prerequisites",
@@ -119,49 +119,49 @@
         {
           "title": "Extract the Contents to your Wii's SD Card",
           "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
-          "image": "/BO-Website/images/extractedContents.png",
+          "image": "/BO-Website/images/extractedContents.PNG",
           "link": ""
         },
         {
           "title": "(Non-NTSC and PAL Versions Only) Rename SC7E52.dol to the Title ID of Your Copy",
           "description": "This step is required if you are not running the NTSC or PAL versions.",
-          "image": "/BO-Website/images/extractedContents.png",
+          "image": "/BO-Website/images/extractedContents.PNG",
           "link": ""
         },
         {
           "title": "Open USB Loader GX",
           "description": "On your Wii, with the SD Card inserted, open USB Loader GX.",
-          "image": "/BO-Website/images/USBLoader.png",
+          "image": "/BO-Website/images/USBLoader.PNG",
           "link": ""
         },
         {
           "title": "Select Settings",
           "description": "In USB Loader, select Black Ops, then select Settings.",
-          "image": "/BO-Website/images/USBGameSettings.png",
+          "image": "/BO-Website/images/USBGameSettings.PNG",
           "link": ""
         },
         {
           "title": "Select Game Load",
           "description": "",
-          "image": "/BO-Website/images/GameLoad.png",
+          "image": "/BO-Website/images/GameLoad.PNG",
           "link": ""
         },
         {
           "title": "Set \"Custom Game IOS\" to 250",
           "description": "",
-          "image": "/BO-Website/images/IOS.png",
+          "image": "/BO-Website/images/IOS.PNG",
           "link": ""
         },
         {
           "title": "Set \"Alternate DOL\" to Load from SD/USB",
           "description": "",
-          "image": "/BO-Website/images/LoadFromUSBSD.png",
+          "image": "/BO-Website/images/LoadFromUSBSD.PNG",
           "link": ""
         },
         {
           "title": "Start Black Ops",
           "description": "Return to the settings and start screen, then select 'Start' to launch the game. Your settings should remain persistent, so you will not need to edit anything again.",
-          "image": "/BO-Website/images/StartBlackOpsUSB.png",
+          "image": "/BO-Website/images/StartBlackOpsUSB.PNG",
           "link": ""
         },
         {
@@ -175,7 +175,7 @@
     },
     {
       "title": "Dolphin",
-      "image": "/BO-Website/images/test3.png",
+      "image": "/BO-Website/images/test3.PNG",
       "steps": [
         {
           "title": "Prerequisties",
@@ -195,37 +195,37 @@
         {
           "title": "Extract the Contents to your Dolphin SD Card Folder",
           "description": "Dolphin allows the user to set a folder to act as their SD Card. Basically this folder would be equivalent to the root of an SD Card used for a real Wii. You can set this path in Dolphin -> Config -> Wii",
-          "image": "/BO-Website/images/DolphinSD.png",
+          "image": "/BO-Website/images/DolphinSD.PNG",
           "link": ""
         },
         {
           "title": "Make sure \"Automatically Sync with Folder\" is Checked",
           "description": "",
-          "image": "/BO-Website/images/DolphinAutoSync.png",
+          "image": "/BO-Website/images/DolphinAutoSync.PNG",
           "link" : ""
         },
         {
           "title": "Right Click Black Ops and Select \"Set as Default ISO\"",
           "description": "",
-          "image": "/BO-Website/images/DolphinDefaultISO.png",
+          "image": "/BO-Website/images/DolphinDefaultISO.PNG",
           "link" : ""
         },
         {
           "title": "Click Open in the Dolphin Options Panel",
           "description": "",
-          "image": "/BO-Website/images/DolphinOpen.png",
+          "image": "/BO-Website/images/DolphinOpen.PNG",
           "link" : ""
         },
         {
           "title": "Click Open in the Dolphin Options Panel",
           "description": "",
-          "image": "/BO-Website/images/DolphinOpen.png",
+          "image": "/BO-Website/images/DolphinOpen.PNG",
           "link" : ""
         },
         {
           "title": "Select the boot.dol File to Launch the Game",
           "description": "Important: You must select the boot.dol file located in the apps/codn-client folder located in the same folder as you Dolphin SD Card folder",
-          "image": "/BO-Website/images/DolphinDol.png",
+          "image": "/BO-Website/images/DolphinDol.PNG",
           "link" : ""
         },
         {
