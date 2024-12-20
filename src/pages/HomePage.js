@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, Link, Typography, Container, Box, Grid, Card, CardMedia, CardContent, ButtonBase, Button, createTheme, ThemeProvider, Stack } from '@mui/material';
+import { AppBar, Toolbar, Link, Typography, Container, Box, Grid, Card, CardMedia, useMediaQuery, CardContent, ButtonBase, Button, createTheme, ThemeProvider, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { useContext, useState, useEffect } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
@@ -18,6 +18,9 @@ const HomePage = () => {
     const theme = useTheme();
     const navigate = useNavigate();
 
+    //TODO: Use Emmas image for mobile
+    const isMobile = !useMediaQuery(theme.breakpoints.down('sm'));
+
     const handleClick = () => {
         navigate('/getting-started');
     };
@@ -34,7 +37,7 @@ const HomePage = () => {
             <Box sx={{
                 position: 'relative',
                 height: '400px',
-                backgroundImage: 'url(https://via.placeholder.com/1500)',
+                backgroundImage: 'url(/BO-Website/images/codwiibackground.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 display: 'flex',
