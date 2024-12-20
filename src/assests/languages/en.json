@@ -1,16 +1,15 @@
-{
-  "homePage": {
+{  "homePage": {
     "imageBanner" : "Welcome to CoDN",
     "header" : "Call of Duty Black Ops Wii is Back!",
     "description" : "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development.",
     "compatibility" : [
-      { "language": "English (USA) ", "status": "🟢 Fully Works" },
-      { "language": "English (PAL)", "status": "🟢 Fully Works" },
-      { "language": "French (Canadian)", "status": "🟡 Limited Playlists Available. Can only play with French versions." },
-      { "language": "French (Europe)", "status": "🟡 Limited Playlists Available. Can only play with French versions." },
-      { "language": "Spanish", "status": "🔴 No Support Currently" },
-      { "language": "Italian", "status": "🔴 No Support Currently" },
-      { "language": "German", "status": "🔴 No Support Currently" }
+      { "language": "English (USA) ",  "code": "SC7E52", "status": "🟢 Fully Works" },
+      { "language": "English (PAL)",  "code": "SC7P52", "status": "🟢 Fully Works" },
+      { "language": "French (Canadian)",  "code": "SC7Z52", "status": "🟢 Fully Works" },
+      { "language": "French (PAL French)",  "code": "SC7F52", "status": "🟢 Fully Works" },
+      { "language": "Spanish",  "code": "SC7S52", "status": "🟢 Fully Works" },
+      { "language": "Italian",  "code": "SC7I52", "status": "🟢 Fully Works" },
+      { "language": "German",  "code": "SC7D52", "status": "🟢 Fully Works" }
   ]
   },
   "headerBar" : {
@@ -93,7 +92,7 @@
           "title": "You Are All Set!",
           "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
           "image": "",
-          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "link": "https://discord.gg/gXsgTUWquc",
           "linkName": "Support Link (Discord)"
         }
       ]
@@ -124,8 +123,8 @@
         },
         {
           "title": "(Non-NTSC and PAL Versions Only) Rename SC7E52.dol to the Title ID of Your Copy",
-          "description": "This step is required if you are not running the NTSC or PAL versions.",
-          "image": "/BO-Website/images/extractedContents.png",
+          "description": "This step is required if you are not running the NTSC or PAL versions. For region codes, click the right-hand image.",
+          "image": "/BO-Website/images/RegionTable.png",
           "link": ""
         },
         {
@@ -168,7 +167,7 @@
           "title": "You Are All Set!",
           "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
           "image": "",
-          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "link": "https://discord.gg/gXsgTUWquc",
           "linkName": "Support Link (Discord)"
         }
       ]
@@ -232,7 +231,7 @@
           "title": "You are all set!",
           "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
           "image": "",
-          "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+          "link": "https://discord.gg/gXsgTUWquc",
           "linkName" : "Support Link (Discord)"
         }
       ]

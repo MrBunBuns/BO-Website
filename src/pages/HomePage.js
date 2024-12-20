@@ -71,7 +71,7 @@ const HomePage = () => {
                         <Grid item xs={12} sm={6} md={4} key={index}>
                             <Card sx={{ padding: '10px', backgroundColor: '#2f3030' }}>
                                 <CardContent>
-                                    <Typography variant="h6">{region.language}</Typography>
+                                    <Typography variant="h6">{region.language} - {region.code} </Typography>
                                     <Typography variant="body2">{region.status}</Typography>
                                 </CardContent>
                             </Card>
