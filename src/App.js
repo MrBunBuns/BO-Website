@@ -63,14 +63,14 @@ function App() {
                 >
                   <Box sx={{ p: 3 }}>
                   <Wrapper>
-                    <BrowserRouter basename="/BO-Website">
+                    <Router basename="/BO-Website">
                       <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/getting-started" element={<GettingStarted />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/FAQ" element={<FAQPage />} />
                       </Routes>
-                    </BrowserRouter>
+                    </Router>
                     </Wrapper>
                   </Box>
                 </Box>
