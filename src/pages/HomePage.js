@@ -39,7 +39,7 @@ const HomePage = () => {
             <Box sx={{
                 position: 'relative',
                 height: isMobile ? ('400px') : ('250px'),
-                backgroundImage: 'url(/BO-Website/images/homepagebanner1.png)',
+                backgroundImage: 'url(/BO-Website/images/homepagebanner3.png)',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 display: 'flex',
