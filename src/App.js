@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider, createTheme, Box, Stack } from '@mui/material';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './contexts/LanguageContext';
 import Header from './components/HeaderBar';
 import HomePage from './pages/HomePage';
@@ -13,12 +13,11 @@ const theme = createTheme({
   palette: {
     background: {
       default: '#262626',
-      header:  '#1a1a1a',
+      header: '#1a1a1a',
     },
     text: {
       primary: '#ffffff',
       secondary: '#b9bbbe',
-
     },
   },
 });
@@ -32,10 +31,7 @@ const Wrapper = ({ children }) => {
 };
 
 function App() {
-  
   return (
-
-
     <ThemeProvider theme={theme}>
       <LanguageProvider>
         <Router>
@@ -47,11 +43,11 @@ function App() {
               color: '#ffffff',
             }}
           >
-            <Stack width="100%" alignItems={'center'}>
+            <Stack width="100%" alignItems="center">
               {/* Header */}
               <Header />
               {/* Main Content */}
-              <Stack height="100%" width={'100%'} marginTop={8} direction="row">
+              <Stack height="100%" width="100%" marginTop={8} direction="row">
                 <Box
                   sx={{
                     flexGrow: 1,
@@ -62,15 +58,13 @@ function App() {
                   }}
                 >
                   <Box sx={{ p: 3 }}>
-                  <Wrapper>
-                    <Router basename="/BO-Website">
+                    <Wrapper>
                       <Routes>
                         <Route path="/" element={<HomePage />} />
                         <Route path="/getting-started" element={<GettingStarted />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/FAQ" element={<FAQPage />} />
                       </Routes>
-                    </Router>
                     </Wrapper>
                   </Box>
                 </Box>
@@ -80,9 +74,6 @@ function App() {
         </Router>
       </LanguageProvider>
     </ThemeProvider>
-
-
-
   );
 }
 
