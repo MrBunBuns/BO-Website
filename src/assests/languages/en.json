@@ -46,7 +46,7 @@
   },
   "gettingStartedPage" : {
     "header": "Getting Started",
-    "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button to get help.",
+    "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button in the Navigation to get help.",
     "prereqTextTitle" : "Modded Wii/Wii U Required",
     "prereqTextDesc" : "This guide assumes that you can already run homebrew from your Wii/Wii U. If you have not modded your console, please visit the approriate site below to do so.",
     "wiiModLink" : "Wii Modding",
@@ -187,7 +187,7 @@
         },
         {
           "title": "Extract the Contents",
-          "description": "Extract the contents to a location where you can find it. We will need this location for the next step",
+          "description": "Extract the contents to a location where you can find it. We will need this location for the next step.",
           "image": "/BO-Website/images/ExtractedCoDNFiles.png",
           "link": ""
         },
