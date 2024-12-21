@@ -68,6 +68,47 @@ const GettingStarted = () => {
         <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
           { categories.description} 
         </Typography>
+        {/* Highlighted Card */}
+        <Card
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: theme.palette.background.alternate,
+            border: '1px solid red',
+            transition: 'border 0.3s ease',
+            width: '100%',
+            marginTop: '40px',
+          }}
+        >
+          <CardContent>
+            <Typography variant="h5" sx={{ textAlign: 'center', fontWeight: 'bold' }}>
+              {categories.prereqTextTitle}
+            </Typography>
+            <Typography variant="body1" sx={{ textAlign: 'center', marginTop: '25px',  color: theme.palette.text.secondary }}>
+              {categories.prereqTextDesc}
+            </Typography>
+            <Stack display='flex' marginTop={3} spacing={4} justifyContent='center' width={'100%'} direction={'row'}>
+              <Button
+                  variant="contained"
+                  color="primary"
+                  endIcon={<ArrowOutwardIcon/>}
+                  sx={{ textTransform: 'none', backgroundColor: '#4d4d4d',  width:'170px', height: '65px' }}
+                  onClick={() => window.open('https://wii.hacks.guide/get-started.html', '_blank', 'noopener,noreferrer')}
+                >
+                  {categories.wiiModLink}
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  endIcon={<ArrowOutwardIcon/>}
+                  sx={{ textTransform: 'none', backgroundColor: '#4d4d4d', width:'170px', height: '65px' }}
+                  onClick={() => window.open('https://wiiu.hacks.guide/', '_blank', 'noopener,noreferrer')}
+                >
+                  {categories.wiiUModLink}
+                </Button>
+            </Stack>
+          </CardContent>
+        </Card>
       </Container>
 
       {/* Categories Section */}

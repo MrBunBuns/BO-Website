@@ -45,22 +45,19 @@
     ]
   },
   "gettingStartedPage" : {
-  "header": "Getting Started",
-  "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button to get help.",
-  "methodHeader" : "Select Your Method:",
-  "methodHelperText" : "Click images to expand",
-  "methods": [
+    "header": "Getting Started",
+    "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button to get help.",
+    "prereqTextTitle" : "Modded Wii/Wii U Required",
+    "prereqTextDesc" : "This guide assumes that you can already run homebrew from your Wii/Wii U. If you have not modded your console, please visit the approriate site below to do so.",
+    "wiiModLink" : "Wii Modding",
+    "wiiUModLink" : "Wii U Modding",
+    "methodHeader" : "Select Your Method:",
+    "methodHelperText" : "Click images to expand",
+    "methods": [
     {
-      "title": "Wii Disc",
+      "title": "Disc",
       "image": "/BO-Website/images/test.png",
       "steps": [
-        {
-          "title": "Prerequisites",
-          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link in this step to visit the Wii Hacks Guide website.",
-          "image": "",
-          "link": "https://wii.hacks.guide/get-started.html",
-          "linkName": "Wii Hacks Guide Website"
-        },
         {
           "title": "Download CoDN-T5 Files",
           "description": "Click the download button to get the CoDN Installer Files.",
@@ -69,7 +66,7 @@
           "linkName": "CoDN Files Download"
         },
         {
-          "title": "Extract the Contents to your Wii's SD Card",
+          "title": "Extract the Contents to the ROOT of your Wii's SD Card",
           "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
           "image": "/BO-Website/images/extractedContents.png",
           "link": ""
@@ -105,13 +102,6 @@
       "title": "USB Loader GX",
       "image": "/BO-Website/images/test2.png",
       "steps": [
-        {
-          "title": "Prerequisites",
-          "description": "To play Black Ops Online, you'll need the Homebrew Channel. If you don’t already have it installed, click the link in this step to visit the Wii Hacks Guide website.",
-          "image": "",
-          "link": "https://wii.hacks.guide/get-started.html",
-          "linkName": "Wii Hacks Guide Website"
-        },
         {
           "title": "Download CoDN-T5 Files",
           "description": "Click the download button to get the CoDN Installer Files.",
@@ -196,15 +186,21 @@
 
         },
         {
-          "title": "Extract the Contents to the root of your Wii's SD Card",
-          "description": "Dolphin allows the user to set a folder to act as their SD Card. Basically this folder would be equivalent to the root of an SD Card used for a real Wii. You can set this path in Dolphin -> Config -> Wii",
-          "image": "/BO-Website/images/DolphinSD.png",
+          "title": "Extract the Contents",
+          "description": "Extract the contents to a location where you can find it. We will need this location for the next step",
+          "image": "/BO-Website/images/ExtractedCoDNFiles.png",
           "link": ""
         },
         {
-          "title": "Make sure \"Automatically Sync with Folder\" is Checked",
-          "description": "",
-          "image": "/BO-Website/images/DolphinAutoSync.png",
+          "title": "In Dolphin, Navagate to Config -> Wii",
+          "description": "Inside of the Wii tab of Config, you should see a screen similar to the image in this step.",
+          "image": "/BO-Website/images/DolphinWiiSetting.png",
+          "link" : ""
+        },
+        {
+          "title": "Set \"SD Card Path\" to point to the .raw file inside of the extracted CoDN Zip from earlier",
+          "description": "Please ensure that, \"Insert SD Card\" and \"Allow Writes to SD Card\" are checked. After this is confirmed to be the set you may close the settings menu",
+          "image": "/BO-Website/images/DolphinSDPath.png",
           "link" : ""
         },
         {
@@ -227,8 +223,8 @@
         },
         {
           "title": "Select the boot.dol File to Launch the Game",
-          "description": "Important: You must select the boot.dol file located in the apps/codn-client folder located in the same folder as you Dolphin SD Card folder",
-          "image": "/BO-Website/images/DolphinDol.png",
+          "description": "Important: You must select the boot.dol file located in the apps/codn-client folder in the same folder as you Dolphin SD Card file",
+          "image": "/BO-Website/images/BootDol.png",
           "link" : ""
         },
         {
