@@ -216,12 +216,6 @@
           "link" : ""
         },
         {
-          "title": "Click Open in the Dolphin Options Panel",
-          "description": "",
-          "image": "/BO-Website/images/DolphinOpen.png",
-          "link" : ""
-        },
-        {
           "title": "Select the boot.dol File to Launch the Game",
           "description": "Important: You must select the boot.dol file located in the apps/codn-client folder in the same folder as you Dolphin SD Card file",
           "image": "/BO-Website/images/BootDol.png",
