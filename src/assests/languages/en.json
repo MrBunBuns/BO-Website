@@ -47,7 +47,7 @@
   "gettingStartedPage" : {
     "header": "Getting Started",
     "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button in the Navigation menu to get help.",
-    "prereqTextTitle" : "Modded Wii/Wii U Required (Console Only)",
+    "prereqTextTitle" : "If Playing on a Real Console: Modded Wii/Wii U Required",
     "prereqTextDesc" : "If using any option other than Dolphin, this guide assumes that you can already run homebrew from your Wii/Wii U. If you have not modded your console, please visit the approriate site below to do so.",
     "wiiModLink" : "Wii Modding",
     "wiiUModLink" : "Wii U Modding",
