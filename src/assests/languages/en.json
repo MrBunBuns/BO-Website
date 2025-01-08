@@ -47,8 +47,8 @@
   "gettingStartedPage" : {
     "header": "Getting Started",
     "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button in the Navigation menu to get help.",
-    "prereqTextTitle" : "Modded Wii/Wii U Required",
-    "prereqTextDesc" : "This guide assumes that you can already run homebrew from your Wii/Wii U. If you have not modded your console, please visit the approriate site below to do so.",
+    "prereqTextTitle" : "Modded Wii/Wii U Required (Console Only)",
+    "prereqTextDesc" : "If using any option other than Dolphin, this guide assumes that you can already run homebrew from your Wii/Wii U. If you have not modded your console, please visit the approriate site below to do so.",
     "wiiModLink" : "Wii Modding",
     "wiiUModLink" : "Wii U Modding",
     "methodHeader" : "Select Your Method:",
@@ -187,7 +187,7 @@
         },
         {
           "title": "Extract the Contents",
-          "description": "Extract the contents to a location where you can find it. We will need this location for the next step.",
+          "description": "Extract the contents to a location where you can find it. We will need this location in a later step.",
           "image": "/BO-Website/images/ExtractedCoDNFiles.png",
           "link": ""
         },
@@ -198,13 +198,31 @@
           "link" : ""
         },
         {
-          "title": "Set \"SD Card Path\" to point to the .raw file inside of the extracted CoDN Zip from earlier",
-          "description": "Please ensure that, \"Insert SD Card\" and \"Allow Writes to SD Card\" are checked. After this is confirmed to be the set you may close the settings menu",
-          "image": "/BO-Website/images/DolphinSDPath.png",
+          "title": "Navigate to the directory of the \"SD Sync Folder\" using a file browser",
+          "description": "Using a file browser, open the directory that SD Sync Folder is pointed at.",
+          "image": "/BO-Website/images/SDSyncFolder.png",
           "link" : ""
         },
         {
-          "title": "Right Click Black Ops and Select \"Set as Default ISO\"",
+          "title": "Copy the contents extracted from the CoDN-T5 zip to the directory of the \"SD Sync Folder\"",
+          "description": "Please ensure the following files are located in the SD Sync Folder: apps/, SC7E52.dol and SC7P52.dol",
+          "image": "/BO-Website/images/SDFolderContents.png",
+          "link" : ""
+        },
+        {
+          "title": "Back in Dolphins Config -> Wii settings, make sure \"Automatically Sync with Folder\" is checked",
+          "description": "This will make sure that the content stored in SD Sync Folder are loaded into Dolphin as an SD Card.",
+          "image": "/BO-Website/images/DolphinAutoSync.png",
+          "link" : ""
+        },
+        {
+          "title": "Now click \"Convert Folder to File Now\" to save the contents to Dolphins SD Card",
+          "description": "You will be prompted that your current SD Data for Dolphin will be deleted and replaced by the contents in the SD Sync Folder. Select Yes.",
+          "image": "/BO-Website/images/ConvertFolderToFile.png",
+          "link" : ""
+        },
+        {
+          "title": "Back at the Games list, right Click Black Ops and Select \"Set as Default ISO\"",
           "description": "",
           "image": "/BO-Website/images/DolphinDefaultISO.png",
           "link" : ""
@@ -218,7 +236,7 @@
         {
           "title": "Select the boot.dol File to Launch the Game",
           "description": "Important: You must select the boot.dol file located in the apps/codn-client folder in the same folder as you Dolphin SD Card file",
-          "image": "/BO-Website/images/BootDol.png",
+          "image": "/BO-Website/images/DolphinDol.png",
           "link" : ""
         },
         {
