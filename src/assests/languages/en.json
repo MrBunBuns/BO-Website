@@ -194,19 +194,19 @@
           "linkName" : "Dolphin NAND Guide"
         },
         {
-          "title": "(First Time Setup Only) Download WAD Files",
-          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the apply process in a later step.",
-          "image": "",
-          "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
-          "linkName" : "WAD Files Drive Link"
-        },
-        {
           "title": "Download CoDN-T5 files",
           "description": "Click the download button to download the CoDN Installer Files.",
           "image": "",
           "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
           "linkName" : "CoDN Files Download"
 
+        },
+        {
+          "title": "(First Time Setup Only) Download WAD Files",
+          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the apply process in a later step.",
+          "image": "",
+          "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
+          "linkName" : "WAD Files Drive Link"
         },
         {
           "title": "Extract the Contents",
