@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Container, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Button, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Container, useMediaQuery, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Button, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
 import en from '../assests/languages/en.json'; // English translations
 import es from '../assests/languages/es.json'; // English translations
@@ -17,6 +17,7 @@ const GettingStarted = () => {
   const [selectedTitle, setSelectedTitle] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(-1); 
   const [selectedYoutubeLink, setSelectedYoutubeLink] = useState(""); 
+  const isNotMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
@@ -51,7 +52,8 @@ const GettingStarted = () => {
   };
 
   useEffect(() => {
-    categories = translations[language].gettingStartedPage
+    categories = translations[language].gettingStartedPage;
+    console.log(selectedYoutubeLink);
     steps.length > 0 ? setSteps(categories.methods[selectedIndex].steps) : setSteps([]);
   }, [language]);
 
@@ -171,7 +173,7 @@ const GettingStarted = () => {
       
       {selectedYoutubeLink && (
         <Container id="video-container">
-          <Typography marginBottom={5} variant="h4" gutterBottom textAlign="center">
+          <Typography variant="h4" gutterBottom textAlign="center">
             {categories.methods[selectedIndex].youtubeTitle}
           </Typography>
           <Card
@@ -181,14 +183,13 @@ const GettingStarted = () => {
               margin: '0 auto', 
               borderRadius: '8px',
               overflow: 'hidden',
-              marginBottom: '40px',
               justifyContent: 'center',
               display: 'flex',
             }}
           >
             <iframe
               width="100%"
-              height="400px"
+              height={isNotMobile ? "400px" : "100px"}
               src={selectedYoutubeLink}
               title="YouTube video"
               frameBorder="0"
