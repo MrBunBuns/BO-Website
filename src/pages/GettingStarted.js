@@ -16,6 +16,7 @@ const GettingStarted = () => {
   const [selectedImage, setSelectedImage] = useState('');
   const [selectedTitle, setSelectedTitle] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(-1); 
+  const [selectedYoutubeLink, setSelectedYoutubeLink] = useState(""); 
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
@@ -125,8 +126,8 @@ const GettingStarted = () => {
                   setGuideTitle(category.title);
                   setSelectedCategory(category.title);
                   setSelectedIndex(index);
-                  
-                  waitForElementAndScroll('#step-by-step-container')
+                  setSelectedYoutubeLink(category.youtubeLink);
+                  waitForElementAndScroll(category.youtubeLink ? '#video-container' : '#step-by-step-container')
 
                 }}
                 sx={{ width: '100%' }}
@@ -168,13 +169,47 @@ const GettingStarted = () => {
         </Grid>
       </Container>
       
+      {selectedYoutubeLink && (
+        <Container id="video-container">
+          <Typography marginBottom={5} variant="h4" gutterBottom textAlign="center">
+            {categories.methods[selectedIndex].youtubeTitle}
+          </Typography>
+          <Card
+            sx={{
+              maxWidth: '720px',
+              width: '100%', 
+              margin: '0 auto', 
+              borderRadius: '8px',
+              overflow: 'hidden',
+              marginBottom: '40px',
+              justifyContent: 'center',
+              display: 'flex',
+            }}
+          >
+            <iframe
+              width="100%"
+              height="400px"
+              src={selectedYoutubeLink}
+              title="YouTube video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={{
+                border: 'none',
+              }}
+            ></iframe>
+          </Card>
+        </Container>
+      )}
+
+
       {/* Step-by-Step Expanded List */}
       {steps.length > 0 && (
         <Container id="step-by-step-container">
-          <Typography variant="h5" sx={{ fontSize: { sm: '2rem', md: '2rem' } }} gutterBottom>
+          <Typography variant="h5" sx={{ fontSize: { sm: '2rem', md: '2rem' } }} gutterBottom textAlign="center">
             {categories.methods[selectedIndex].title}
           </Typography>
-          <Typography variant="body2" color={theme.palette.text.secondary} sx={{ fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }} gutterBottom>
+          <Typography variant="body2" color={theme.palette.text.secondary} sx={{ fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }} gutterBottom textAlign="center">
             * {categories.methodHelperText}
           </Typography>
           <List>

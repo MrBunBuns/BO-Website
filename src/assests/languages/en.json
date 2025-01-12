@@ -55,8 +55,9 @@
     "methodHelperText" : "Click images to expand",
     "methods": [
     {
-      "title": "Disc",
+      "title": "Step by Step Disc Guide",
       "image": "/BO-Website/images/test.png",
+      "youtubeLink": "",
       "steps": [
         {
           "title": "Download CoDN-T5 Files",
@@ -105,8 +106,9 @@
       ]
     },
     {
-      "title": "USB Loader GX",
+      "title": "Step by Step USB Loader GX Guide",
       "image": "/BO-Website/images/test2.png",
+      "youtubeLink": "",
       "steps": [
         {
           "title": "Download CoDN-T5 Files",
@@ -179,8 +181,10 @@
       ]
     },
     {
-      "title": "Dolphin",
+      "title": "Step by Step Guide",
       "image": "/BO-Website/images/test3.png",
+      "youtubeTitle": "Video Tutorial",
+      "youtubeLink": "https://www.youtube.com/watch?v=t94hGZs__xM",
       "steps": [
         {
           "title": "Prerequisties",
