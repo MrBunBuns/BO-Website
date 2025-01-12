@@ -91,12 +91,24 @@ const Header = () => {
                 textTransform: 'none',
                 fontSize: { xs: '1rem', sm: '1.5rem' },
                 color: theme.palette.text.primary,
+                display: 'flex',
+                alignItems: 'center', 
               }}
-            >
-              <Typography variant="h5" component="div">
-                CoDN
-              </Typography>
-            </Button>
+          >
+            <img
+              src="/BO-Website/images/GunLogo.png"
+              alt="CoDN Icon"
+              style={{
+                width: 25, // Adjust the width of the icon
+                height: 25, // Adjust the height of the icon
+                marginRight: 8, // Add spacing between the icon and the text
+              }}
+            />
+            <Typography variant="h5" component="div">
+              CoDN
+            </Typography>
+          </Button>
+          
           ) : (
             <IconButton
               color="inherit"
@@ -111,7 +123,7 @@ const Header = () => {
             </IconButton>
           )}
           {isNotMobile && (
-            <Stack direction="row" spacing={2} sx={{ marginLeft: '50px' }}>
+            <Stack direction="row" spacing={2} sx={{ marginLeft: '30px' }}>
               {buttons.map((button, index) => (
                 <Button
                   key={index}
