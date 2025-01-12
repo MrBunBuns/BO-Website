@@ -16,7 +16,7 @@
     "home" : "Home",
     "gettingStarted" : "Getting Started",
     "about" : "About",
-    "supportButton" : "Support (Discord)",
+    "supportButton" : "Support",
     "faq" : "FAQ"
   },
   "aboutPage" : {
@@ -28,27 +28,27 @@
     "questions" :  [
       {
         "question": "Will my old profiles be migrated?",
-        "answer": "Fishy answer here"
+        "answer": "Due to the online servers being hosted independent from the original game servers, your existing profiles will need to be recreated. Attempting to log in with a previous existing account will result in an error."
       },
       {
         "question": "Will we need NANDs for dolphin?",
-        "answer": "Fishy answer here"
+        "answer": "In order to effectively moderate the servers against cheating, you will be required to import your nand when playing on the dolphin version of the game. Please see the Dolphin section on the getting started page for details on how to import your nand from a wii."
       },
       {
         "question": "Will bans be enforced?",
-        "answer": "Fishy answer here"
+        "answer": "Permanent and temporary bans will be enforced on accounts suspected of cheating. If you feel your ban was a mistake, you can appeal your ban through the CoDN discord page. Click the \"Support\" button in the navigation menu to be taken to the discord channel."
       },
       {
         "question": "How can I obtain Max Rank + COD Points",
-        "answer": "Go to lobby screen. For Wiimote - On DPad: Up, Up, Down, Down, Left, Right, Left, Right, Minus. For Classic Controller - on DPad: Up, Up, Down, Down, Left, Right, Left, Right, B"
+        "answer": "Go to Multiplayer lobby screen. For Wiimote: Up, Up, Down, Down, Left, Right, Left, Right, Minus. For Classic Controller: Up, Up, Down, Down, Left, Right, Left, Right, B"
       }
     ]
   },
   "gettingStartedPage" : {
     "header": "Getting Started",
     "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button in the Navigation menu to get help.",
-    "prereqTextTitle" : "If Playing on a Real Console: Modded Wii/Wii U Required",
-    "prereqTextDesc" : "If using any option other than Dolphin, this guide assumes that you can already run homebrew from your Wii/Wii U. If you have not modded your console, please visit the approriate site below to do so.",
+    "prereqTextTitle" : "Disclaimer: Modded Wii/Wii U Required",
+    "prereqTextDesc" : "This guide assumes that you can already run homebrew from your Wii/Wii U. This will also be required for Dolphin since you have to import a backup of you NAND. If you have not modded your console, please visit the approriate site below to do so.",
     "wiiModLink" : "Wii Modding",
     "wiiUModLink" : "Wii U Modding",
     "methodHeader" : "Select Your Method:",
@@ -88,6 +88,12 @@
           "description": "Run the client to launch into the game. Note: You must always run the client to play online.",
           "image": "/BO-Website/images/TUClient.png",
           "link": ""
+        },
+        {
+          "title": "Required: Create a brand new profile for the new server",
+          "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
+          "image": "/BO-Website/images/NewProfile.png",
+          "link" : ""
         },
         {
           "title": "You Are All Set!",
@@ -158,6 +164,12 @@
           "link": ""
         },
         {
+          "title": "Required: Create a brand new profile for the new server",
+          "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
+          "image": "/BO-Website/images/NewProfile.png",
+          "link" : ""
+        },
+        {
           "title": "You Are All Set!",
           "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
           "image": "",
@@ -176,6 +188,13 @@
           "image": "",
           "link": "https://dolphin-emu.org/docs/guides/nand-usage-guide/",
           "linkName" : "Dolphin NAND Guide"
+        },
+        {
+          "title": "(First Time Setup Only) Download WAD Files",
+          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the apply process in a later step.",
+          "image": "",
+          "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
+          "linkName" : "WAD Files Drive Link"
         },
         {
           "title": "Download CoDN-T5 files",
@@ -228,6 +247,18 @@
           "link" : ""
         },
         {
+          "title": "In the top menu of Dolphin, select Tools-> Install WAD ",
+          "description": "This step is only neccesary if you have not already applied the latest WAD to your NAND. If you are unsure just follow the steps anyway.",
+          "image": "/BO-Website/images/InstallWADOption.png",
+          "link" : ""
+        },
+        {
+          "title": "Select the WAD file downloaded early and click open to apply it to the NAND",
+          "description": "Important: Applying this patch will take up around 70 blocks on you NAND.",
+          "image": "/BO-Website/images/WADFileInstall.png",
+          "link" : ""
+        },
+        {
           "title": "Click Open in the Dolphin Options Panel",
           "description": "",
           "image": "/BO-Website/images/DolphinOpen.png",
@@ -235,13 +266,19 @@
         },
         {
           "title": "Select the boot.dol File to Launch the Game",
-          "description": "Important: You must select the boot.dol file located in the apps/codn-client folder in the same folder as you Dolphin SD Card file",
+          "description": "Important: it is recommended to select the boot.dol file located in the apps/codn-client folder in the same folder as you Dolphin SD Card file",
           "image": "/BO-Website/images/DolphinDol.png",
           "link" : ""
         },
         {
+          "title": "Required: Create a brand new profile for the new server",
+          "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
+          "image": "/BO-Website/images/NewProfile.png",
+          "link" : ""
+        },
+        {
           "title": "You are all set!",
-          "description": "If all went well, you should have been booted directly into Multiplayer! If you are having issues please click the support button to be taken to our Discord!",
+          "description": "If all went well, you should have been booted directly into Multiplayer! You will be required to create a brand new profile for the new server. If you are having issues please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
           "linkName" : "Support Link (Discord)"

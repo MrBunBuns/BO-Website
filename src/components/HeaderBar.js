@@ -20,6 +20,8 @@ import en from '../assests/languages/en.json'; // English translations
 import es from '../assests/languages/es.json'; // Spanish translations
 import { useNavigate } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDiscord } from '@fortawesome/free-brands-svg-icons';
 
 const translations = { en, es };
 
@@ -35,7 +37,7 @@ const Header = () => {
   });
 
   const theme = useTheme();
-  const isMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
+  const isNotMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
 
   const navigate = useNavigate();
 
@@ -64,7 +66,11 @@ const Header = () => {
     { text: buttonTexts.gettingStarted, action: () => navigate('/getting-started') },
    // { text: buttonTexts.about, action: () => navigate('/about') }, Disabling about for now
     { text: buttonTexts.faq, action: () => navigate('/faq') },
-    { text: buttonTexts.supportButton, action: () => window.open('https://discord.gg/gXsgTUWquc', '_blank', 'noopener,noreferrer') },
+    {
+      text: buttonTexts.supportButton,
+      action: () => window.open('https://discord.gg/gXsgTUWquc', '_blank', 'noopener,noreferrer'),
+      icon: <FontAwesomeIcon icon={faDiscord} />,
+    },
   ];
 
   return (
@@ -78,7 +84,7 @@ const Header = () => {
         sx={{ display: 'flex', justifyContent: 'space-between', width: '100%' }}
       >
         <Stack direction="row">
-          {isMobile ? (
+          {isNotMobile ? (
             <Button
               onClick={() => navigate('/')}
               sx={{
@@ -104,12 +110,13 @@ const Header = () => {
               </Typography>
             </IconButton>
           )}
-          {isMobile && (
+          {isNotMobile && (
             <Stack direction="row" spacing={2} sx={{ marginLeft: '50px' }}>
               {buttons.map((button, index) => (
                 <Button
                   key={index}
-                  onClick={button.action}
+                  onClick={button.action}             
+                  startIcon={button.icon || null}
                   sx={{ color: '#fff', textDecoration: 'none' }}
                 >
                   {button.text}
@@ -177,6 +184,7 @@ const Header = () => {
           {buttons.map((button, index) => (
             <Button
               key={index}
+              startIcon={button.icon || null}
               onClick={() => {
                 button.action();
                 setDrawerOpen(false);
@@ -190,6 +198,7 @@ const Header = () => {
               {button.text}
             </Button>
           ))}
+        
         </Box>
       </Drawer>
     </AppBar>
