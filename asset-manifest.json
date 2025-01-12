@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/BO-Website/static/css/main.e6c13ad2.css",
-    "main.js": "/BO-Website/static/js/main.fb68a085.js",
+    "main.js": "/BO-Website/static/js/main.c3e2fa3a.js",
     "static/js/488.c8ca44d2.chunk.js": "/BO-Website/static/js/488.c8ca44d2.chunk.js",
     "index.html": "/BO-Website/index.html",
     "main.e6c13ad2.css.map": "/BO-Website/static/css/main.e6c13ad2.css.map",
-    "main.fb68a085.js.map": "/BO-Website/static/js/main.fb68a085.js.map",
+    "main.c3e2fa3a.js.map": "/BO-Website/static/js/main.c3e2fa3a.js.map",
     "488.c8ca44d2.chunk.js.map": "/BO-Website/static/js/488.c8ca44d2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.fb68a085.js"
+    "static/js/main.c3e2fa3a.js"
   ]
 }
