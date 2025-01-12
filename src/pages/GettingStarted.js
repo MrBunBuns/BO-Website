@@ -189,7 +189,7 @@ const GettingStarted = () => {
           >
             <iframe
               width="100%"
-              height={isNotMobile ? "400px" : "100px"}
+              height={isNotMobile ? "400px" : "200px"}
               src={selectedYoutubeLink}
               title="YouTube video"
               frameBorder="0"
