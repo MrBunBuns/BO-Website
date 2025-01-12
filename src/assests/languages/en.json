@@ -27,6 +27,10 @@
     "title" : "Frequently Asked Questions",
     "questions" :  [
       {
+        "question": "Will the other Call of Duty Wii games be added?",
+        "answer": "There are currently no plans to bring back the other Call of Duty Wii games. We will update you if this changes."
+      },
+      {
         "question": "Will my old profiles be migrated?",
         "answer": "Due to the online servers being hosted independent from the original game servers, your existing profiles will need to be recreated. Attempting to log in with a previous existing account will result in an error."
       },
