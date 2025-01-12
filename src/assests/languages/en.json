@@ -59,7 +59,7 @@
     "methodHelperText" : "Click images to expand",
     "methods": [
     {
-      "title": "Step by Step Disc Guide",
+      "title": "Disc",
       "image": "/BO-Website/images/test.png",
       "youtubeLink": "",
       "steps": [
@@ -110,7 +110,7 @@
       ]
     },
     {
-      "title": "Step by Step USB Loader GX Guide",
+      "title": "USB Loader GX",
       "image": "/BO-Website/images/test2.png",
       "youtubeLink": "",
       "steps": [
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "title": "Step by Step Guide",
+      "title": "Dolphin",
       "image": "/BO-Website/images/test3.png",
       "youtubeTitle": "Video Tutorial",
       "youtubeLink": "https://www.youtube.com/embed/oS9uTEMloMQ",
