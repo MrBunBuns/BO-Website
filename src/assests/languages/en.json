@@ -1,63 +1,63 @@
-{  "homePage": {
-    "imageBanner" : "Welcome to CoDN",
-    "header" : "Call of Duty Black Ops Wii is Back!",
-    "description" : "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development.",
-    "compatibility" : [
-      { "language": "English (USA) ",  "code": "SC7E52", "status": "🟢 Fully Works" },
-      { "language": "English (PAL)",  "code": "SC7P52", "status": "🟢 Fully Works" },
-      { "language": "French (Canadian)",  "code": "SC7Z52", "status": "🟢 Fully Works" },
-      { "language": "French (PAL French)",  "code": "SC7F52", "status": "🟢 Fully Works" },
-      { "language": "Spanish",  "code": "SC7S52", "status": "🟢 Fully Works" },
-      { "language": "Italian",  "code": "SC7I52", "status": "🟢 Fully Works" },
-      { "language": "German",  "code": "SC7D52", "status": "🟢 Fully Works" }
+{"homePage": {
+  "imageBanner": "Welcome to CoDN",
+  "header": "Call of Duty Black Ops Wii is Back!",
+  "description": "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development.",
+  "compatibility": [
+    { "language": "English (USA)", "code": "SC7E52", "status": "🟢 Fully Works" },
+    { "language": "English (PAL)", "code": "SC7P52", "status": "🟢 Fully Works" },
+    { "language": "French (Canadian)", "code": "SC7Z52", "status": "🟢 Fully Works" },
+    { "language": "French (PAL French)", "code": "SC7F52", "status": "🟢 Fully Works" },
+    { "language": "Spanish", "code": "SC7S52", "status": "🟢 Fully Works" },
+    { "language": "Italian", "code": "SC7I52", "status": "🟢 Fully Works" },
+    { "language": "German", "code": "SC7D52", "status": "🟢 Fully Works" }
   ]
-  },
-  "headerBar" : {
-    "home" : "Home",
-    "gettingStarted" : "Getting Started",
-    "about" : "About",
-    "supportButton" : "Support",
-    "faq" : "FAQ"
-  },
-  "aboutPage" : {
-    "title" : "About",
-    "description" : "IDK"
-  },
-  "faqPage" : {
-    "title" : "Frequently Asked Questions",
-    "questions" :  [
-      {
-        "question": "Will the other Call of Duty Wii games be added?",
-        "answer": "There are currently no plans to bring back the other Call of Duty Wii games. We will update you if this changes."
-      },
-      {
-        "question": "Will my old profiles be migrated?",
-        "answer": "Due to the online servers being hosted independent from the original game servers, your existing profiles will need to be recreated. Attempting to log in with a previous existing account will result in an error."
-      },
-      {
-        "question": "Will we need NANDs for dolphin?",
-        "answer": "In order to effectively moderate the servers against cheating, you will be required to import your nand when playing on the dolphin version of the game. Please see the Dolphin section on the getting started page for details on how to import your nand from a wii."
-      },
-      {
-        "question": "Will bans be enforced?",
-        "answer": "Permanent and temporary bans will be enforced on accounts suspected of cheating. If you feel your ban was a mistake, you can appeal your ban through the CoDN discord page. Click the \"Support\" button in the navigation menu to be taken to the discord channel."
-      },
-      {
-        "question": "How can I obtain Max Rank + COD Points",
-        "answer": "Go to Multiplayer lobby screen. For Wiimote: Up, Up, Down, Down, Left, Right, Left, Right, Minus. For Classic Controller: Up, Up, Down, Down, Left, Right, Left, Right, B"
-      }
-    ]
-  },
-  "gettingStartedPage" : {
-    "header": "Getting Started",
-    "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties please click the \"Support\" button in the Navigation menu to get help.",
-    "prereqTextTitle" : "Disclaimer: Modded Wii/Wii U Required",
-    "prereqTextDesc" : "This guide assumes that you can already run homebrew from your Wii/Wii U. This will also be required for Dolphin since you have to import a backup of you NAND. If you have not modded your console, please visit the approriate site below to do so.",
-    "wiiModLink" : "Wii Modding",
-    "wiiUModLink" : "Wii U Modding",
-    "methodHeader" : "Select Your Method:",
-    "methodHelperText" : "Click images to expand",
-    "methods": [
+},
+"headerBar": {
+  "home": "Home",
+  "gettingStarted": "Getting Started",
+  "about": "About",
+  "supportButton": "Support",
+  "faq": "FAQ"
+},
+"aboutPage": {
+  "title": "About",
+  "description": "IDK"
+},
+"faqPage": {
+  "title": "Frequently Asked Questions",
+  "questions": [
+    {
+      "question": "Will the other Call of Duty Wii games be added?",
+      "answer": "There are currently no plans to bring back the other Call of Duty Wii games. We will update you if this changes."
+    },
+    {
+      "question": "Will my old profiles be migrated?",
+      "answer": "Due to the online servers being hosted independently from the original game servers, your existing profiles will need to be recreated. Attempting to log in with a previously existing account will result in an error."
+    },
+    {
+      "question": "Will we need NANDs for Dolphin?",
+      "answer": "In order to effectively moderate the servers against cheating, you will be required to import your NAND when playing on the Dolphin version of the game. Please see the Dolphin section on the Getting Started page for details on how to import your NAND from a Wii."
+    },
+    {
+      "question": "Will bans be enforced?",
+      "answer": "Permanent and temporary bans will be enforced on accounts suspected of cheating. If you feel your ban was a mistake, you can appeal your ban through the CoDN Discord page. Click the \"Support\" button in the navigation menu to be taken to the Discord channel."
+    },
+    {
+      "question": "How can I obtain Max Rank + COD Points?",
+      "answer": "Go to the Multiplayer lobby screen. For Wiimote: Up, Up, Down, Down, Left, Right, Left, Right, Minus. For Classic Controller: Up, Up, Down, Down, Left, Right, Left, Right, B."
+    }
+  ]
+},
+"gettingStartedPage": {
+  "header": "Getting Started",
+  "description": "This page will guide you in getting online for Black Ops Wii. If you are having difficulties, please click the \"Support\" button in the navigation menu to get help.",
+  "prereqTextTitle": "Disclaimer: Modded Wii/Wii U Required",
+  "prereqTextDesc": "This guide assumes that you can already run homebrew on your Wii/Wii U. This will also be required for Dolphin since you have to import a backup of your NAND. If you have not modded your console, please visit the appropriate site below to do so.",
+  "wiiModLink": "Wii Modding",
+  "wiiUModLink": "Wii U Modding",
+  "methodHeader": "Select Your Method:",
+  "methodHelperText": "Click images to expand",
+  "methods": [
     {
       "title": "Disc",
       "image": "/BO-Website/images/test.png",
@@ -83,39 +83,39 @@
           "link": ""
         },
         {
-          "title": "Run CodN TU Installer (First Time Only)",
+          "title": "Run CoDN TU Installer (First Time Only)",
           "description": "Run the installer only if you do not already have v51 installed. Attempting to launch without v51 will result in an error message.",
           "image": "/BO-Website/images/TUInstaller.png",
           "link": ""
         },
         {
-          "title": "Run CodN Client",
+          "title": "Run CoDN Client",
           "description": "Run the client to launch into the game. Note: You must always run the client to play online.",
           "image": "/BO-Website/images/TUClient.png",
           "link": ""
         },
         {
-          "title": "If succesful, you will be booted into the multiplayer menu",
-          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single player menu. You will also note the water mark in the top left of the screen.",
+          "title": "If successful, you will be booted into the multiplayer menu",
+          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single-player menu. You will also see the watermark in the top left of the screen.",
           "image": "/BO-Website/images/MainMenu.png",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "Required: Create a brand new profile for the new server",
           "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
           "image": "/BO-Website/images/NewProfile.png",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "You are all set!",
-          "description": "Congratulations on getting back online! If you are having issues please click the support button to be taken to our Discord!",
+          "description": "Congratulations on getting back online! If you are having issues, please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
-          "linkName" : "Support Link (Discord)"
+          "linkName": "Support Link (Discord)"
         }
       ]
     },
-    {
+  {
       "title": "USB Loader GX",
       "image": "/BO-Website/images/test2.png",
       "youtubeLink": "",
@@ -128,20 +128,20 @@
           "linkName": "CoDN Files Download"
         },
         {
-          "title": "Extract the Contents to the root of your Wii's SD Card",
-          "description": "Ensure the following files are located on the SD Card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
+          "title": "Extract the Contents to the Root of Your Wii's SD Card",
+          "description": "Ensure the following files are located on the SD card: SC7E52.dol, SC7P52.dol, and the apps folder. If you already have an apps folder, copy the content inside 'apps/' into your existing apps directory.",
           "image": "/BO-Website/images/extractedContents.png",
           "link": ""
         },
         {
-          "title": "(Non-NTSC and PAL Versions Only) Rename SC7E52.dol to the Title ID of Your Copy",
+          "title": "(Non-NTSC/PAL Versions Only) Rename SC7E52.dol to the Title ID of Your Copy",
           "description": "This step is required if you are not running the NTSC or PAL versions. For region codes, click the image in this step.",
           "image": "/BO-Website/images/RegionTable.png",
           "link": ""
         },
         {
           "title": "Open USB Loader GX",
-          "description": "On your Wii, with the SD Card inserted, open USB Loader GX.",
+          "description": "On your Wii, with the SD card inserted, open USB Loader GX.",
           "image": "/BO-Website/images/USBLoader.png",
           "link": ""
         },
@@ -176,23 +176,23 @@
           "link": ""
         },
         {
-          "title": "If succesful, you will be booted into the multiplayer menu",
-          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single player menu. You will also note the water mark in the top left of the screen.",
+          "title": "If Successful, You Will Be Booted into the Multiplayer Menu",
+          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single-player menu. You will also see the watermark in the top-left corner of the screen.",
           "image": "/BO-Website/images/MainMenu.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Required: Create a brand new profile for the new server",
+          "title": "Required: Create a Brand New Profile for the New Server",
           "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
           "image": "/BO-Website/images/NewProfile.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "You are all set!",
-          "description": "Congratulations on getting back online! If you are having issues please click the support button to be taken to our Discord!",
+          "title": "You Are All Set!",
+          "description": "Congratulations on getting back online! If you are having issues, please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
-          "linkName" : "Support Link (Discord)"
+          "linkName": "Support Link (Discord)"
         }
       ]
     },
@@ -203,26 +203,25 @@
       "youtubeLink": "https://www.youtube.com/embed/oS9uTEMloMQ",
       "steps": [
         {
-          "title": "Prerequisties",
+          "title": "Prerequisites",
           "description": "In order to play on Dolphin Emulator, you are required to import a NAND backup. Please click the link in this step to learn how.",
           "image": "",
           "link": "https://dolphin-emu.org/docs/guides/nand-usage-guide/",
-          "linkName" : "Dolphin NAND Guide"
+          "linkName": "Dolphin NAND Guide"
         },
         {
-          "title": "Download CoDN-T5 files",
+          "title": "Download CoDN-T5 Files",
           "description": "Click the download button to download the CoDN Installer Files.",
           "image": "",
           "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-          "linkName" : "CoDN Files Download"
-
+          "linkName": "CoDN Files Download"
         },
         {
           "title": "(First Time Setup Only) Download WAD Files",
-          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the apply process in a later step.",
+          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the application process in a later step.",
           "image": "",
           "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
-          "linkName" : "WAD Files Drive Link"
+          "linkName": "WAD Files Drive Link"
         },
         {
           "title": "Extract the Contents",
@@ -232,82 +231,82 @@
         },
         {
           "title": "In Dolphin, Navigate to Config -> Wii",
-          "description": "Inside of the Wii tab of Config, you should see a screen similar to the image in this step.",
+          "description": "Inside the Wii tab of Config, you should see a screen similar to the image in this step.",
           "image": "/BO-Website/images/DolphinWiiSetting.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Navigate to the directory of the \"SD Sync Folder\" using a file browser",
-          "description": "Using a file browser, open the directory that SD Sync Folder is pointed at.",
+          "title": "Navigate to the Directory of the \"SD Sync Folder\" Using a File Browser",
+          "description": "Using a file browser, open the directory that the SD Sync Folder is pointed at.",
           "image": "/BO-Website/images/SDSyncFolder.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Copy the contents extracted from the CoDN-T5 zip to the directory of the \"SD Sync Folder\"",
-          "description": "Please ensure the following files are located in the SD Sync Folder: apps/, SC7E52.dol and SC7P52.dol",
+          "title": "Copy the Contents Extracted from the CoDN-T5 Zip to the Directory of the \"SD Sync Folder\"",
+          "description": "Please ensure the following files are located in the SD Sync Folder: apps/, SC7E52.dol, and SC7P52.dol.",
           "image": "/BO-Website/images/SDFolderContents.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Back in Dolphins Config -> Wii settings, make sure \"Automatically Sync with Folder\" is checked",
-          "description": "This will make sure that the content stored in SD Sync Folder are loaded into Dolphin as an SD Card.",
+          "title": "Back in Dolphin's Config -> Wii Settings, Make Sure \"Automatically Sync with Folder\" Is Checked",
+          "description": "This will ensure that the content stored in the SD Sync Folder is loaded into Dolphin as an SD Card.",
           "image": "/BO-Website/images/DolphinAutoSync.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Now click \"Convert Folder to File Now\" to save the contents to Dolphins SD Card",
+          "title": "Click \"Convert Folder to File Now\" to Save the Contents to Dolphin's SD Card",
           "description": "You will be prompted that your current SD Data for Dolphin will be deleted and replaced by the contents in the SD Sync Folder. Select Yes.",
           "image": "/BO-Website/images/ConvertFolderToFile.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Back at the Games list, right Click Black Ops and Select \"Set as Default ISO\"",
+          "title": "Back at the Games List, Right-Click Black Ops and Select \"Set as Default ISO\"",
           "description": "",
           "image": "/BO-Website/images/DolphinDefaultISO.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "In the top menu of Dolphin, select Tools-> Install WAD ",
-          "description": "This step is only neccesary if you have not already applied the latest WAD to your NAND. If you are unsure just follow the steps anyway.",
+          "title": "In the Top Menu of Dolphin, Select Tools -> Install WAD",
+          "description": "This step is only necessary if you have not already applied the latest WAD to your NAND. If you are unsure, just follow the steps anyway.",
           "image": "/BO-Website/images/InstallWADOption.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Select the WAD file downloaded early and click open to apply it to the NAND",
-          "description": "Important: Applying this patch will take up around 70 blocks on you NAND.",
+          "title": "Select the WAD File Downloaded Earlier and Click Open to Apply It to the NAND",
+          "description": "Important: Applying this patch will take up around 70 blocks on your NAND.",
           "image": "/BO-Website/images/WADFileInstall.png",
-          "link" : ""
+          "link": ""
         },
         {
           "title": "Click Open in the Dolphin Options Panel",
           "description": "",
           "image": "/BO-Website/images/DolphinOpen.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Select the boot.dol File to Launch the Game",
-          "description": "Important: it is recommended to select the boot.dol file located in the apps/codn-client folder in the same folder as you Dolphin SD Card file",
+          "title": "Select the Boot.dol File to Launch the Game",
+          "description": "Important: It is recommended to select the boot.dol file located in the apps/codn-client folder in the same folder as your Dolphin SD Card file.",
           "image": "/BO-Website/images/DolphinDol.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "If succesful, you will be booted into the multiplayer menu",
-          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single player menu. You will also note the water mark in the top left of the screen.",
+          "title": "If Successful, You Will Be Booted into the Multiplayer Menu",
+          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single-player menu. You will also see the watermark in the top-left corner of the screen.",
           "image": "/BO-Website/images/MainMenu.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "Required: Create a brand new profile for the new server",
+          "title": "Required: Create a Brand-New Profile for the New Server",
           "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
           "image": "/BO-Website/images/NewProfile.png",
-          "link" : ""
+          "link": ""
         },
         {
-          "title": "You are all set!",
-          "description": "Congratulations on getting back online! If you are having issues please click the support button to be taken to our Discord!",
+          "title": "You Are All Set!",
+          "description": "Congratulations on getting back online! If you are having issues, please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
-          "linkName" : "Support Link (Discord)"
+          "linkName": "Support Link (Discord)"
         }
       ]
     }
