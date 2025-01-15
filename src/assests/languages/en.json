@@ -95,17 +95,23 @@
           "link": ""
         },
         {
+          "title": "If succesful, you will be booted into the multiplayer menu",
+          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single player menu. You will also note the water mark in the top left of the screen.",
+          "image": "/BO-Website/images/MainMenu.png",
+          "link" : ""
+        },
+        {
           "title": "Required: Create a brand new profile for the new server",
           "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
           "image": "/BO-Website/images/NewProfile.png",
           "link" : ""
         },
         {
-          "title": "You Are All Set!",
-          "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
+          "title": "You are all set!",
+          "description": "Congratulations on getting back online! If you are having issues please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
-          "linkName": "Support Link (Discord)"
+          "linkName" : "Support Link (Discord)"
         }
       ]
     },
@@ -170,17 +176,23 @@
           "link": ""
         },
         {
+          "title": "If succesful, you will be booted into the multiplayer menu",
+          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single player menu. You will also note the water mark in the top left of the screen.",
+          "image": "/BO-Website/images/MainMenu.png",
+          "link" : ""
+        },
+        {
           "title": "Required: Create a brand new profile for the new server",
           "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
           "image": "/BO-Website/images/NewProfile.png",
           "link" : ""
         },
         {
-          "title": "You Are All Set!",
-          "description": "If everything worked correctly, you should boot directly into Multiplayer! If you encounter issues, click the support button to join our Discord.",
+          "title": "You are all set!",
+          "description": "Congratulations on getting back online! If you are having issues please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
-          "linkName": "Support Link (Discord)"
+          "linkName" : "Support Link (Discord)"
         }
       ]
     },
@@ -279,6 +291,12 @@
           "link" : ""
         },
         {
+          "title": "If succesful, you will be booted into the multiplayer menu",
+          "description": "If everything worked correctly, you will be launched into the multiplayer menu rather than the single player menu. You will also note the water mark in the top left of the screen.",
+          "image": "/BO-Website/images/MainMenu.png",
+          "link" : ""
+        },
+        {
           "title": "Required: Create a brand new profile for the new server",
           "description": "Unfortunately, all profiles created on the official servers will not work on the new server. You will be required to create a new profile.",
           "image": "/BO-Website/images/NewProfile.png",
@@ -286,7 +304,7 @@
         },
         {
           "title": "You are all set!",
-          "description": "If all went well, you should have been booted directly into Multiplayer! You will be required to create a brand new profile for the new server. If you are having issues please click the support button to be taken to our Discord!",
+          "description": "Congratulations on getting back online! If you are having issues please click the support button to be taken to our Discord!",
           "image": "",
           "link": "https://discord.gg/gXsgTUWquc",
           "linkName" : "Support Link (Discord)"
