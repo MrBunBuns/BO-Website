@@ -1,16 +1,21 @@
 import React from 'react';
-import { Dialog, DialogActions, DialogContent, DialogTitle, IconButton, useTheme, Button } from '@mui/material';
+import { Dialog, DialogActions, DialogContent, DialogTitle, IconButton, useTheme, useMediaQuery, Button } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
 
 const ImageDisplay = ({ open, onClose, image, title }) => {
   const theme = useTheme();
-
+  const isNotMobile = useMediaQuery('(min-width: 900px)');
+  if(!isNotMobile) {
+    open = false;
+  }
   return (
     <Dialog
       open={open}
       onClose={onClose}
-      maxWidth="md"
-      fullWidth
+      maxWidth="lg"
+      display='flex'
+      justifyContent="center"
+      
       sx={{
         '& .MuiPaper-root': {
           backgroundColor: theme.palette.background.dark, // Change dialog background
@@ -37,7 +42,12 @@ const ImageDisplay = ({ open, onClose, image, title }) => {
           justifyContent: 'center',
         }}
       >
-        <img src={image} alt={title} style={{ width: '100%', height: 'auto' }} />
+        <img src={image} alt={title} style={{
+          maxWidth: '80%', // Adjust the percentage as needed
+          width: 'auto',
+          height: 'auto',
+          objectFit: 'contain', // Ensures the image doesn't stretch
+        }} />
       </DialogContent>
       <DialogActions
         sx={{

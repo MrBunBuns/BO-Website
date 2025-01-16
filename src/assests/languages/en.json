@@ -217,20 +217,19 @@
           "linkName": "CoDN Files Download"
         },
         {
-          "title": "(First Time Setup Only) Download WAD Files",
-          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the application process in a later step.",
-          "image": "",
-          "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
-          "linkName": "WAD Files Drive Link"
-        },
-        {
           "title": "Extract the Contents",
-          "description": "Extract the contents to a location where you can find it. We will need this location in a later step.",
+          "description": "Extract the contents of the CoDN-T5 files to a location where you can find it. We will need this location in a later step.",
           "image": "/BO-Website/images/ExtractedCoDNFiles.png",
           "link": ""
         },
         {
-          "title": "In Dolphin, Navigate to Config -> Wii",
+          "title": "In Dolphin, Navigate to Config",
+          "description": "Inside of the main screen in Dolphin, you should see a button towards the top of the screen called Config.",
+          "image": "/BO-Website/images/ConfigButton.png",
+          "link": ""
+        },
+        {
+          "title": "In Config, Navigate to the Wii Tab",
           "description": "Inside the Wii tab of Config, you should see a screen similar to the image in this step.",
           "image": "/BO-Website/images/DolphinWiiSetting.png",
           "link": ""
@@ -264,6 +263,13 @@
           "description": "",
           "image": "/BO-Website/images/DolphinDefaultISO.png",
           "link": ""
+        },
+        {
+          "title": "(First Time Setup Only) Download WAD Files",
+          "description": "Navigate to the link in this step to download the latest patch for Black Ops. You will need to select the WAD files based on your region. We will walk through the application process in a later step.",
+          "image": "",
+          "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
+          "linkName": "WAD Files Drive Link"
         },
         {
           "title": "In the Top Menu of Dolphin, Select Tools -> Install WAD",

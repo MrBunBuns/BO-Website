@@ -17,7 +17,7 @@ const GettingStarted = () => {
   const [selectedTitle, setSelectedTitle] = useState('');
   const [selectedIndex, setSelectedIndex] = useState(-1); 
   const [selectedYoutubeLink, setSelectedYoutubeLink] = useState(""); 
-  const isNotMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
+  const isNotMobile = useMediaQuery('(min-width: 900px)');
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
@@ -46,9 +46,11 @@ const GettingStarted = () => {
   
   // Handle image click in step
   const handleImageClick = (image, title) => {
-    setSelectedImage(image);
-    setSelectedTitle(title);
-    setOpenDialog(true);
+    if(isNotMobile) {
+      setSelectedImage(image);
+      setSelectedTitle(title);
+      setOpenDialog(true);
+    } 
   };
 
   useEffect(() => {

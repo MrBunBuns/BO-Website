@@ -37,7 +37,7 @@ const Header = () => {
   });
 
   const theme = useTheme();
-  const isNotMobile = !useMediaQuery(theme.breakpoints.down('sm') || theme.breakpoints.down('xs'));
+  const isNotMobile = useMediaQuery('(min-width: 900px)');
 
   const navigate = useNavigate();
 
