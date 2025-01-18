@@ -6,6 +6,8 @@ import es from '../assests/languages/es.json'; // English translations
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { LanguageContext } from '../contexts/LanguageContext';
 import { useSearchParams } from 'react-router-dom';
+import LinkIcon from '@mui/icons-material/Link'; // Import Link icon
+import { Snackbar, Alert } from '@mui/material'; // Add these imports
 
 const translations = { en, es };
 
@@ -21,6 +23,7 @@ const GettingStarted = () => {
   const isNotMobile = useMediaQuery('(min-width: 900px)');
   const [searchParams] = useSearchParams();
   const [highlightedStepIndex, setHighlightedStepIndex] = useState(null);
+  const [snackbarOpen, setSnackbarOpen] = useState(false); // Snackbar state
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
@@ -32,7 +35,7 @@ const GettingStarted = () => {
       const intervalId = setInterval(() => {
         const element = document.querySelector(selector);
         if (element) {
-          const offset = 100; // Prevents us from scrolling too far
+          const offset = 300; // Prevents us from scrolling too far
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const scrollPosition = elementPosition - offset;
           
@@ -76,6 +79,15 @@ const GettingStarted = () => {
     setSteps([]);
   }, []);
 
+  const handleCopyToClipboard = (index) => {
+    navigator.clipboard.writeText('https://mrbunbuns.github.io/BO-Website/#/getting-started?method=dolphin&step=' + index.toString()
+  );
+    setSnackbarOpen(true); // Show snackbar
+  };
+
+  const handleCloseSnackbar = () => {
+    setSnackbarOpen(false); // Hide snackbar
+  };
 
   // TODO: Think of something better for choosing method's index. Maybe a direct string field index?
   // ex: http://localhost:3000/BO-Website#/getting-started?method=usb&step=2 
@@ -177,7 +189,7 @@ const GettingStarted = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     backgroundColor: theme.palette.background.alternate,
-                    border: selectedIndex === index ? '3px solid #1976d2' : 'none',
+                    border: selectedIndex === index ? '3px solidrgb(241, 237, 0)' : 'none',
                     transition: 'border 0.3s ease',
                     width: '100%',
                     maxWidth: '250px',
@@ -321,6 +333,18 @@ const GettingStarted = () => {
                     onClick={() => handleImageClick(step.image, step.title)}
                   />
                 )}
+                {/* Icon for opening step link */}
+                  <ButtonBase
+                    sx={{
+                      position: 'absolute',
+                      bottom: '8px',
+                      left: '8px',
+                      color: theme.palette.text.secondary,
+                    }}
+                    onClick={() => handleCopyToClipboard(index)}
+                  >
+                    <LinkIcon />
+                  </ButtonBase>
               </ListItem>
             ))}
           </List>
@@ -334,6 +358,17 @@ const GettingStarted = () => {
         image={selectedImage}
         title={selectedTitle}
       />
+       {/* Snackbar for "Link copied" message */}
+       <Snackbar
+        open={snackbarOpen}
+        autoHideDuration={3000} // Snackbar disappears after 3 seconds
+        onClose={handleCloseSnackbar}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      >
+        <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
+          Link copied!
+        </Alert>
+      </Snackbar>
     </Stack>
   );
 };
