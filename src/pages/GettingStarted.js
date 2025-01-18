@@ -5,6 +5,7 @@ import en from '../assests/languages/en.json'; // English translations
 import es from '../assests/languages/es.json'; // English translations
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { LanguageContext } from '../contexts/LanguageContext';
+import { useSearchParams } from 'react-router-dom';
 
 const translations = { en, es };
 
@@ -18,6 +19,8 @@ const GettingStarted = () => {
   const [selectedIndex, setSelectedIndex] = useState(-1); 
   const [selectedYoutubeLink, setSelectedYoutubeLink] = useState(""); 
   const isNotMobile = useMediaQuery('(min-width: 900px)');
+  const [searchParams] = useSearchParams();
+  const [highlightedStepIndex, setHighlightedStepIndex] = useState(null);
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
@@ -53,6 +56,16 @@ const GettingStarted = () => {
     } 
   };
 
+  const handleSetContent = (category, index) => {
+
+    setSteps(category.steps);
+    setGuideTitle(category.title);
+    setSelectedCategory(category.title);
+    setSelectedIndex(index);
+    setSelectedYoutubeLink(category.youtubeLink);
+    waitForElementAndScroll(category.youtubeLink ? '#video-container' : '#step-by-step-container')
+  }
+
   useEffect(() => {
     categories = translations[language].gettingStartedPage;
     console.log(selectedYoutubeLink);
@@ -62,6 +75,29 @@ const GettingStarted = () => {
   useEffect(() => {
     setSteps([]);
   }, []);
+
+
+  // TODO: Think of something better for choosing method's index. Maybe a direct string field index?
+  // ex: http://localhost:3000/BO-Website#/getting-started?method=usb&step=2 
+  useEffect(() => {
+    categories = translations[language].gettingStartedPage;
+    const method = searchParams.get('method');
+    const stepIndex = parseInt(searchParams.get('step'), 10);
+    let index = -1;
+    if (method && method.includes('disc')) {
+      index = 0;
+    } else if (method && method.includes('usb')) {
+      index = 1;
+    } else if (method && method.includes('dolphin')) {
+      index = 2;
+    }
+  
+    if (method && !isNaN(index) && categories.methods[index]) {
+      handleSetContent(categories.methods[index], index);
+      setHighlightedStepIndex(stepIndex || null); 
+      waitForElementAndScroll(`#step-${stepIndex}`);
+    }
+  }, [language, searchParams]);
 
   return (
     <Stack width={'100%'} alignItems={'center'} justifyContent={'center'} spacing={8}>
@@ -219,18 +255,20 @@ const GettingStarted = () => {
             {steps.map((step, index) => (
               <ListItem
                 key={index}
+                id={`step-${index}`}
                 sx={{
                   display: 'flex',
                   flexDirection: 'row',
                   alignItems: 'flex-start',
                   gap: '16px',
                   marginBottom: '16px',
-                  border: '1px solid #ccc',
+                  border: highlightedStepIndex === index ? '2px solid #1976d2' : '1px solid #ccc',
                   padding: '16px',
                   borderRadius: '8px',
+                  backgroundColor: highlightedStepIndex === index ? theme.palette.action.selected : 'transparent',
                   [theme.breakpoints.down('sm')]: {
-                    flexDirection: 'column', // Stack items vertically on small screens
-                    alignItems: 'center', // Center items
+                    flexDirection: 'column',
+                    alignItems: 'center',
                   },
                 }}
               >
