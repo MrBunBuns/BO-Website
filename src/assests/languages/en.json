@@ -27,6 +27,14 @@
   "title": "Frequently Asked Questions",
   "questions": [
     {
+      "question": "How can I report an issue?",
+      "answer": "Please visit the CoDN discord to report an issue in the Support channel."
+    },
+    {
+      "question": "How can I obtain Max Rank + COD Points?",
+      "answer": "Go to the Multiplayer lobby screen. For Wiimote: Up, Up, Down, Down, Left, Right, Left, Right, Minus. For Classic Controller: Up, Up, Down, Down, Left, Right, Left, Right, B."
+    },
+    {
       "question": "Will the other Call of Duty Wii games be added?",
       "answer": "There are currently no plans to bring back the other Call of Duty Wii games. We will update you if this changes."
     },
@@ -41,10 +49,6 @@
     {
       "question": "Will bans be enforced?",
       "answer": "Permanent and temporary bans will be enforced on accounts suspected of cheating. If you feel your ban was a mistake, you can appeal your ban through the CoDN Discord page. Click the \"Support\" button in the navigation menu to be taken to the Discord channel."
-    },
-    {
-      "question": "How can I obtain Max Rank + COD Points?",
-      "answer": "Go to the Multiplayer lobby screen. For Wiimote: Up, Up, Down, Down, Left, Right, Left, Right, Minus. For Classic Controller: Up, Up, Down, Down, Left, Right, Left, Right, B."
     }
   ]
 },
