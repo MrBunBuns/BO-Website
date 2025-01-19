@@ -38,7 +38,10 @@ const GettingStarted = () => {
           const offset = 300; // Prevents us from scrolling too far
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const scrollPosition = elementPosition - offset;
-          
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
           window.scrollTo({
             top: scrollPosition,
             behavior: 'smooth',
@@ -277,7 +280,7 @@ const GettingStarted = () => {
                   alignItems: 'flex-start',
                   gap: '16px',
                   marginBottom: '16px',
-                  border: highlightedStepIndex === index ? '2px solid #1976d2' : '1px solid #ccc',
+                  border: highlightedStepIndex === index ? '3px solid #f7f718' : '1px solid #ccc',
                   padding: '16px',
                   borderRadius: '8px',
                   backgroundColor: highlightedStepIndex === index ? theme.palette.action.selected : 'transparent',
