@@ -185,6 +185,7 @@ const GettingStarted = () => {
                   setSelectedCategory(category.title);
                   setSelectedIndex(index);
                   setSelectedYoutubeLink(category.youtubeLink);
+                  setHighlightedStepIndex(-1); // Clears highlights if user got to page using step share link
                   waitForElementAndScroll(category.youtubeLink ? '#video-container' : '#step-by-step-container')
 
                 }}
