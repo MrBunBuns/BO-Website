@@ -33,6 +33,7 @@ const GettingStarted = () => {
   const waitForElementAndScroll = (selector) => {
     return new Promise(resolve => {
       const intervalId = setInterval(() => {
+       
         const element = document.querySelector(selector);
         if (element) {
           const offset = 300; // Prevents us from scrolling too far
@@ -95,8 +96,14 @@ const GettingStarted = () => {
   // TODO: Think of something better for choosing method's index. Maybe a direct string field index?
   // ex: http://localhost:3000/BO-Website#/getting-started?method=usb&step=2 
   useEffect(() => {
+    setSelectedIndex(-1);
     categories = translations[language].gettingStartedPage;
-    const method = searchParams.get('method').toLocaleLowerCase();
+    let method = searchParams.get('method');
+    
+    if (method) {
+      method = method.toLocaleLowerCase();
+    }
+    console.log(method)
     const stepIndex = parseInt(searchParams.get('step'), 10);
     let index = -1;
     if (method && method.includes('disc')) {
