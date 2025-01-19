@@ -80,8 +80,9 @@ const GettingStarted = () => {
   }, []);
 
   const handleCopyToClipboard = (index) => {
-    navigator.clipboard.writeText('https://mrbunbuns.github.io/BO-Website/#/getting-started?method=dolphin&step=' + index.toString()
-  );
+    if(index) {
+      navigator.clipboard.writeText('https://mrbunbuns.github.io/BO-Website/#/getting-started?method=dolphin&step=' + index.toString());
+    } 
     setSnackbarOpen(true); // Show snackbar
   };
 
@@ -337,7 +338,7 @@ const GettingStarted = () => {
                   <ButtonBase
                     sx={{
                       position: 'absolute',
-                      bottom: '8px',
+                      top: '5px',
                       left: '8px',
                       color: theme.palette.text.secondary,
                     }}
