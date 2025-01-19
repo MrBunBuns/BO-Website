@@ -38,10 +38,7 @@ const GettingStarted = () => {
           const offset = 300; // Prevents us from scrolling too far
           const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
           const scrollPosition = elementPosition - offset;
-          window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
+
           window.scrollTo({
             top: scrollPosition,
             behavior: 'smooth',
@@ -99,7 +96,7 @@ const GettingStarted = () => {
   // ex: http://localhost:3000/BO-Website#/getting-started?method=usb&step=2 
   useEffect(() => {
     categories = translations[language].gettingStartedPage;
-    const method = searchParams.get('method');
+    const method = searchParams.get('method').toLocaleLowerCase();
     const stepIndex = parseInt(searchParams.get('step'), 10);
     let index = -1;
     if (method && method.includes('disc')) {
