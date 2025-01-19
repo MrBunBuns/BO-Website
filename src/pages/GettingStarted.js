@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { Container, useMediaQuery, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Button, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Container, useMediaQuery, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Button, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem, Tooltip } from '@mui/material';
 import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
 import en from '../assests/languages/en.json'; // English translations
 import es from '../assests/languages/es.json'; // English translations
@@ -79,15 +79,17 @@ const GettingStarted = () => {
     setSteps([]);
   }, []);
 
-  const handleCopyToClipboard = (index) => {
-    if(index) {
-      navigator.clipboard.writeText('https://mrbunbuns.github.io/BO-Website/#/getting-started?method=dolphin&step=' + index.toString());
-    } 
-    setSnackbarOpen(true); // Show snackbar
+  const handleCopyToClipboard = (methodName, index) => {
+    if(methodName.includes('USB')) {
+      methodName = 'usb';
+    }
+
+    navigator.clipboard.writeText(`https://mrbunbuns.github.io/BO-Website/#/getting-started?method=${methodName}&step=${index.toString()}`);
+    setSnackbarOpen(true); 
   };
 
   const handleCloseSnackbar = () => {
-    setSnackbarOpen(false); // Hide snackbar
+    setSnackbarOpen(false); 
   };
 
   // TODO: Think of something better for choosing method's index. Maybe a direct string field index?
@@ -190,7 +192,7 @@ const GettingStarted = () => {
                     display: 'flex',
                     flexDirection: 'column',
                     backgroundColor: theme.palette.background.alternate,
-                    border: selectedIndex === index ? '3px solidrgb(241, 237, 0)' : 'none',
+                    border: selectedIndex === index ? '5px solid #1976d2' : 'none',
                     transition: 'border 0.3s ease',
                     width: '100%',
                     maxWidth: '250px',
@@ -259,7 +261,7 @@ const GettingStarted = () => {
       {steps.length > 0 && (
         <Container id="step-by-step-container">
           <Typography variant="h5" sx={{ fontSize: { sm: '2rem', md: '2rem' } }} gutterBottom textAlign="center">
-            {categories.methods[selectedIndex].title}
+            {categories.methodTitleText}
           </Typography>
           <Typography variant="body2" color={theme.palette.text.secondary} sx={{ fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }} gutterBottom textAlign="center">
             * {categories.methodHelperText}
@@ -335,6 +337,7 @@ const GettingStarted = () => {
                   />
                 )}
                 {/* Icon for opening step link */}
+                <Tooltip title="Copy Link to Step">
                   <ButtonBase
                     sx={{
                       position: 'absolute',
@@ -342,10 +345,12 @@ const GettingStarted = () => {
                       left: '8px',
                       color: theme.palette.text.secondary,
                     }}
-                    onClick={() => handleCopyToClipboard(index)}
+                    onClick={() => handleCopyToClipboard(categories.methods[selectedIndex].title, index)}
                   >
                     <LinkIcon />
                   </ButtonBase>
+                </Tooltip>
+                  
               </ListItem>
             ))}
           </List>
@@ -367,7 +372,7 @@ const GettingStarted = () => {
         anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
       >
         <Alert onClose={handleCloseSnackbar} severity="success" sx={{ width: '100%' }}>
-          Link copied!
+          Link for step copied!
         </Alert>
       </Snackbar>
     </Stack>

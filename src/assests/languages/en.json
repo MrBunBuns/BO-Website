@@ -56,6 +56,7 @@
   "wiiModLink": "Wii Modding",
   "wiiUModLink": "Wii U Modding",
   "methodHeader": "Select Your Method:",
+  "methodTitleText": "Step by Step Guide",
   "methodHelperText": "Click images to expand",
   "methods": [
     {
@@ -84,7 +85,7 @@
         },
         {
           "title": "Run CoDN TU Installer (First Time Only)",
-          "description": "Run the installer only if you do not already have v51 installed. Attempting to launch without v51 will result in an error message.",
+          "description": "Run the installer only if you do not already have v51 installed. Attempting to launch the game without v51 will result in an error message.",
           "image": "/BO-Website/images/TUInstaller.png",
           "link": ""
         },
@@ -140,8 +141,20 @@
           "link": ""
         },
         {
+          "title": "Open Homebrew Channel",
+          "description": "On your Wii, with the SD Card inserted, open the Homebrew Channel.",
+          "image": "/BO-Website/images/HomebrewChannel.png",
+          "link": ""
+        },
+        {
+          "title": "Run CoDN TU Installer (First Time Only)",
+          "description": "Run the installer only if you do not already have v51 installed. Attempting to launch the game without v51 will result in an error message.",
+          "image": "/BO-Website/images/TUInstaller.png",
+          "link": ""
+        },
+        {
           "title": "Open USB Loader GX",
-          "description": "On your Wii, with the SD card inserted, open USB Loader GX.",
+          "description": "Make sure you have your SD Card in your wii.",
           "image": "/BO-Website/images/USBLoader.png",
           "link": ""
         },
