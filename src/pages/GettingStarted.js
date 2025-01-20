@@ -27,8 +27,8 @@ const GettingStarted = () => {
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
+  const [categories, setCategories] = useState(translations[language].gettingStartedPage);
 
-  let categories = translations[language].gettingStartedPage
  
   const waitForElementAndScroll = (selector) => {
     return new Promise(resolve => {
@@ -71,9 +71,11 @@ const GettingStarted = () => {
   }
 
   useEffect(() => {
-    categories = translations[language].gettingStartedPage;
-    console.log(selectedYoutubeLink);
-    steps.length > 0 ? setSteps(categories.methods[selectedIndex].steps) : setSteps([]);
+    setCategories(translations[language].gettingStartedPage);
+    console.log(selectedIndex)
+    if(steps) {
+      steps.length > 0 ? setSteps(categories.methods[selectedIndex].steps) : setSteps([]);
+    }
   }, [language]);
 
   useEffect(() => {
@@ -96,15 +98,13 @@ const GettingStarted = () => {
   // TODO: Think of something better for choosing method's index. Maybe a direct string field index?
   // ex: http://localhost:3000/BO-Website#/getting-started?method=usb&step=2 
   useEffect(() => {
-    setSelectedIndex(-1);
-    categories = translations[language].gettingStartedPage;
+    setCategories(translations[language].gettingStartedPage);
     let method = searchParams.get('method');
     
     if (method) {
       method = method.toLocaleLowerCase();
     }
     const stepIndex = parseInt(searchParams.get('step'), 10);
-    console.log(stepIndex)
     let index = -1;
     if (method && method.includes('disc')) {
       index = 0;
@@ -113,9 +113,8 @@ const GettingStarted = () => {
     } else if (method && method.includes('dolphin')) {
       index = 2;
     }
-   
 
-    if (method && categories.methods[index]) {
+    if (categories.methods[index]) {
       handleSetContent(categories.methods[index], index);
       setHighlightedStepIndex(stepIndex); 
       waitForElementAndScroll(`#step-${stepIndex}`);
@@ -237,7 +236,7 @@ const GettingStarted = () => {
       {selectedYoutubeLink && (
         <Container id="video-container">
           <Typography variant="h4" gutterBottom textAlign="center">
-            {categories.methods[selectedIndex].youtubeTitle}
+           {categories.methods[selectedIndex].youtubeTitle}
           </Typography>
           <Card
             sx={{

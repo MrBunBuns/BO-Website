@@ -66,6 +66,7 @@
     {
       "title": "Disc",
       "image": "/BO-Website/images/test.png",
+      "youtubeTitle": "",
       "youtubeLink": "",
       "steps": [
         {
@@ -123,6 +124,7 @@
   {
       "title": "USB Loader GX",
       "image": "/BO-Website/images/test2.png",
+      "youtubeTitle": "",
       "youtubeLink": "",
       "steps": [
         {
