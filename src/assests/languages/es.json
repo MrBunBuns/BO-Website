@@ -1,99 +1,122 @@
 {
   "homePage": {
-    "imageBanner" : "Bienvenido a CoDN",
-    "header" : "¡Call of Duty Black Ops Wii ha vuelto!",
-    "description" : "Tras el cierre completo de los servicios en línea de la Wii en 2023, todos los juegos de Call of Duty en la plataforma perdieron el acceso a sus características multijugador. Sin embargo, gracias a los esfuerzos de un equipo talentoso de desarrolladores, estos servicios han sido restaurados, lo que permite a los jugadores volver a disfrutar de Call of Duty en línea en la Wii. Actualmente, solo se ha revivido Call of Duty: Black Ops, mientras que la restauración de otros títulos requiere más investigación y desarrollo.",
-    "compatibility" : [
-      { "language": "Inglés (USA)", "status": "🟢 Funciona completamente" },
-      { "language": "Inglés (PAL)", "status": "🟢 Funciona completamente" },
-      { "language": "Francés (Canadiense)", "status": "🟡 Listas de juegos limitadas. Solo se puede jugar con versiones en francés." },
-      { "language": "Francés (Europa)", "status": "🟡 Listas de juegos limitadas. Solo se puede jugar con versiones en francés." },
-      { "language": "Español", "status": "🔴 No hay soporte actualmente" },
-      { "language": "Italiano", "status": "🔴 No hay soporte actualmente" },
-      { "language": "Alemán", "status": "🔴 No hay soporte actualmente" }
+    "imageBanner": "¡Bienvenido a CoDN!",
+    "header": "¡Call of Duty Black Ops Wii está de vuelta!",
+    "description": "Tras el cierre completo de los servicios en línea de Wii en 2023, todos los juegos de Call of Duty en la plataforma perdieron acceso a sus funciones multijugador. Sin embargo, gracias a los esfuerzos de un talentoso equipo de desarrolladores, estos servicios han sido restaurados, permitiendo que los jugadores disfruten nuevamente de Call of Duty en línea en la Wii. Actualmente, solo Call of Duty: Black Ops ha sido revivido, mientras que la restauración de otros títulos requiere más investigación y desarrollo.",
+    "compatibility": [
+      { "language": "Inglés (EE.UU.)", "code": "SC7E52", "status": "🟢 Totalmente Funcional" },
+      { "language": "Inglés (PAL)", "code": "SC7P52", "status": "🟢 Totalmente Funcional" },
+      { "language": "Francés (Canadá)", "code": "SC7Z52", "status": "🟢 Totalmente Funcional" },
+      { "language": "Francés (PAL Francés)", "code": "SC7F52", "status": "🟢 Totalmente Funcional" },
+      { "language": "Español", "code": "SC7S52", "status": "🟢 Totalmente Funcional" },
+      { "language": "Italiano", "code": "SC7I52", "status": "🟢 Totalmente Funcional" },
+      { "language": "Alemán", "code": "SC7D52", "status": "🟢 Totalmente Funcional" }
     ]
   },
-  "headerBar" : {
-    "home" : "Inicio",
-    "gettingStarted" : "Comenzando",
-    "about" : "Acerca de",
-    "supportButton" : "Soporte",
-    "faq" : "Preguntas Frecuentes"
+  "headerBar": {
+    "home": "Inicio",
+    "gettingStarted": "Primeros Pasos",
+    "about": "Acerca de",
+    "supportButton": "Soporte",
+    "faq": "Preguntas Frecuentes"
   },
-  "aboutPage" : {
-    "title" : "Acerca de",
-    "description" : "IDK"
+  "aboutPage": {
+    "title": "Acerca de",
+    "description": "IDK"
   },
-  "faqPage" : {
-    "title" : "Preguntas Frecuentes",
-    "questions" :  [
+  "faqPage": {
+    "title": "Preguntas Frecuentes",
+    "questions": [
       {
-        "question": "¿De qué trata esta página?",
-        "answer": "Esta página proporciona información sobre nuestros servicios y productos."
+        "question": "¿Cómo puedo reportar un problema?",
+        "answer": "Por favor, visita el Discord de CoDN para reportar un problema en el canal de Soporte."
       },
       {
-        "question": "¿Cómo puedo contactar con soporte?",
-        "answer": "Puedes contactar con soporte por correo electrónico o mediante nuestro formulario de contacto."
+        "question": "¿Cómo puedo obtener el rango máximo + puntos COD?",
+        "answer": "Ve a la pantalla del lobby multijugador. Para Wiimote: Arriba, Arriba, Abajo, Abajo, Izquierda, Derecha, Izquierda, Derecha, Menos. Para Controlador Clásico: Arriba, Arriba, Abajo, Abajo, Izquierda, Derecha, Izquierda, Derecha, B."
       },
       {
-        "question": "¿Cuáles son las opciones de pago?",
-        "answer": "Aceptamos tarjetas de crédito, PayPal y transferencias bancarias."
+        "question": "¿Se añadirán otros juegos de Call of Duty para Wii?",
+        "answer": "Actualmente no hay planes para restaurar otros juegos de Call of Duty para Wii. Te actualizaremos si esto cambia."
+      },
+      {
+        "question": "¿Mis perfiles antiguos se migrarán?",
+        "answer": "Debido a que los servidores en línea son independientes de los servidores originales del juego, tus perfiles existentes deberán ser recreados. Intentar iniciar sesión con una cuenta existente dará como resultado un error."
+      },
+      {
+        "question": "¿Necesitaremos NANDs para Dolphin?",
+        "answer": "Para moderar eficazmente los servidores contra trampas, será necesario importar tu NAND al jugar en la versión Dolphin del juego. Por favor, consulta la sección Dolphin en la página de Primeros Pasos para más detalles sobre cómo importar tu NAND desde una Wii."
+      },
+      {
+        "question": "¿Se aplicarán baneos?",
+        "answer": "Los baneos permanentes y temporales se aplicarán a cuentas sospechosas de hacer trampas. Si crees que tu baneo fue un error, puedes apelar tu baneo a través de la página de Discord de CoDN. Haz clic en el botón \"Soporte\" en el menú de navegación para acceder al canal de Discord."
       }
     ]
   },
-  "gettingStartedPage" : {
-    "header": "Comenzando",
-    "description": "Esta página te guiará para jugar en línea a Black Ops Wii. Si tienes dificultades, haz clic en el botón \"Soporte\" para obtener ayuda.",
-    "methodHeader" : "Selecciona tu método:",
-    "methodHelperText" : "Haz clic en las imágenes para expandir",
+  "gettingStartedPage": {
+    "header": "Primeros Pasos",
+    "description": "Esta página te guiará para conectarte en línea con Black Ops Wii. Si tienes dificultades, por favor haz clic en el botón \"Soporte\" en el menú de navegación para obtener ayuda.",
+    "prereqTextTitle": "Aviso: Se requiere una Wii/Wii U modificada",
+    "prereqTextDesc": "Esta guía asume que ya puedes ejecutar homebrew en tu Wii/Wii U. Esto también será necesario para Dolphin ya que tendrás que importar una copia de seguridad de tu NAND. Si no has modificado tu consola, por favor visita el sitio adecuado a continuación para hacerlo.",
+    "wiiModLink": "Modificación de Wii",
+    "wiiUModLink": "Modificación de Wii U",
+    "methodHeader": "Selecciona tu Método:",
+    "methodTitleText": "Guía Paso a Paso",
+    "methodHelperText": "Haz clic en las imágenes para ampliarlas",
     "methods": [
       {
-        "title": "Disco de Wii",
+        "title": "Disco",
         "image": "/BO-Website/images/test.png",
+        "youtubeLink": "",
         "steps": [
           {
-            "title": "Requisitos previos",
-            "description": "Para jugar Black Ops en línea, necesitarás el Canal Homebrew. Si no lo tienes instalado, haz clic en el enlace a la derecha para visitar el sitio web de la Guía de Hacks para Wii.",
-            "image": "",
-            "link": "https://wii.hacks.guide/get-started.html",
-            "linkName": "Sitio Web de Guía de Hacks para Wii"
-          },
-          {
-            "title": "Descargar archivos CoDN-T5",
-            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador CoDN.",
+            "title": "Descargar Archivos CoDN-T5",
+            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador de CoDN.",
             "image": "",
             "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-            "linkName": "Descarga de Archivos CoDN"
+            "linkName": "Descargar Archivos CoDN"
           },
           {
-            "title": "Extrae los contenidos a la tarjeta SD de tu Wii",
-            "description": "Asegúrate de que los siguientes archivos estén ubicados en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' a tu directorio apps existente.",
+            "title": "Extraer el Contenido a la RAÍZ de la Tarjeta SD de tu Wii",
+            "description": "Asegúrate de que los siguientes archivos estén en la tarjeta SD: SC7E52.dol, SC7P52.dol y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' en tu directorio existente de apps.",
             "image": "/BO-Website/images/extractedContents.png",
             "link": ""
           },
           {
-            "title": "Abrir Canal Homebrew",
-            "description": "En tu Wii, con la tarjeta SD y el disco de Black Ops insertado, abre el Canal Homebrew.",
+            "title": "Abrir el Canal Homebrew",
+            "description": "En tu Wii, con la tarjeta SD y tu copia en disco de Black Ops insertados, abre el Canal Homebrew.",
             "image": "/BO-Website/images/HomebrewChannel.png",
             "link": ""
           },
           {
-            "title": "Ejecutar CodN TU Installer (Solo la primera vez)",
-            "description": "Ejecuta el instalador solo si no tienes la versión v51 instalada. Intentar lanzar sin v51 dará un mensaje de error.",
+            "title": "Ejecutar el Instalador CoDN TU (Solo la Primera Vez)",
+            "description": "Ejecuta el instalador solo si aún no tienes v51 instalado. Intentar iniciar el juego sin v51 resultará en un mensaje de error.",
             "image": "/BO-Website/images/TUInstaller.png",
             "link": ""
           },
           {
-            "title": "Ejecutar el Cliente CodN",
-            "description": "Ejecuta el cliente para iniciar el juego. Nota: Debes ejecutar siempre el cliente para jugar en línea.",
+            "title": "Ejecutar el Cliente CoDN",
+            "description": "Ejecuta el cliente para iniciar el juego. Nota: Siempre debes ejecutar el cliente para jugar en línea.",
             "image": "/BO-Website/images/TUClient.png",
             "link": ""
           },
           {
+            "title": "Si es exitoso, serás llevado al menú multijugador",
+            "description": "Si todo funcionó correctamente, serás lanzado al menú multijugador en lugar del menú de un jugador. También verás la marca de agua en la esquina superior izquierda de la pantalla.",
+            "image": "/BO-Website/images/MainMenu.png",
+            "link": ""
+          },
+          {
+            "title": "Obligatorio: Crear un nuevo perfil para el nuevo servidor",
+            "description": "Desafortunadamente, todos los perfiles creados en los servidores oficiales no funcionarán en el nuevo servidor. Se te pedirá que crees un nuevo perfil.",
+            "image": "/BO-Website/images/NewProfile.png",
+            "link": ""
+          },
+          {
             "title": "¡Todo listo!",
-            "description": "Si todo ha funcionado correctamente, deberías entrar directamente en el modo multijugador. Si encuentras problemas, haz clic en el botón de soporte para unirte a nuestro Discord.",
+            "description": "¡Felicidades por volver en línea! Si tienes problemas, por favor haz clic en el botón de soporte para acceder a nuestro Discord.",
             "image": "",
-            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "link": "https://discord.gg/gXsgTUWquc",
             "linkName": "Enlace de Soporte (Discord)"
           }
         ]
@@ -101,74 +124,92 @@
       {
         "title": "USB Loader GX",
         "image": "/BO-Website/images/test2.png",
+        "youtubeLink": "",
         "steps": [
           {
-            "title": "Requisitos previos",
-            "description": "Para jugar Black Ops en línea, necesitarás el Canal Homebrew. Si no lo tienes instalado, haz clic en el enlace a la derecha para visitar el sitio web de la Guía de Hacks para Wii.",
-            "image": "",
-            "link": "https://wii.hacks.guide/get-started.html",
-            "linkName": "Sitio Web de Guía de Hacks para Wii"
-          },
-          {
-            "title": "Descargar archivos CoDN-T5",
-            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador CoDN.",
+            "title": "Descargar Archivos CoDN-T5",
+            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador de CoDN.",
             "image": "",
             "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-            "linkName": "Descarga de Archivos CoDN"
+            "linkName": "Descargar Archivos CoDN"
           },
           {
-            "title": "Extrae los contenidos a la tarjeta SD de tu Wii",
-            "description": "Asegúrate de que los siguientes archivos estén ubicados en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' a tu directorio apps existente.",
+            "title": "Extraer el Contenido en la Raíz de la Tarjeta SD de tu Wii",
+            "description": "Asegúrate de que los siguientes archivos estén en la tarjeta SD: SC7E52.dol, SC7P52.dol, y la carpeta apps. Si ya tienes una carpeta apps, copia el contenido dentro de 'apps/' en tu carpeta apps existente.",
             "image": "/BO-Website/images/extractedContents.png",
             "link": ""
           },
           {
-            "title": "(Solo versiones no NTSC y PAL) Renombrar SC7E52.dol con el ID del título de tu copia",
-            "description": "Este paso es necesario si no estás usando las versiones NTSC o PAL.",
-            "image": "/BO-Website/images/extractedContents.png",
+            "title": "(Solo para Versiones No NTSC/PAL) Renombra SC7E52.dol al ID de Título de tu Copia",
+            "description": "Este paso es necesario si no estás utilizando las versiones NTSC o PAL. Para los códigos de región, haz clic en la imagen de este paso.",
+            "image": "/BO-Website/images/RegionTable.png",
+            "link": ""
+          },
+          {
+            "title": "Abrir el Canal Homebrew",
+            "description": "En tu Wii, con la tarjeta SD insertada, abre el Canal Homebrew.",
+            "image": "/BO-Website/images/HomebrewChannel.png",
+            "link": ""
+          },
+          {
+            "title": "Ejecutar CoDN TU Installer (Solo la Primera Vez)",
+            "description": "Ejecuta el instalador solo si no tienes ya instalada la versión v51. Intentar iniciar el juego sin la versión v51 dará lugar a un mensaje de error.",
+            "image": "/BO-Website/images/TUInstaller.png",
             "link": ""
           },
           {
             "title": "Abrir USB Loader GX",
-            "description": "En tu Wii, con la tarjeta SD insertada, abre USB Loader GX.",
+            "description": "Asegúrate de tener la tarjeta SD en tu Wii.",
             "image": "/BO-Website/images/USBLoader.png",
             "link": ""
           },
           {
             "title": "Seleccionar Configuración",
-            "description": "En USB Loader, selecciona Black Ops, luego selecciona Configuración.",
+            "description": "En USB Loader, selecciona Black Ops y luego selecciona Configuración.",
             "image": "/BO-Website/images/USBGameSettings.png",
             "link": ""
           },
           {
-            "title": "Seleccionar Cargar Juego",
+            "title": "Seleccionar Carga del Juego",
             "description": "",
             "image": "/BO-Website/images/GameLoad.png",
             "link": ""
           },
           {
-            "title": "Establecer \"Custom Game IOS\" a 250",
+            "title": "Establecer \"Custom Game IOS\" en 250",
             "description": "",
             "image": "/BO-Website/images/IOS.png",
             "link": ""
           },
           {
-            "title": "Establecer \"Alternate DOL\" a Cargar desde SD/USB",
+            "title": "Establecer \"Alternate DOL\" para Cargar desde SD/USB",
             "description": "",
             "image": "/BO-Website/images/LoadFromUSBSD.png",
             "link": ""
           },
           {
             "title": "Iniciar Black Ops",
-            "description": "Regresa a la configuración y la pantalla de inicio, luego selecciona 'Iniciar' para lanzar el juego. Tus configuraciones deben permanecer persistentes, por lo que no necesitarás editar nada más.",
+            "description": "Regresa a la configuración y pantalla de inicio, luego selecciona 'Iniciar' para lanzar el juego. Tus configuraciones se mantendrán persistentes, por lo que no necesitarás editarlas nuevamente.",
             "image": "/BO-Website/images/StartBlackOpsUSB.png",
             "link": ""
           },
           {
-            "title": "¡Todo listo!",
-            "description": "Si todo ha funcionado correctamente, deberías entrar directamente en el modo multijugador. Si encuentras problemas, haz clic en el botón de soporte para unirte a nuestro Discord.",
+            "title": "Si Todo Funciona, Serás Redirigido al Menú Multijugador",
+            "description": "Si todo funcionó correctamente, serás lanzado al menú multijugador en lugar del menú de un jugador. También verás la marca de agua en la esquina superior izquierda de la pantalla.",
+            "image": "/BO-Website/images/MainMenu.png",
+            "link": ""
+          },
+          {
+            "title": "Requisito: Crear un Nuevo Perfil para el Nuevo Servidor",
+            "description": "Desafortunadamente, todos los perfiles creados en los servidores oficiales no funcionarán en el nuevo servidor. Se te pedirá que crees un nuevo perfil.",
+            "image": "/BO-Website/images/NewProfile.png",
+            "link": ""
+          },
+          {
+            "title": "¡Todo Listo!",
+            "description": "¡Felicidades por volver en línea! Si tienes problemas, haz clic en el botón de soporte para ser dirigido a nuestro Discord.",
             "image": "",
-            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
+            "link": "https://discord.gg/gXsgTUWquc",
             "linkName": "Enlace de Soporte (Discord)"
           }
         ]
@@ -176,66 +217,126 @@
       {
         "title": "Dolphin",
         "image": "/BO-Website/images/test3.png",
+        "youtubeTitle": "Tutorial en Video",
+        "youtubeLink": "https://www.youtube.com/embed/PPBFFmRv2nA",
         "steps": [
           {
-            "title": "Requisitos",
-            "description": "Para jugar en el emulador Dolphin, necesitas importar una copia de seguridad del NAND. Haz clic en el enlace a la derecha para aprender cómo.",
+            "title": "Requisitos Previos",
+            "description": "Para jugar en el emulador Dolphin, necesitas importar una copia de seguridad de NAND. Haz clic en el enlace de este paso para aprender cómo hacerlo.",
             "image": "",
             "link": "https://dolphin-emu.org/docs/guides/nand-usage-guide/",
-            "linkName" : "Guía de NAND de Dolphin"
+            "linkName": "Guía de NAND de Dolphin"
           },
           {
-            "title": "Descargar archivos CoDN-T5",
-            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador CoDN.",
+            "title": "Descargar Archivos CoDN-T5",
+            "description": "Haz clic en el botón de descarga para obtener los archivos del instalador de CoDN.",
             "image": "",
             "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-            "linkName" : "Descarga de Archivos CoDN"
+            "linkName": "Descargar Archivos CoDN"
           },
           {
-            "title": "Extrae los contenidos a la carpeta de la tarjeta SD de Dolphin",
-            "description": "Dolphin permite al usuario establecer una carpeta para que funcione como su tarjeta SD. Básicamente, esta carpeta será equivalente a la raíz de una tarjeta SD utilizada en una Wii real. Puedes establecer esta ruta en Dolphin -> Configuración -> Wii",
-            "image": "/BO-Website/images/DolphinSD.png",
+            "title": "Extraer el Contenido",
+            "description": "Extrae el contenido de los archivos CoDN-T5 a una ubicación donde puedas encontrarlos. Necesitaremos esta ubicación en un paso posterior.",
+            "image": "/BO-Website/images/ExtractedCoDNFiles.png",
             "link": ""
           },
           {
-            "title": "Asegúrate de que \"Sincronizar automáticamente con la carpeta\" esté activado",
-            "description": "",
-            "image": "/BO-Website/images/DolphinAutoSync.png",
-            "link" : ""
+            "title": "En Dolphin, Navega a Configuración",
+            "description": "En la pantalla principal de Dolphin, deberías ver un botón en la parte superior de la pantalla llamado Configuración.",
+            "image": "/BO-Website/images/ConfigButton.png",
+            "link": ""
           },
           {
-            "title": "Haz clic derecho sobre Black Ops y selecciona \"Establecer como ISO predeterminada\"",
+            "title": "En Configuración, Navega a la Pestaña de Wii",
+            "description": "En la pestaña de Wii de Configuración, deberías ver una pantalla similar a la imagen de este paso.",
+            "image": "/BO-Website/images/DolphinWiiSetting.png",
+            "link": ""
+          },
+          {
+            "title": "Navega al Directorio de la \"Carpeta de Sincronización SD\" Usando un Explorador de Archivos",
+            "description": "Usando un explorador de archivos, abre el directorio al que apunta la Carpeta de Sincronización SD.",
+            "image": "/BO-Website/images/SDSyncFolder.png",
+            "link": ""
+          },
+          {
+            "title": "Copia el Contenido Extraído del Zip de CoDN-T5 al Directorio de la \"Carpeta de Sincronización SD\"",
+            "description": "Asegúrate de que los siguientes archivos estén ubicados en la Carpeta de Sincronización SD: apps/, SC7E52.dol y SC7P52.dol.",
+            "image": "/BO-Website/images/SDFolderContents.png",
+            "link": ""
+          },
+          {
+            "title": "En Configuración de Wii de Dolphin, Asegúrate de que \"Sincronizar Automáticamente con Carpeta\" Esté Marcado",
+            "description": "Esto asegurará que el contenido almacenado en la Carpeta de Sincronización SD se cargue en Dolphin como una tarjeta SD.",
+            "image": "/BO-Website/images/DolphinAutoSync.png",
+            "link": ""
+          },
+          {
+            "title": "Haz Clic en \"Convertir Carpeta a Archivo Ahora\" para Guardar el Contenido en la Tarjeta SD de Dolphin",
+            "description": "Se te informará que los datos actuales de la SD de Dolphin serán eliminados y reemplazados por el contenido en la Carpeta de Sincronización SD. Selecciona Sí.",
+            "image": "/BO-Website/images/ConvertFolderToFile.png",
+            "link": ""
+          },
+          {
+            "title": "De Vuelta en la Lista de Juegos, Haz Clic Derecho en Black Ops y Selecciona \"Establecer como ISO Predeterminado\"",
             "description": "",
             "image": "/BO-Website/images/DolphinDefaultISO.png",
-            "link" : ""
+            "link": ""
           },
           {
-            "title": "Haz clic en Abrir en el panel de opciones de Dolphin",
-            "description": "",
-            "image": "/BO-Website/images/DolphinOpen.png",
-            "link" : ""
-          },
-          {
-            "title": "Haz clic en Abrir en el panel de opciones de Dolphin",
-            "description": "",
-            "image": "/BO-Website/images/DolphinOpen.png",
-            "link" : ""
-          },
-          {
-            "title": "Selecciona el archivo boot.dol para iniciar el juego",
-            "description": "Importante: Debes seleccionar el archivo boot.dol ubicado en la carpeta apps/codn-client, que está en la misma carpeta que tu carpeta SD de Dolphin.",
-            "image": "/BO-Website/images/DolphinDol.png",
-            "link" : ""
-          },
-          {
-            "title": "¡Todo listo!",
-            "description": "Si todo ha ido bien, deberías haber entrado directamente en el modo multijugador. Si tienes problemas, haz clic en el botón de soporte para unirte a nuestro Discord.",
+            "title": "(Solo Configuración Inicial) Descargar Archivos WAD",
+            "description": "Navega al enlace de este paso para descargar el último parche para Black Ops. Necesitarás seleccionar los archivos WAD según tu región. Explicaremos el proceso de aplicación en un paso posterior.",
             "image": "",
-            "link": "https://i.ipg.pw/CodN-T5-1.0-pre.zip",
-            "linkName" : "Enlace de Soporte (Discord)"
+            "link": "https://drive.google.com/drive/folders/127prEfCwhUJAeMLm5W0hzvnmKWXHYTCd",
+            "linkName": "Enlace de Archivos WAD"
+          },
+          {
+            "title": "En el Menú Superior de Dolphin, Selecciona Herramientas -> Instalar WAD",
+            "description": "Este paso solo es necesario si no has aplicado ya el último WAD a tu NAND. Si no estás seguro, sigue los pasos de todos modos.",
+            "image": "/BO-Website/images/InstallWADOption.png",
+            "link": ""
+          },
+          {
+            "title": "Selecciona el Archivo WAD Descargado Anteriormente y Haz Clic en Abrir para Aplicarlo al NAND",
+            "description": "Importante: Aplicar este parche ocupará alrededor de 70 bloques en tu NAND.",
+            "image": "/BO-Website/images/WADFileInstall.png",
+            "link": ""
+          },
+          {
+            "title": "Haz Clic en Abrir en el Panel de Opciones de Dolphin",
+            "description": "",
+            "image": "/BO-Website/images/DolphinOpen.png",
+            "link": ""
+          },
+          {
+            "title": "Selecciona el Archivo Boot.dol para Iniciar el Juego",
+            "description": "Importante: Se recomienda seleccionar el archivo boot.dol ubicado en la carpeta apps/codn-client dentro de la misma carpeta que tu archivo de tarjeta SD de Dolphin.",
+            "image": "/BO-Website/images/DolphinDol.png",
+            "link": ""
+          },
+          {
+            "title": "Si Todo Funciona, Serás Redirigido al Menú Multijugador",
+            "description": "Si todo funcionó correctamente, serás lanzado al menú multijugador en lugar del menú de un jugador. También verás la marca de agua en la esquina superior izquierda de la pantalla.",
+            "image": "/BO-Website/images/MainMenu.png",
+            "link": ""
+          },
+          {
+            "title": "Requisito: Crear un Nuevo Perfil para el Nuevo Servidor",
+            "description": "Desafortunadamente, todos los perfiles creados en los servidores oficiales no funcionarán en el nuevo servidor. Se te pedirá que crees un nuevo perfil.",
+            "image": "/BO-Website/images/NewProfile.png",
+            "link": ""
+          },
+          {
+            "title": "¡Todo Listo!",
+            "description": "¡Felicidades por volver en línea! Si tienes problemas, haz clic en el botón de soporte para ser dirigido a nuestro Discord.",
+            "image": "",
+            "link": "https://discord.gg/gXsgTUWquc",
+            "linkName": "Enlace de Soporte (Discord)"
           }
         ]
       }
     ]
   }
+  
 }
+
+      

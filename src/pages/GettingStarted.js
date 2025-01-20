@@ -1,13 +1,13 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { Container, useMediaQuery, Typography, Grid, ButtonBase, Card, CardMedia, CardContent, Button, List, ListItem, useTheme, Stack, FormControl, InputLabel, Select, MenuItem, Tooltip } from '@mui/material';
-import ImageDisplay from '../components/ImageDisplay';  // Assuming this component exists
+import ImageDisplay from '../components/ImageDisplay'; 
 import en from '../assests/languages/en.json'; // English translations
-import es from '../assests/languages/es.json'; // English translations
+import es from '../assests/languages/es.json'; // Spanish translations
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { LanguageContext } from '../contexts/LanguageContext';
 import { useSearchParams } from 'react-router-dom';
-import LinkIcon from '@mui/icons-material/Link'; // Import Link icon
-import { Snackbar, Alert } from '@mui/material'; // Add these imports
+import LinkIcon from '@mui/icons-material/Link';
+import { Snackbar, Alert } from '@mui/material'; 
 
 const translations = { en, es };
 
@@ -23,7 +23,7 @@ const GettingStarted = () => {
   const isNotMobile = useMediaQuery('(min-width: 900px)');
   const [searchParams] = useSearchParams();
   const [highlightedStepIndex, setHighlightedStepIndex] = useState(null);
-  const [snackbarOpen, setSnackbarOpen] = useState(false); // Snackbar state
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
 
   const [selectedCategory, setSelectedCategory] = useState(null); 
   const { language } = useContext(LanguageContext);
@@ -103,8 +103,8 @@ const GettingStarted = () => {
     if (method) {
       method = method.toLocaleLowerCase();
     }
-    console.log(method)
     const stepIndex = parseInt(searchParams.get('step'), 10);
+    console.log(stepIndex)
     let index = -1;
     if (method && method.includes('disc')) {
       index = 0;
@@ -113,12 +113,14 @@ const GettingStarted = () => {
     } else if (method && method.includes('dolphin')) {
       index = 2;
     }
-  
-    if (method && !isNaN(index) && categories.methods[index]) {
+   
+
+    if (method && categories.methods[index]) {
       handleSetContent(categories.methods[index], index);
-      setHighlightedStepIndex(stepIndex || null); 
+      setHighlightedStepIndex(stepIndex); 
       waitForElementAndScroll(`#step-${stepIndex}`);
     }
+    
   }, [language, searchParams]);
 
   return (

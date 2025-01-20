@@ -55,9 +55,6 @@ const ImageDisplay = ({ open, onClose, image, title }) => {
           justifyContent: 'center',
         }}
       >
-        <Button onClick={onClose} color="primary" variant="contained">
-          Close
-        </Button>
       </DialogActions>
     </Dialog>
   );
