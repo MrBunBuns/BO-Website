@@ -73,9 +73,7 @@ const GettingStarted = () => {
   useEffect(() => {
     setCategories(translations[language].gettingStartedPage);
     console.log(selectedIndex)
-    if(steps) {
-      steps.length > 0 ? setSteps(categories.methods[selectedIndex].steps) : setSteps([]);
-    }
+    setSteps([]);
   }, [language]);
 
   useEffect(() => {

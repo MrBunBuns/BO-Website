@@ -54,6 +54,7 @@ const Header = () => {
       supportButton: translations[language].headerBar.supportButton,
       home: translations[language].headerBar.home,
       gettingStarted: translations[language].headerBar.gettingStarted,
+      guidelines: translations[language].headerBar.guidelines,
       about: translations[language].headerBar.about,
       faq: translations[language].headerBar.faq,
 
@@ -64,6 +65,7 @@ const Header = () => {
   const buttons = [
     { text: buttonTexts.home, action: () => navigate('/') },
     { text: buttonTexts.gettingStarted, action: () => navigate('/getting-started') },
+    { text: buttonTexts.guidelines, action: () => navigate('/guidelines') },
    // { text: buttonTexts.about, action: () => navigate('/about') }, Disabling about for now
     { text: buttonTexts.faq, action: () => navigate('/faq') },
     {

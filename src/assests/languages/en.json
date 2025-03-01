@@ -8,13 +8,14 @@
     { "language": "French (Canadian)", "code": "SC7Z52", "status": "🟢 Fully Works" },
     { "language": "French (PAL French)", "code": "SC7F52", "status": "🟢 Fully Works" },
     { "language": "Spanish", "code": "SC7S52", "status": "🟢 Fully Works" },
-    { "language": "Italian", "code": "SC7I52", "status": "🟢 Fully Works" },
-    { "language": "German", "code": "SC7D52", "status": "🟢 Fully Works" }
+    { "language": "Italian", "code": "SC7I52", "status": "🔴 Crashes at Startup" },
+    { "language": "German", "code": "SC7D52", "status": "🟡 Multiplayer Works but Zombies Crashes on Load" }
   ]
 },
 "headerBar": {
   "home": "Home",
   "gettingStarted": "Getting Started",
+  "guidelines": "Guidelines",
   "about": "About",
   "supportButton": "Support",
   "faq": "FAQ"
@@ -336,6 +337,11 @@
       ]
     }
   ]
+  },
+  "guidelinesPage": {
+    "title": "Community Guidelines",
+    "guidelineText": "These guidelines are here to maintain a positive spirit of the game and provide\na good experience for our players. Failure to meet any of these guidelines may\nrestrict your access to our game servers:\n\n1. Cheating or hacking, or otherwise giving yourself an unfair advantage or\ndisrupting other people's fun, is not allowed in any form and will result in a\nconsole ban. This means you are not allowed to:\n- Use any sort of cheat, mod or other third-party utility in public matches.\n- Use any cheat in private matches that can then affect public matches.\n- Use a custom class loadout that the game normally does not let you select.\n- Modifying score and kill counts in public Multiplayer matches or Zombies.\n- Giving yourself weapons you aren't supposed to be able to use normally.\n- Spoof your player name or your profile/console identifier.\n- Tamper with the CodN client or server in any way.\n\nThe only exception is codes that allow you unlock every weapon - this is\ndirectly included in our mod, and you may not use any cheat code to do the\nsame task.\n\n1.1. This includes any sort of glitching, including:\n- Glitching out of the map.\n- Accessing areas of the map where you can see and/or shoot enemies, but they\ncan't see you and/or shoot you back.\n\n1.2. This also includes \"boosting\" in public lobbies, as it's seen as disruptive\nto other people's fun.\n\n2. Harassment and toxicity is not permitted.\n\n2.1. You must not use in-game text chat or nicknames to harass, intimidate or\nthreaten other players, or harass anybody based on their name, skin colour,\ncountry, ethnicity, gender or sexuality. This includes using offensive slurs.\n\n2.2. You may not target or \"troll\" specific players for the purpose of\ndisruption. This can include, but is not limited to, for example intentionally\nteam killing your teammates or a specific teammate.\n\n3. Dolphin Emulator is permitted if you own the game on a Wii, however you must:\n- Import a NAND backup from a legitimate, unbanned Wii console.\n- Be able to maintain a solid 30 FPS (the game must run at full speed - you\n  must not \"lag\" or slow down any lobby.)\n- Disable any and all cheats, Gecko Codes and file replacements.\nIf you are not able to do any of these, you may be temporarily or permanently\nbanned depending on severity.\n\n3.1. If you are sharing a NAND with other people in order to play on Dolphin,\nyou are responsible for every person using that NAND. If one person is cheating,\nthen everybody using that NAND may also be banned in the future.\n\n4. Attempting to circumvent any ban, regardless of length, is strictly\nprohibited and will result in a permanent ban on any associated profile and\nconsole involved. This includes importing a new device identifier, spoofing\nany existing device identifier, using a proxy or \"VPN\" service to change your\nyour IP address (for purposes of avoiding a ban), or tampering with the CodN\nclient or server.\n\nBreaking any of these guidelines may result in a profile and console ban.\nThe length of bans depends on severity and frequency, and are up to moderator\ndiscretion.\n\nIf you believe your ban was not made in good faith or would like to appeal,\nplease contact the CoDN team, and we may review your ban. If you get banned\nafter a moderator unban, then you may not appeal again."
+ 
   }
   
 }

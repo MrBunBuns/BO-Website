@@ -6,6 +6,7 @@ import Header from './components/HeaderBar';
 import HomePage from './pages/HomePage';
 import GettingStarted from './pages/GettingStarted';
 import AboutPage from './pages/AboutPage';
+import GuidelinesPage from './pages/GuidelinesPage';
 import { useLayoutEffect } from 'react';
 import FAQPage from './pages/FAQPage';
 
@@ -67,6 +68,7 @@ function App() {
                         <Route path="/getting-started" element={<GettingStarted />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/FAQ" element={<FAQPage />} />
+                        <Route path="/guidelines" element={<GuidelinesPage />} />
                       </Routes>
                     </Wrapper>
                   </Box>
