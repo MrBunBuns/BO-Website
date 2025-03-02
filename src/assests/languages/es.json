@@ -2,6 +2,8 @@
   "homePage": {
     "imageBanner": "¡Bienvenido a CoDN!",
     "header": "¡Call of Duty Black Ops Wii está de vuelta!",
+    "compatibilityText": "Compatibilidad Regional",
+    "getConnected": "Conéctate",
     "description": "Tras el cierre completo de los servicios en línea de Wii en 2023, todos los juegos de Call of Duty en la plataforma perdieron acceso a sus funciones multijugador. Sin embargo, gracias a los esfuerzos de un talentoso equipo de desarrolladores, estos servicios han sido restaurados, permitiendo que los jugadores disfruten nuevamente de Call of Duty en línea en la Wii. Actualmente, solo Call of Duty: Black Ops ha sido revivido, mientras que la restauración de otros títulos requiere más investigación y desarrollo.",
     "compatibility": [
       { "language": "English (USA)", "code": "SC7E52", "status": "🟢 Funciona completamente" },

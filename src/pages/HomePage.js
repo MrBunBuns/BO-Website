@@ -14,6 +14,8 @@ const HomePage = () => {
     const [bannerText, setBannerText] = useState(translations[language].homePage.imageBanner); 
     const [headerText, setHeaderText] = useState(translations[language].homePage.header); 
     const [description, setDescription] = useState(translations[language].homePage.description); 
+    const [compatibilityText, setCompatibilityText] = useState(translations[language].homePage.compatibilityText); 
+    const [getConnected, setGetConnected] = useState(translations[language].homePage.getConnected); 
     const [regionCompatibility, setRegionCompatibility] = useState(translations[language].homePage.compatibility);
     const theme = useTheme();
     const navigate = useNavigate();
@@ -32,6 +34,7 @@ const HomePage = () => {
         setHeaderText(translations[language].homePage.header);
         setDescription(translations[language].homePage.description);
         setRegionCompatibility(translations[language].homePage.compatibility);
+        setCompatibilityText(translations[language].homePage.compatibilityText);
       }, [language]); 
 
     return (
@@ -61,12 +64,12 @@ const HomePage = () => {
             <Typography variant="body1" sx={{ color: theme.palette.text.secondary, fontSize: { xs: '1.2rem', sm: '1.5rem', md: '1.2em' } }}>
                 {description}
             </Typography>
-            <Button onClick={handleClick} style={{ color: '#fff', backgroundColor: theme.palette.background.primary, textDecoration: 'none', marginTop: '30px' }}>Get Connected</Button>
+            <Button onClick={handleClick} style={{ color: '#fff', backgroundColor: theme.palette.background.primary, textDecoration: 'none', marginTop: '30px' }}>{getConnected}</Button>
 
             {/* Region Compatibility Section */}
             <Box sx={{ marginTop: '40px' }}>
                 <Typography variant="h5" sx={{ marginBottom: '20px' }}>
-                    Region Compatibility
+                    {compatibilityText}
                 </Typography>
                 <Grid container spacing={2}>
                     {regionCompatibility.map((region, index) => (

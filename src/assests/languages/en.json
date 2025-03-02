@@ -1,6 +1,8 @@
 {"homePage": {
   "imageBanner": "Welcome to CoDN",
   "header": "Call of Duty Black Ops Wii is Back!",
+  "compatibilityText": "Region Compatibility",
+  "getConnected": "Get Connected",
   "description": "Following the complete shutdown of the Wii's online services in 2023, all Call of Duty games on the platform lost access to their multiplayer features. However, thanks to the efforts of a talented team of developers, these services have been restored, allowing players to once again enjoy Call of Duty online on the Wii. Currently, only Call of Duty: Black Ops has been revived, while the restoration of other titles requires further investigation and development.",
   "compatibility": [
     { "language": "English (USA)", "code": "SC7E52", "status": "🟢 Fully Works" },
