@@ -8,15 +8,16 @@
       { "language": "English (PAL)", "code": "SC7P52", "status": "🟢 Funciona completamente" },
       { "language": "French (Canadian)", "code": "SC7Z52", "status": "🟢 Funciona completamente" },
       { "language": "French (PAL French)", "code": "SC7F52", "status": "🟢 Funciona completamente" },
-      { "language": "Spanish", "code": "SC7S52", "status": "🟢 Funciona completamente" },
-      { "language": "Italian", "code": "SC7I52", "status": "🔴 Se bloquea al iniciar" },
-      { "language": "German", "code": "SC7D52", "status": "🟡 El multijugador funciona, pero el modo zombis se bloquea al cargar" }
+      { "language": "Español", "code": "SC7S52", "status": "🟢 Funciona completamente" },
+      { "language": "Italiano", "code": "SC7I52", "status": "🔴 Se bloquea al iniciar" },
+      { "language": "Alemán", "code": "SC7D52", "status": "🟡 El multijugador funciona, pero Zombies se bloquea al cargar" }
     ]
   },
   "headerBar": {
     "home": "Inicio",
     "gettingStarted": "Primeros Pasos",
     "about": "Acerca de",
+    "guidelines": "Normas",
     "supportButton": "Soporte",
     "faq": "Preguntas Frecuentes"
   },
@@ -337,7 +338,12 @@
         ]
       }
     ]
-  }
+  },
+  "guidelinesPage": {
+    "title": "Normas de la Comunidad",
+    "guidelineText": "Estas normas existen para mantener un espíritu positivo en el juego y garantizar\nuna buena experiencia para nuestros jugadores. No cumplir con estas normas puede\nrestringir tu acceso a nuestros servidores:\n\n1. Hacer trampas o piratear, o de cualquier otra manera darte una ventaja injusta o\ndisruptiva para la diversión de otros, no está permitido bajo ninguna forma y resultará en\nuna prohibición de la consola. Esto significa que no puedes:\n- Usar ningún tipo de trampa, modificación o utilidad de terceros en partidas públicas.\n- Usar trampas en partidas privadas que luego puedan afectar a las partidas públicas.\n- Usar una configuración personalizada de clases que el juego normalmente no permite seleccionar.\n- Modificar la puntuación y el conteo de bajas en partidas multijugador públicas o en el modo Zombies.\n- Darse armas que normalmente no se pueden usar.\n- Falsificar tu nombre de jugador o tu identificador de perfil/consola.\n- Manipular el cliente o servidor de CodN de cualquier manera.\n\nLa única excepción son los códigos que permiten desbloquear todas las armas, ya que esto está\nincluido directamente en nuestro mod. No puedes usar ningún código de trucos para hacer lo mismo.\n\n1.1. Esto incluye cualquier tipo de aprovechamiento de fallos o glitches, incluyendo:\n- Salirse del mapa.\n- Acceder a áreas del mapa donde puedes ver y/o disparar a los enemigos, pero ellos no pueden verte\ny/o dispararte de vuelta.\n\n1.2. También incluye el \"boosting\" en lobbies públicos, ya que se considera disruptivo para la diversión\nde los demás jugadores.\n\n2. No se permite el acoso ni la toxicidad.\n\n2.1. No debes utilizar el chat de texto en el juego ni los apodos para acosar, intimidar o amenazar\na otros jugadores, ni acosar a nadie por su nombre, color de piel, país, etnia, género o sexualidad.\nEsto incluye el uso de insultos ofensivos.\n\n2.2. No puedes dirigirte a jugadores específicos con la intención de molestar. Esto incluye, pero no\nse limita a, matar intencionadamente a tus compañeros de equipo o a un compañero en particular.\n\n3. Se permite el uso del emulador Dolphin si posees el juego en una Wii, sin embargo, debes:\n- Importar una copia de seguridad de la NAND desde una consola Wii legítima y sin prohibiciones.\n- Mantener un rendimiento estable de 30 FPS (el juego debe ejecutarse a velocidad completa y no\n  provocar retrasos o ralentizaciones en una partida).\n- Desactivar cualquier trampa, código Gecko o reemplazo de archivos.\nSi no cumples con estos requisitos, podrías recibir una prohibición temporal o permanente\ndependiendo de la gravedad.\n\n3.1. Si compartes una NAND con otras personas para jugar en Dolphin, eres responsable de todos los que\nla usen. Si una persona hace trampas, todos los que usen esa NAND podrían ser prohibidos en el futuro.\n\n4. Intentar eludir una prohibición, sin importar su duración, está estrictamente\nprohibido y resultará en una prohibición permanente de cualquier perfil y consola asociada.\nEsto incluye importar un nuevo identificador de dispositivo, falsificar un identificador\nexistente, usar un proxy o servicio \"VPN\" para cambiar tu dirección IP (con el propósito de evitar\nuna prohibición), o manipular el cliente o servidor de CodN.\n\nRomper cualquiera de estas normas puede resultar en la prohibición del perfil y de la consola.\nLa duración de las prohibiciones depende de la gravedad y frecuencia de las infracciones, y queda a\ndiscreción de los moderadores.\n\nSi crees que tu prohibición no se realizó de buena fe o deseas apelar, por favor, contacta al equipo de CoDN,\ny revisaremos tu caso. Si vuelves a ser prohibido después de que un moderador te desbloquee, no podrás\napelar nuevamente."
+}
+
   
 }
 
