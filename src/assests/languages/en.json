@@ -10,8 +10,8 @@
     { "language": "French (Canadian)", "code": "SC7Z52", "status": "🟢 Fully Works" },
     { "language": "French (PAL French)", "code": "SC7F52", "status": "🟢 Fully Works" },
     { "language": "Spanish", "code": "SC7S52", "status": "🟢 Fully Works" },
-    { "language": "Italian", "code": "SC7I52", "status": "🔴 Crashes at Startup" },
-    { "language": "German", "code": "SC7D52", "status": "🟡 Multiplayer Works but Zombies Crashes on Load" }
+    { "language": "Italian", "code": "SC7I52", "status": "🟢 Fully Works" },
+    { "language": "German", "code": "SC7D52", "status": "🟢 Fully Works" }
   ]
 },
 "headerBar": {
